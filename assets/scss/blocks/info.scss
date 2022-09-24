@@ -1,0 +1,115 @@
+.info {
+    margin-top: -35px;
+    margin-bottom: 730px;
+}
+.info__container {
+}
+.decor__block {
+}
+.body__decor {
+}
+.info__body {
+    max-width: 1100px;
+    margin: 19px auto 0;
+}
+.info__title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 150%;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 18px;
+}
+.info__text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: center;
+    color: #000000;    
+}
+.info__block {
+    margin-top: 83px;
+}
+.info__inner {
+}
+.info__items {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    margin-bottom: 96px;
+    a {
+        width: 30%;
+        font-size: 24px;
+        line-height: 150%;
+        color: #000000;
+        background: linear-gradient(180deg, #F6F6F6 0%, #D5D5D5 100%);
+        margin-right: 29px;
+        padding: 17px 49px;
+        text-align: center;
+        margin-bottom: 25px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+.info__item {
+    width: 100%;
+    margin-bottom: 30px;
+
+    a {
+        width: 100%;
+        font-size: 24px;
+        line-height: 150%;
+        color: #000000;
+        background: linear-gradient(180deg, #F6F6F6 0%, #D5D5D5 100%);
+        margin-right: 29px;
+        text-align: center;
+    }
+}
+.info__main {
+}
+.info__col {
+    background-color: #F6F6F6;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    display: none;
+
+    &:before {
+        content: "";
+        height: 50%;
+        width: 33.3333%;
+        position: absolute;
+
+        background: linear-gradient(180deg, #D5D5D5 0%, #F6F6F6 100%);
+        left: 0;
+        top: 0;
+    }
+
+}
+.info__link {
+    font-size: 24px;
+    line-height: 200%;
+    text-decoration-line: underline;
+    color: #4149F2;    
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    &.active {
+        display: block;
+    }
+}
+
+#tabs .whiteborder {
+    background: linear-gradient(180deg, #D5D5D5 0%, #F6F6F6 100%);
+}
+
+#tabs .hide {
+    display: none;
+}
+
+#tabs .show {
+    display: block;
+}
