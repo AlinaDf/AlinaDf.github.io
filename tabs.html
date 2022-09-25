@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:regular,500,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Inter:regular" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+
+    <!--Sprite-->
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <a href="index.html" class="header__logo logo-header">
+                    <div class="logo-header__img">
+                        <img src="assets/img/header/logo.png" alt="">
+                    </div>
+                    <div class="logo-header__text">ЫнсапKZ</div>
+                </a>
+                <div class="header__body" id="nav">
+                    <div class="header__nav nav">
+                        <li class="nav__item"><a href="" class="nav__link">Главная</a></li>
+                        <li class="nav__item">
+                            <a href="" class="nav__link nav-last">Продукция</a>
+
+                            <ul class="subnav">
+                                <li>
+                                    <a class="subnav__link" href="#">Хирургические инструменты
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="subnav__link" href="#">Медицинские газы
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="subnav__link" href="#">Аппараты ИВЛ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="subnav__link" href="#">Тест системы</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__item"><a href="" class="nav__link">О компании</a></li>
+                        <li class="nav__item"><a href="" class="nav__link">Контакты</a></li>
+                    </div>
+                    <div class="header__right right-header">
+                        <div class="right-header__lang header__lang">
+                            <div class="header__lang-item">
+                                <img src="assets/img/header/1.png" alt="">
+                            </div>
+                            <div class="header__lang-item">
+                                <img src="assets/img/header/2.svg" alt="">
+                            </div>
+                            <div class="header__lang-item">
+                                <img src="assets/img/header/3.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="right-header__contact">+7 775 136-81-91</div>
+                    </div>
+                </div>
+                <button class="header__menu" id="navToggle">
+                    <span></span>
+                </button>
+            </div>
+        </header>
+            <main class="main">
+                <div class="intro intro--tabs">
+                    <div class="intro__container">
+                        <div class="intro__tabs-logo">
+                            <img src="assets/img/intro/logo.png" alt="">
+                        </div>
+                        <div class="intro__tabs-subtitle">Хирургические инструменты</div>
+                    </div>
+                </div>
+                <section class="info">
+                    <div class="info__container">
+                        <div class="decor__block">
+                            <div class="body__decor">
+                                <img src="assets/img/catalog/decor.png" alt="">
+                            </div>
+                        </div>
+                        <div class="info__body">
+                            <h3 class="info__title">Lawton Medizintechnik</h3>
+                            <div class="info__text">Компания специализируется на изготовлении высококачественных хирургических и диагностических инструментов таких как ножницы, щипцы, зажимы, иглодержатели, скальпели и другое для разных хирургических дисциплин: общая хирургия, нейрохирургия, микрохирургия, оториноларингология, офтальмология, урология, гинекология и родовспоможение, пластическая хирургия, инструменты для трансплантации. Инструменты выполнены из высококачественной медицинской стали или титана.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="tabs">
+                            <!-- Кнопка-переключатель и название первого таба -->
+                            <div class="tab__el">
+                                <input type="radio" name="tabs" id="tab-first" checked >
+                                <label for="tab-first">
+                                    <p>Общий каталог</p>
+                                </label>
+                                <div id="tab-content-1" class="tab-content tab-pos">
+                                    <ul class="tab__block tab-posa">
+                                        <li><a href="" class="tabs__link">Для гинекологии</a></li>
+                                        <li><a href="" class="tabs__link">Для детской хирургии</a></li>
+                                        <li><a href="" class="tabs__link">Для межпозвоночных дисков</a></li>
+                                        <li><a href="" class="tabs__link">Для спинальной хирургии</a></li>
+                                    </ul>
+                                    </div> <!-- #tab-content-1 -->
+                            </div>
+                            <!-- Кнопка-переключатель и название второго таба -->
+                            <div class="tabs__inner">
+                                <input type="radio" name="tabs" id="tab-second">
+                                <label for="tab-second">
+                                    <p>Общая хирургия</p>
+                                </label>
+                                <input type="radio" name="tabs" id="tab-third">
+                                <label for="tab-third">
+                                    <p>Трансплантология</p>
+                                </label>
+                                <input type="radio" name="tabs" id="tab-fourth">
+                                <label for="tab-fourth">
+                                    <p>Нейрохирургия</p>
+                                </label>
+                                <input type="radio" name="tabs" id="tab-fifth">
+                                <label for="tab-fifth">
+                                    <p>Микрохирургия</p>
+                                </label>
+                                <input type="radio" name="tabs" id="tab-sixth">
+                                <label for="tab-sixth">
+                                    <p>Отоларингология</p>
+                                </label>
+                                <input type="radio" name="tabs" id="tab-seventh">
+                                <label for="tab-seventh">
+                                    <p>Офтальмология</p>
+                                </label>
+                                <!-- Вывод контента наших табов -->
+                                <div id="tab-content-2" class="tab-content">
+                                    <div class="tabs__body tab__list">
+                                        <div class="tabs__block-item item-tabs">
+                                            <div class="item-tabs__title">Зажимы</div>
+                                            <ul>
+                                                <li><a href="" class="tabs__link">Для гинекологии</a></li>
+                                                <li><a href="" class="tabs__link">Для детской хирургии</a></li>
+                                                <li><a href="" class="tabs__link">Для межпозвоночных дисков</a></li>
+                                                <li><a href="" class="tabs__link">Для спинальной хирургии</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="tabs__block-item item-tabs">
+                                            <div class="item-tabs__title">Инструменты</div>
+                                            <ul>
+                                                <li><a href="" class="tabs__link">XXL-инструменты для общей хирургии</a></li>
+                                                <li><a href="" class="tabs__link">Для биопсии позвоночника</a></li>
+                                                <li><a href="" class="tabs__link">Для передней резекции прямой кишки</a></li>
+                                                <li><a href="" class="tabs__link">Для снятия одноразового лезвия</a></li>
+                                                <li><a href="" class="tabs__link">Для спиц в травматологии</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="tabs__block-item item-tabs">
+                                            <div class="item-tabs__title">Инструменты из нитинола</div>
+                                            <ul>
+                                                <li><a href="" class="tabs__link">Гибкий микро источник света</a></li>
+                                                <li><a href="" class="tabs__link">Инструменты</a></li>
+                                                <li><a href="" class="tabs__link">Канюля промывочная</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="tabs__block-item item-tabs">
+                                            <div class="item-tabs__title">Ножницы</div>
+                                            <ul>
+                                                <li><a href="" class="tabs__link">Биполярные</a></li>
+                                                <li><a href="" class="tabs__link">Для геникологии</a></li>
+                                                <li><a href="" class="tabs__link">Керамические</a></li>
+                                                <li><a href="" class="tabs__link">Лигатурные</a></li>
+                                                <li><a href="" class="tabs__link">С ножевой шлифовкой</a></li>
+                                                <li><a href="" class="tabs__link">Титановые</a></li>
+                                                <li><a href="" class="tabs__link">Шведская модель</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="tabs__block-item item-tabs">
+                                            <ul>
+                                                <li><a href="" class="tabs__link">Для гинекологии</a></li>
+                                                <li><a href="" class="tabs__link">Для детской хирургии</a></li>
+                                                <li><a href="" class="tabs__link">Для межпозвоночных дисков</a></li>
+                                                <li><a href="" class="tabs__link">Для спинальной хирургии</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div> <!-- #tab-content-2 -->
+                                <div id="tab-content-3" class="tab-content">
+                                    <ul class="tab__block">
+                                        <li><a href="" class="tabs__link">Наборы для трансплантологии
+                                        </a></li>
+                                        <li><a href="" class="tabs__link">Инструменты для трансплантации сердца
+                                        </a></li>
+                                        <li><a href="" class="tabs__link">Инструменты для трансплантации почек и поджелудочной железы
+                                        </a></li>
+                                        <li><a href="" class="tabs__link">Инструменты для трансплантации печени
+                                        </a></li>
+                                        <li><a href="" class="tabs__link">Инструменты для трансплантации легких</a></li>
+                                    </ul>
+                                </div> <!-- #tab-content-3 -->
+                                <div id="tab-content-4" class="tab-content">
+                                    <ul class="tab__block">
+                                        <li><a href="" class="tabs__link">Вкладка 4
+                                        </a></li>
+                                    </ul>
+                                </div> <!-- #tab-content-4 -->
+                                <div id="tab-content-5" class="tab-content">
+                                    <ul class="tab__block">
+                                        <li><a href="" class="tabs__link">Вкладка 5
+                                        </a></li>
+                                    </ul>
+                                </div> <!-- #tab-content-5 -->
+                                <div id="tab-content-6" class="tab-content">
+                                    <ul class="tab__block">
+                                        <li><a href="" class="tabs__link">Вкладка 6
+                                        </a></li>
+                                    </ul>
+                                </div> <!-- #tab-content-6 -->
+                                <div id="tab-content-7" class="tab-content">
+                                    <ul class="tab__block">
+                                        <li><a href="" class="tabs__link">Вкладка 7
+                                        </a></li>
+                                    </ul>
+                                </div> <!-- #tab-content-4 -->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer">
+                <div class="footer__container">
+                    <div class="footer__inner">
+                        <a href="index.html" class="footer__logo">
+                            <div class="footer__img">
+                                <img src="assets/img/footer/logo.png" alt="">
+                            </div>
+                            <div class="footer__logo-text">ЫнсапKZ</div>
+                        </a>
+                        <ul class="footer__nav nav">
+                                <li><a href="index.html" class="footer__link">Главная</a></li>
+                                <li><a href="tabs.html" class="footer__link">Продукция</a></li>
+                                <li><a href="" class="footer__link">О компании</a></li>
+                                <li><a href="" class="footer__link">Контакты</a></li>
+                        </ul>
+                        <div class="footer__button">
+                            <button class="btn btn--white" data-modal="#project_1">Заказать консультацию</button>
+                        </div>
+                    </div>
+                    <div class="footer__social social__footer">
+                        <div class="social__footer-item">
+                            <a href="#">
+                                <img src="assets/img/footer/3.png" alt="">
+                            </a>
+                        </div>
+                        <div class="social__footer-item">
+                            <a href="#">
+                                <img src="assets/img/footer/1.png" alt="">
+                            </a>
+                        </div>
+                        <div class="social__footer-item">
+                            <a href="#">
+                                <img src="assets/img/footer/2.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer__copy">2022 ⓒ ТОО «ЫнсапKZ» <br>
+                        Все права защищены.</div>
+                </div>
+            </footer>
+    </div>
+    
+    <!--Modal-->
+
+    <div class="modal" id="project_1">
+        <div class="modal__dialog">
+            <button class="modal__close" type="button" data-close>
+                <img src="assets/img/modal-close_btn.svg" alt="">
+            </button>
+            <div class="modal__title">Отправите заявку и получите консультацию по нашим услугам</div>
+            <form action="#" class="modal__form">
+                <div class="modal__item">
+                    <input type="text" placeholder="Имя">
+                </div>
+                <div class="modal__item">
+                    <input type="tel" placeholder="Телефон">
+                </div>
+            </form>
+            <div class="modal__btn">
+                <button class="btn btn--red">Заказать консультацию</button>
+            </div>
+        </div>
+    </div>
+
+    <!--JS-->
+    
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
