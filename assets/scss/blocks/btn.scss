@@ -1,0 +1,20 @@
+.btn {
+    background: linear-gradient(180deg, #9664FF 0%, #854EF9 100%);
+    cursor: pointer;
+
+    &--circle {
+        border-radius: 1.6rem;
+        font-weight: 700;
+        font-size: 1.3rem;
+        line-height: 246%;
+        text-align: right;
+        letter-spacing: -0.018em;
+        color: #FFFFFF;
+        min-height: 40px;
+        padding: 0 33px;
+    }
+
+    &:hover {
+        background: #854EF9;
+    }
+}
