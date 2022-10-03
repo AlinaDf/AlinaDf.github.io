@@ -1,0 +1,36 @@
+.btn {
+    cursor: pointer;
+
+    &--circle {
+        border-radius: 1.6rem;
+        font-weight: 700;
+        font-size: 1.3rem;
+        line-height: 246%;
+        text-align: right;
+        letter-spacing: -0.018em;
+        color: #FFFFFF;
+        min-height: 40px;
+        padding: 0 33px;
+        background: linear-gradient(180deg, #9664FF 0%, #854EF9 100%);
+    }
+
+    &--square {
+        display: flex;
+        align-items: center;
+        background: linear-gradient(93.58deg, #9664FF -2%, #854EF9 117.56%);
+        box-shadow: inset 8.74047px 9.71163px 18.4521px rgba(150, 100, 255, 0.3);
+        border-radius: 13.5963px;
+
+        min-height: 66px;
+        padding: 0 17px;
+
+        font-weight: 600;
+        font-size: 1.6rem;
+        line-height: calc(22 / 16);
+        color: #FFFFFF;
+    }
+
+    &:hover {
+        background: #854EF9;
+    }
+}

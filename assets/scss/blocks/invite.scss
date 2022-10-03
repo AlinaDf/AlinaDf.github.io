@@ -1,0 +1,68 @@
+.invite {
+    margin-top: 61px;
+}
+.invite__block {
+    border-radius: 29px;
+    background-color: #F9F9F9;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 50px 20px 50px 41px;
+}
+.invite__content {
+    width: 54%;
+}
+.content-invite {
+}
+.content-invite__title {
+    font-size: 3.2rem;
+    line-height: calc(44 / 32);
+    background: linear-gradient(90.58deg, #1E2029 0.01%, #474B60 146.12%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.content-invite__text {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 182%;
+    color: rgba(30, 32, 41, 0.6);
+    margin: 33px 0 40px;
+}
+.content-invite__btn {
+}
+.btn {
+}
+.btn--square {
+}
+.content-invite__btn-icon {
+    margin-left: 19px;
+}
+.invite__photo {
+    width: 45%;
+
+    img {
+        width: 100%;
+    }
+}
+.invite__decor {
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+}
+.invite__decor-1 {
+    background: #1E2029;
+    border-radius: 23px;
+    width: 46px;
+    height: 4px;
+    margin-right: 9px;
+}
+.invite__decor-2 {
+    background: #1E2029;
+    opacity: 0.4;
+    border-radius: 23px;
+    width: 9px;
+    height: 4px;
+}
