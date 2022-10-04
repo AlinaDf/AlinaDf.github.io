@@ -1,0 +1,35 @@
+.btn {
+    background: #252525;
+    border-radius: 10px;
+    color: #FFFFFF;
+    cursor: pointer;
+
+    &--bg {
+        font-weight: 600;
+        font-size: 2rem;
+        line-height: calc(23 / 20);
+        letter-spacing: 0.05em;
+        color: #FFFFFF;
+
+        min-height: 75px;
+        padding: 0 3.2rem;
+
+        @media (max-width: 371px) {
+            font-size: 1.4rem;
+        }
+    }
+
+    &--middle {
+        min-height: 64px;
+        padding: 0 35px;
+    }
+
+    &--sm {
+        min-height: 46px;
+        padding: 0 28px;
+    }
+
+    &:hover {
+        background-color: lighten(#252525, 5%);
+    }
+}
