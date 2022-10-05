@@ -1,0 +1,123 @@
+.advantages {
+    margin-top: 12.9rem;
+
+    width: 100%;
+    min-height: 714px;
+    background: url("../assets/img/advantages/bg.jpg") center no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    position: relative;
+    z-index: 1;
+
+    &:after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: 
+        rgba(86, 86, 86, 0.85);
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+    }
+
+    @media (max-width: 729px) {
+        padding-bottom: 6.3rem;
+    }
+}
+.advantages__container {
+    position: relative;
+    z-index: 3;
+}
+.advantages__header {
+}
+.header-block {
+}
+.advantages__icon {
+    background: #F5F5F5;
+    border-radius: 50%;
+    width: 74px;
+    height: 74px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    position: absolute;
+    top: -38px;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    box-shadow: 0 2px #C5C2C2;
+}
+.advantages__main {
+    padding-top: 124px;
+    text-align: center;
+}
+.main-advantages {
+    max-width: 632px;
+    margin: auto;
+    margin-bottom: 60px;
+}
+.main-advantages__title {
+    font-weight: 600;
+    font-size: 4rem;
+    line-height: calc(47 / 40);
+    text-transform: uppercase;
+    
+    color: #FFFFFF;    
+
+    @media (max-width: 449px) {
+        font-size: 2.4rem;
+    }
+}
+.main-advantages__subtitle {
+    font-size: 20px;
+    line-height: 150%;
+    color: #FFFFFF;
+    opacity: 0.65;
+
+    margin-top: 2rem;
+
+    @media (max-width: 449px) {
+        font-size: 2rem;
+    }
+}
+.advantages__inner {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+
+    @media (max-width: 729px) {
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+}
+.advantages__item {
+    padding: 0 1rem;
+
+    @media (max-width: 729px) {
+        margin-bottom: 4rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+.item-advantages {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4rem;
+
+    max-width: 420px;
+}
+.item-advantages__icon {
+    margin-right: 2rem;
+}
+.item-advantages__text {
+    font-size: 1.6rem;
+    line-height: 150%;
+    color: #FFFFFF;    
+}
