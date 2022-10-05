@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:regular,500,600" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <!--Sprite-->
+
+    <svg style="display: none">
+        <symbol id="star" viewBox="0 0 14 14">
+            <path d="M6.99992 0.333336L9.05992 4.50667L13.6666 5.18L10.3333 8.42667L11.1199 13.0133L6.99992 10.8467L2.87992 13.0133L3.66658 8.42667L0.333252 5.18L4.93992 4.50667L6.99992 0.333336Z" fill="#FFB81C"/>
+        </symbol>
+    </svg>
+
+    <div class="wrapper">
+            <header class="header">
+                <div class="header__container">
+                    <div class="header__left left-header">
+                        <div class="left-header__logo">
+                            <img src="assets/img/logo.png" alt="">
+                        </div>
+                    </div>
+                    <div class="header__body" id="nav">
+                        <nav class="header__nav nav">
+                            <ul class="nav__inner">
+                                <li><a href="#" class="nav__link">Калькулятор</a></li>
+                                <li><a href="#" class="nav__link">Услуги</a></li>
+                                <li><a href="#" class="nav__link">Алгоритм</a></li>
+                                <li><a href="#" class="nav__link">Условия</a></li>
+                                <li><a href="#" class="nav__link">Вопросы и ответы</a></li>
+                                <li><a href="#" class="nav__link">Контакты</a></li>
+                            </ul>
+                        </nav>
+                        <div class="header__right right-header">
+                            <div class="left-header__text">Пн-Пт с 09:00 до 17:00</div>
+                            <div class="right-header__text">8707-770-90-80</div>
+                            <div class="right-header__social social">
+                                <a href="#" class="social__item">
+                                    <img src="assets/img/1.png" alt="">
+                                </a>
+                                <a href="#" class="social__item">
+                                    <img src="assets/img/2.png" alt="">
+                                </a>
+                                <a href="#" class="social__item">
+                                    <img src="assets/img/3.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="header__menu" id="navToggle">
+                        <span></span>
+                    </button>
+                </div>
+            </header>
+            <main class="main">
+                <section class="intro">
+                    <div class="intro__container">
+                        <div class="intro__content content-intro">
+                            <h1 class="content-intro__title">Автоломбард в Алматы</h1>
+                            <div class="content-intro__text">
+                                <p>Деньги под залог авто
+                                    <span>С ПРАВОМ ВОЖДЕНИЯ</span></p>
+                                <p>Процентная ставка 3.51% в месяц, 
+                                    без скрытых комиссий</p>
+                            </div>
+                            <div class="content-intro__btn">
+                                <button class="btn btn--bg">Получить консультацию</button>
+                            </div>
+                        </div>
+                        <div class="intro__photo">
+                            <img src="assets/img/intro/intro.svg" alt="">
+                        </div>
+                    </div>
+                </section>
+                <section class="condition">
+                    <div class="condition__container">
+                        <div class="condition__header header-block">
+                            <div class="header-block__icon">
+                                <img src="assets/img/condition/icon.png" alt="">
+                            </div>
+                            <h2 class="header-block__title">УСЛОВИЯ</h2>
+                        </div>
+                        <div class="condition__inner">
+                            <div class="condition__col">
+                                <div class="condition__item item-condition">
+                                    <div class="item-condition__icon">
+                                        <img src="assets/img/condition/1.png" alt="">
+                                    </div>
+                                    <div class="item-condition__title">Для транспорта:</div>
+                                    <div class="item-condition__text">Легковые автомобили с 2001 года и свежее</div>
+                                </div>
+                            </div>
+                            <div class="condition__col">
+                                <div class="condition__item item-condition">
+                                    <div class="item-condition__icon">
+                                        <img src="assets/img/condition/2.png" alt="">
+                                    </div>
+                                    <div class="item-condition__title">Для клиента:</div>
+                                    <div class="item-condition__text">От 21 года, резидент РК</div>
+                                </div>
+                            </div>
+                            <div class="condition__col">
+                                <div class="condition__item item-condition">
+                                    <div class="item-condition__icon">
+                                        <img src="assets/img/condition/3.png" alt="">
+                                    </div>
+                                    <div class="item-condition__title">Для документов:</div>
+                                    <div class="item-condition__text">Удостоверение личности хозяина авто, тех. паспорт автомобиля</div>
+                                </div>
+                            </div>
+                            <div class="condition__col">
+                                <div class="condition__item item-condition">
+                                    <div class="item-condition__icon">
+                                        <img src="assets/img/condition/4.png" alt="">
+                                    </div>
+                                    <div class="item-condition__text">Займ от 1 месяца</div>
+                                </div>
+                            </div>
+                            <div class="condition__col">
+                                <div class="condition__item item-condition">
+                                    <div class="item-condition__icon">
+                                        <img src="assets/img/condition/1.png" alt="">
+                                    </div>
+                                    <div class="item-condition__text">От 1 миллиона, выдача денег за 60 минут</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="calc">
+                    <div class="calc__container">
+                        <div class="calc__header header-block">
+                            <div class="header-block__icon">
+                                <img src="assets/img/calc/icon.png" alt="">
+                            </div>
+                            <h2 class="header-block__title">Рассчитайте Ваш микрокредит прямо сейчас</h2>
+                            <div class="calc__header-subtitle">Годовая Эффективная Ставка Вознаграждение (ГЭСВ) - до 56%</div>
+                        </div>
+                        <div class="calc__block block-calc">
+                            <div class="calc__content">
+                                <div class="block-calc__title calc-title">Укажите сумму</div>
+                                <form action="#">
+                                    <div class="calc__form">
+                                        <div class="ui-element">
+                                          <div class="lever">
+                                            <div class="ragerange">
+                                                <input type="range" min="0" max="1024" step="256" value="768" class="custom-range" />
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                </form>
+                                <div class="block-calc__inner calc__inner">
+                                    <div class="calc__inner-text">1 млн</div>
+                                    <div class="calc__inner-text">15 млн</div>
+                                </div>
+                                <div class="block-calc__title">Рассчитайте стоимость автомобиля</div>
+                                <div class="block-calc__body">
+                                    <div class="block-calc__item calc__item">
+                                        <div class="calc__item-suptitle">Сумма микрокредита</div>
+                                        <div class="calc__item-text">15 000 000 ₸ </div>
+                                    </div>
+                                    <div class="block-calc__item calc__item">
+                                        <div class="calc__item-suptitle">Процент в месяц</div>
+                                        <div class="calc__item-text">526 500 ₸</div>
+                                    </div>
+                                </div>
+                                <div class="block-calc__bottom calc__bottom">
+                                    <div class="calc__bottom-btn">
+                                        <button class="btn btn--middle">Оставить заявку</button>
+                                    </div>
+                                    <div class="calc__bottom-graf calc-graf">
+                                        <div class="calc-graf__icon">
+                                            <img src="assets/img/calc/graf.svg" alt="">
+                                        </div>
+                                        <div class="calc-graf__text">График платежей</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="services">
+                    <div class="services__container">
+                        <div class="services__header header-block">
+                            <div class="header-block__icon">
+                                <img src="assets/img/services/icon.png" alt="">
+                            </div>
+                            <h2 class="header-block__title">Услуги</h2>
+                        </div>
+                        <div class="services__inner">
+                            <div class="services__item item-services">
+                                <div class="item-services__col">
+                                    <div class="services__content">
+                                        <h3 class="item-services__title">Займ под залог авто с правом вождения</h3>
+                                        <div class="item-services__text">Деньги, которые вы можете получить под залог вашего автомобиля</div>
+                                        <div class="item-services__btn">
+                                            <button class="btn btn--middle">Получить консультацию</button>
+                                        </div>
+                                    </div>
+                                    <div class="services__photo">
+                                        <img src="assets/img/services/1.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services__item item-services">
+                                <div class="item-services__col">
+                                    <div class="services__content">
+                                        <h3 class="item-services__title">Рефинансирование кредитов</h3>
+                                        <div class="item-services__text">Замена действующих кредитных обязательств на микрокредит по условиям Автоломбардов</div>
+                                        <div class="item-services__btn">
+                                            <button class="btn btn--middle">Получить консультацию</button>
+                                        </div>
+                                    </div>
+                                    <div class="services__photo">
+                                        <img src="assets/img/services/2.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="advantages">
+                    <div class="advantages__container">
+                        <div class="advantages__header header-block">
+                            <div class="advantages__icon">
+                                <img src="assets/img/advantages/icon.png" alt="">
+                            </div>
+                        </div>
+                        <div class="advantages__main main-advantages">
+                            <h2 class="main-advantages__title">Самые выгодные условия</h2>
+                            <div class="main-advantages__subtitle">«Rich Автоломбард»  предлагает наличные деньги под залог автомобиля на максимально выгодных условиях:</div>
+                        </div>
+                        <div class="advantages__inner">
+                            <div class="advantages__item item-advantages">
+                                <div class="item-advantages__icon">
+                                    <img src="assets/img/advantages/mark.svg" alt="">
+                                </div>
+                                <div class="item-advantages__text">Любой срок с бесплатной пролонгацией* </div>
+                            </div>
+                            <div class="advantages__item item-advantages">
+                                <div class="item-advantages__icon">
+                                    <img src="assets/img/advantages/mark.svg" alt="">
+                                </div>
+                                <div class="item-advantages__text">Сумма кредита наличными под залог авто составляет 80% от рыночной стоимости автомобиля</div>
+                            </div>
+                            <div class="advantages__item item-advantages">
+                                <div class="item-advantages__icon">
+                                    <img src="assets/img/advantages/mark.svg" alt="">
+                                </div>
+                                <div class="item-advantages__text">Дневная ставка от 0,1% займа</div>
+                            </div>
+                            <div class="advantages__item item-advantages">
+                                <div class="item-advantages__icon">
+                                    <img src="assets/img/advantages/mark.svg" alt="">
+                                </div>
+                                <div class="item-advantages__text">Пересчет комиссии по фактическим дням пользования</div>
+                            </div>
+                            <div class="advantages__item item-advantages">
+                                <div class="item-advantages__icon">
+                                    <img src="assets/img/advantages/mark.svg" alt="">
+                                </div>
+                                <div class="item-advantages__text">Моментальная выдача наличных (в течение 60 минут)</div>
+                            </div>
+                            <div class="advantages__item item-advantages">
+                                <div class="item-advantages__icon">
+                                    <img src="assets/img/advantages/mark.svg" alt="">
+                                </div>
+                                <div class="item-advantages__text">Прозрачные расчеты, отсутствие скрытых комиссий</div>
+                            </div>
+                            <div class="advantages__item item-advantages">
+                                <div class="item-advantages__icon">
+                                    <img src="assets/img/advantages/mark.svg" alt="">
+                                </div>
+                                <div class="item-advantages__text">Система лояльности к клиентам по оплате</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="algorithm">
+                    <div class="algorithm__container">
+                        <div class="algorithm__header header-block">
+                            <div class="header-block__icon">
+                                <img src="assets/img/algorithm/icon.png" alt="">
+                            </div>
+                            <h2 class="header-block__title">АЛГОРИТМ СОВЕРШЕНИЯ СДЕЛКИ</h2>
+                            <div class="algorithm__subtitle">Всего 5 шагов</div>
+                        </div>
+                        <div class="algorithm__inner">
+                            <div class="algorithm__col">
+                                <div class="algorithm__item item-algorithm">
+                                    <div class="item-algorithm__title">Шаг 1</div>
+                                    <div class="item-algorithm__icon">
+                                        <img src="assets/img/algorithm/1.png" alt="">
+                                    </div>
+                                    <div class="item-algorithm__text">Свяжитесь с менеджером, воспользуйтесь услугой предварительной оценки по телефону</div>
+                                </div>
+                            </div>
+                            <div class="algorithm__col">
+                                <div class="algorithm__item item-algorithm">
+                                    <div class="item-algorithm__title">Шаг 2</div>
+                                    <div class="item-algorithm__icon">
+                                        <img src="assets/img/algorithm/2.png" alt="">
+                                    </div>
+                                    <div class="item-algorithm__text">Приезжайте в офис, 
+                                        в удобное для вас время, 
+                                        для оформления договора</div>
+                                </div>
+                            </div>
+                            <div class="algorithm__col">
+                                <div class="algorithm__item item-algorithm">
+                                    <div class="item-algorithm__title">Шаг 3</div>
+                                    <div class="item-algorithm__icon">
+                                        <img src="assets/img/algorithm/3.png" alt="">
+                                    </div>
+                                    <div class="item-algorithm__text">Сотрудники оценят состояние 
+                                        авто и проверят его чистоту 
+                                        с юридической стороны
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="algorithm__col">
+                                <div class="algorithm__item item-algorithm">
+                                    <div class="item-algorithm__title">Шаг 4</div>
+                                    <div class="item-algorithm__icon">
+                                        <img src="assets/img/algorithm/4.png" alt="">
+                                    </div>
+                                    <div class="item-algorithm__text">Составляется договор, в нем 
+                                        прописываются сумма займа, срок 
+                                        и процентная ставка</div>
+                                </div>
+                            </div>
+                            <div class="algorithm__col">
+                                <div class="algorithm__item item-algorithm">
+                                    <div class="item-algorithm__title">Шаг 5</div>
+                                    <div class="item-algorithm__icon">
+                                        <img src="assets/img/algorithm/5.png" alt="">
+                                    </div>
+                                    <div class="item-algorithm__text">После подписания документов 
+                                        клиент получает наличные в кассе</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="money">
+                    <div class="money__container">
+                        <div class="money__header header-block">
+                            <div class="money__icon">
+                                <img src="assets/img/money/icon.png" alt="">
+                            </div>
+                        </div>
+                        <div class="money__body">
+                            <div class="money__photo">
+                                <img src="assets/img/money/1.png" alt="">
+                            </div>
+                            <div class="money__content content-money">
+                                <h2 class="content-money__title">Быстрые деньги</h2>
+                                <div class="content-money__text">
+                                    <p>Если вам приходилось сталкиваться с финансовыми трудностями, то вы знаете дорогу в банк. Но быстро получить деньги в нем практически невозможно. Кроме хорошей кредитной истории, он требует поручителей, а вся процедура занимает не один день.
+                                    </p>
+                                    <p>Отличная альтернатива — воспользоваться услугой автозалог. Оформив договор буквально в течение 60 минут без бумажной волокиты и поручителей, вы получите необходимую сумму. И хотя это так называемый «короткий» займ, гибкие параметры делают его удобным для многих случаев.
+                                    </p>
+                                    <p>Срочно нужны деньги? Обращайтесь в автоломбард под залог автомобилей и сами оцените все преимущества работы с нами.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="plus">
+                    <div class="plus__container">
+                        <div class="plus__header header-block">
+                            <div class="header-block__icon">
+                                <img src="assets/img/plus/icon.png" alt="">
+                            </div>
+                            <h2 class="header-block__title">Наши преимущества</h2>
+                            <div class="plus__subtitle">Кроме собственно займа под залог автомобиля, наш клиент может рассчитывать на целый ряд выгодных предложений</div>
+                        </div>
+                        <div class="plus__body">
+                            <div class="plus__content content-plus">
+                                <div class="content-plus__item">
+                                    Возможность досрочного погашения, при котором проценты взимаются только за дни пользования деньгами</div>
+                                <div class="content-plus__item">
+                                    Перерасчет процентов при частичном погашении долга</div>
+                                <div class="content-plus__item">
+                                    Кредитование под залог автомобиля, по условиям которого владелец продолжает пользоваться машиной</div>
+                                <div class="content-plus__item">
+                                    Полная открытость и прозрачность расчетов</div>
+                                <div class="content-plus__item">Пролонгация договора до года, осуществляется без дополнительных платежей со стороны клиента</div>
+                                <div class="content-plus__item">
+                                    Работаем на основании лицензии</div>
+                            </div>
+                            <div class="plus__photo">
+                                <img src="assets/img/plus/photo.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="reviews">
+                    <div class="reviews__container">
+                        <div class="reviews__header header-block">
+                            <div class="header-block__icon">
+                                <img src="assets/img/reviews/icon.png" alt="">
+                            </div>
+                            <h2 class="header-block__title">Что о нас говорят клиенты</h2>
+                        </div>
+                        <div class="reviews__inner">
+                            <div class="reviews__item item-reviews">
+                                <div class="item-reviews__name">Регина Чиркова</div>
+                                <div class="item-reviews__stars">
+                                    <svg>
+                                        <use xlink:href="#star"></use>
+                                    </svg>
+                                    <svg>
+                                        <use xlink:href="#star"></use>
+                                    </svg>
+                                    <svg>
+                                        <use xlink:href="#star"></use>
+                                    </svg>
+                                    <svg>
+                                        <use xlink:href="#star"></use>
+                                    </svg>
+                                    <svg>
+                                        <use xlink:href="#star"></use>
+                                    </svg>
+                                </div>
+                                <div class="item-reviews__text">Обратились по рекомендации знакомых. Не пожалели! Удобное местоположение стоянки, компетентные сотрудники и, главное, самые выгодные условия на фоне конкурентов.
+                                    Спасибо за взаимовыгодное сотрудничество!</div>
+                            </div>
+                            <div class="reviews__item item-reviews">
+                                <div class="item-reviews__name">Руслан Макатаев</div>
+                                <div class="item-reviews__stars">
+                                    <svg>
+                                        <use xlink:href="#star"></use>
+                                    </svg>
+                                    <svg>
+                                        <use xlink:href="#star"></use>
+                                    </svg>
+                                    <svg>
+                                        <use xlink:href="#star"></use>
+                                    </svg>
+                                    <svg>
+                                        <use xlink:href="#star"></use>
+                                    </svg>
+                                    <svg>
+                                        <use xlink:href="#star"></use>
+                                    </svg>
+                                </div>
+                                <div class="item-reviews__text">Обратился в компанию, срочно нужно было найти деньги. Сотрудники молодцы быстро и без проблем оформили, все объяснили доходчиво и процент не высокий. Удачи в работе!</div>
+                            </div>
+                            <div class="reviews__item item-reviews">
+                                <div class="item-reviews__name">Евгения Афонина</div>
+                                <div class="item-reviews__stars">
+                                    <svg>
+                                        <use xlink:href="#star"></use>
+                                    </svg>
+                                    <svg>
+                                        <use xlink:href="#star"></use>
+                                    </svg>
+                                    <svg>
+                                        <use xlink:href="#star"></use>
+                                    </svg>
+                                    <svg>
+                                        <use xlink:href="#star"></use>
+                                    </svg>
+                                    <svg>
+                                        <use xlink:href="#star"></use>
+                                    </svg>
+                                </div>
+                                <div class="item-reviews__text">Отличный автоломбард! Очень всем рекомендую! Всё оформили быстро. Низкий процент. Вежливые сотрудники. Отличный сервис. Благодарю 🙏</div>
+                            </div>
+                            <div class="reviews__item item-reviews">
+                                <div class="item-reviews__name">Регина Чиркова</div>
+                                <div class="item-reviews__stars">
+                                    <svg>
+                                        <use xlink:href="#star"></use>
+                                    </svg>
+                                    <svg>
+                                        <use xlink:href="#star"></use>
+                                    </svg>
+                                    <svg>
+                                        <use xlink:href="#star"></use>
+                                    </svg>
+                                    <svg>
+                                        <use xlink:href="#star"></use>
+                                    </svg>
+                                    <svg>
+                                        <use xlink:href="#star"></use>
+                                    </svg>
+                                </div>
+                                <div class="item-reviews__text">Обратились по рекомендации знакомых. Не пожалели! Удобное местоположение стоянки, компетентные сотрудники и, главное, самые выгодные условия на фоне конкурентов.
+                                    Спасибо за взаимовыгодное сотрудничество!</div>
+                            </div>
+                            <div class="reviews__item item-reviews">
+                                <div class="item-reviews__name">Руслан Макатаев</div>
+                                <div class="item-reviews__stars">
+                                    <svg>
+                                        <use xlink:href="#star"></use>
+                                    </svg>
+                                    <svg>
+                                        <use xlink:href="#star"></use>
+                                    </svg>
+                                    <svg>
+                                        <use xlink:href="#star"></use>
+                                    </svg>
+                                    <svg>
+                                        <use xlink:href="#star"></use>
+                                    </svg>
+                                    <svg>
+                                        <use xlink:href="#star"></use>
+                                    </svg>
+                                </div>
+                                <div class="item-reviews__text">Обратился в компанию, срочно нужно было найти деньги. Сотрудники молодцы быстро и без проблем оформили, все объяснили доходчиво и процент не высокий. Удачи в работе!</div>
+                            </div>
+                            <div class="reviews__item item-reviews">
+                                <div class="item-reviews__name">Евгения Афонина</div>
+                                <div class="item-reviews__stars">
+                                    <svg>
+                                        <use xlink:href="#star"></use>
+                                    </svg>
+                                    <svg>
+                                        <use xlink:href="#star"></use>
+                                    </svg>
+                                    <svg>
+                                        <use xlink:href="#star"></use>
+                                    </svg>
+                                    <svg>
+                                        <use xlink:href="#star"></use>
+                                    </svg>
+                                    <svg>
+                                        <use xlink:href="#star"></use>
+                                    </svg>
+                                </div>
+                                <div class="item-reviews__text">Отличный автоломбард! Очень всем рекомендую! Всё оформили быстро. Низкий процент. Вежливые сотрудники. Отличный сервис. Благодарю 🙏</div>
+                            </div>
+                        </div>
+                        <div class="reviews__btn">
+                            <button class="btn btn--sm">Перейти ко всем отзывам в 2ГИС</button>
+                        </div>
+                    </div>
+                </section>
+                <section class="questions">
+                    <div class="questions__container">
+                        <div class="questions__header header-block">
+                            <div class="header-block__icon">
+                                <img src="assets/img/questions/icon.png" alt="">
+                            </div>
+                            <h2 class="header-block__title">Вопросы и ответы</h2>
+                        </div>
+                        <div class="questions__inner">
+                            <div class="questions__item item-questions">
+                                <div class="item-questions__title">
+                                    <img src="assets/img/questions/plus.svg" alt="">
+                                    Какие нужны документы?</div>
+                                <div class="item-questions__text">Удостоверение личности хозяина авто, тех. паспорт автомобиля.</div>
+                            </div>
+                            <div class="questions__item item-questions">
+                                <div class="item-questions__title">
+                                    <img src="assets/img/questions/plus.svg" alt="">
+                                    Способы оплаты</div>
+                                <div class="item-questions__text">Удостоверение личности хозяина авто, тех. паспорт автомобиля.</div>
+                            </div>
+                            <div class="questions__item item-questions">
+                                <div class="item-questions__title">
+                                    <img src="assets/img/questions/plus.svg" alt="">
+                                    Максимальный срок микрокредита?</div>
+                                <div class="item-questions__text">Удостоверение личности хозяина авто, тех. паспорт автомобиля.</div>
+                            </div>
+                            <div class="questions__item item-questions">
+                                <div class="item-questions__title">
+                                    <img src="assets/img/questions/plus.svg" alt="">
+                                    Какую сумму я могу получить за свой автомобиль?</div>
+                                <div class="item-questions__text">
+                                    <img src="assets/img/questions/plus.svg" alt="">
+                                    Удостоверение личности хозяина авто, тех. паспорт автомобиля.</div>
+                            </div>
+                            <div class="questions__item item-questions">
+                                <div class="item-questions__title">
+                                    <img src="assets/img/questions/plus.svg" alt="">
+                                    Принимаете ли иногородние авто?</div>
+                                <div class="item-questions__text">Удостоверение личности хозяина авто, тех. паспорт автомобиля.</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="map">
+                        <div class="map__header header-block">
+                            <div class="map__icon">
+                                <img src="assets/img/map/icon.png" alt="">
+                            </div>
+                        </div>
+                        <div class="map__block grounds-pane" id="map"></div>
+                        <div class="map__container">
+                            <div class="map__main">
+                                <div class="map__content content-map">
+                                    <div class="content-map__title">Контакты</div>
+                                    <div class="content-map__text">​улица Тимирязева, 42 к36/2, 15 офис Бостандыкский район, Алматы, 050057</div>
+                                    <div class="content-map__block">
+                                        <div class="content-map__graf">Пн-Пт с 09:00 до 17:00</div>
+                                        <div class="content-map__text">8707-770-90-80</div>
+                                    </div>
+                                    <div class="content-map__bottom">
+                                        <div class="content-map__text">rich.autolombard@gmail.com</div>
+                                        <div class="content-map__social map__social">
+                                            <div class="map__social-item">
+                                                <img src="assets/img/map/1.png" alt="">
+                                            </div>
+                                            <div class="map__social-item">
+                                                <img src="assets/img/map/2.png" alt="">
+                                            </div>
+                                            <div class="map__social-item">
+                                                <img src="assets/img/map/3.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </section>
+                <section class="info">
+                    <div class="info__container">
+                        <div class="info__item">
+                            <div class="info__text">
+                                <p>«Rich Автоломбард» предлагает крупные суммы под залог авто или паспорта транспортного средства. Мы работаем без выходных, предоставляем клиентам весь спектр услуг, связанных с займами, включая оценку и консультацию юриста.</p>
+                            </div>
+                        </div>
+                        <div class="info__item">
+                            <h2 class="info__title">Преимущества обращения в «Rich Автоломбард»</h2>
+                            <ul>
+                                <li>Короткий срок выдачи средств. Мы готовы выплатить заем в день обращения, вся процедура от заявки до подписания договора длится около получаса.
+                                </li>
+                                <li>Гибкие условия сотрудничества. Наш автомобильный ломбард всегда готов пойти навстречу: при необходимости мы продлим срок кредитования или позволим закрыть его раньше изначальной даты. Никаких скрытых условий и санкций, у нас – прозрачные условия займов.</li>
+                            </ul>
+                        </div>
+                        <div class="info__item">
+                            <h2 class="info__title">Кредит под залог машины</h2>
+                            <div class="info__text">
+                                <p>Процедура оформления займа простая: оставляйте заявку по телефону или через сайт. В течение 15 минут наши менеджеры перезвонят и помогут подобрать оптимальные условия кредитования. После этого мы ждем вас в нашем автоломбарде в Алматы, где эксперты проведут оценку транспорта, и уже через полчаса деньги будут у вас на руках. Вы можете получить выплаты наличными или безналичным платежом. Мы также позаботимся о том, чтобы вы безопасно и с комфортом доехали до дома или офиса после сделки.</p>
+                            </div>
+                        </div>
+                        <div class="info__item">
+                            <h2 class="info__title">Кредит под залог ПТС</h2>
+                            <div class="info__text">
+                                <p>Необязательно расставаться с автомобилем, чтобы получить крупную сумму денег в короткие сроки. Мы принимаем в качестве залога не только транспорт, но и ПТС. При таком формате кредитования у нас в офисе остается только паспорт транспортного средства, вы же продолжаете пользоваться автомобилем. Однако сумма кредитования будет немного меньше, чем в случае, если вы решите заложить непосредственно автомобиль.</p>
+                                <p>Срок выдачи автозалога – от 61 дня (с учетом льготного периода) до 1 (одного) года. Максимальная полная стоимость потребительского займа определяется в процентах годовых и не может более чем на одну треть превышать публикуемое Банком Казахстана среднерыночное значение ПСК по соответствующей категории займов. На I квартал 2022 г. полная стоимость потребительского займа в ломбарде под залог транспортных средств составляет 83,087% годовых.</p>
+                                <p>Пример расчета полной стоимости потребительского займа: <br>При выдаче Ломбардом потребительского займа в размере 100 000,00 рублей сроком на 180 дней под 83,087% годовых, сумма, подлежащая возврату составит 141 544 рублей, полная стоимость займа составит 83,087% годовых. Иные платежи и комиссии, а также дополнительные расходы, связанные с получение займа, ломбардом не взимаются.</p>
+                                <p>Исполнение обязательств Заемщика по Договору займа обеспечивается залогом транспортного средства, которое передается Ломбарду с полным комплектом ключей и документов.
+                                </p>
+                                <p>В случае неисполнения Заемщиком в установленный срок, обязательств, предусмотренных Договором займа, обращение взыскания на заложенное транспортное средство осуществляется по истечении льготного срока без совершения исполнительной надписи нотариуса путем ее продажи, в том числе с публичных торгов. Ответственность Заемщика за ненадлежащее исполнение Договора займа установлена в размере 0,1% от суммы задолженности за каждый день просрочки, проценты за пользование займом в период начисления неустойки не взимаются.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer">
+                <div class="footer__container">
+                    <div class="footer__top">
+                        <div class="footer__logo">
+                            <img src="assets/img/footer/logo.png" alt="">
+                        </div>
+                        <nav class="footer__nav nav">
+                            <ul class="nav__inner nav__footer">
+                                <li><a href="" class="nav__link">Калькулятор</a></li>
+                                <li><a href="" class="nav__link">Услуги</a></li>
+                                <li><a href="" class="nav__link">Алгоритм</a></li>
+                                <li><a href="" class="nav__link">Условия</a></li>
+                                <li><a href="" class="nav__link">Вопросы и ответы</a></li>
+                                <li><a href="" class="nav__link">Контакты</a></li>
+                            </ul>
+                        </nav>
+                        <div class="footer__right right-footer">
+                            <div class="right-footer__suptitle">Пн-Пт с 09:00 до 17:00</div>
+                            <div class="right-footer__text">8707-770-90-80</div>
+                            <div class="right-footer__social social social__block">
+                                <div class="social__item social__footer">
+                                    <img src="assets/img/1.png" alt="">
+                                </div>
+                                <div class="social__item social__footer">
+                                    <img src="assets/img/2.png" alt="">
+                                </div>
+                                <div class="social__item social__footer">
+                                    <img src="assets/img/3.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__bottom">Номер лицензии: ---------- <br>
+                        Выдано Агентством Республики Казахстан <br>
+                        по регулированию и развитию финансового рынка <br>
+                        от 00.00.0000</div>
+                </div>
+
+                <div class="container">
+                    <h1>Sliders</h1>
+                    <div class="wrapper">
+                      <div class="ui-element">
+                        <div class="lever">
+                          <div class="ragerange">
+                              <input type="range" min="0" max="1024" step="256" value="256" class="custom-range" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="wrapper">
+                      <div class="ui-element">
+                        <div class="lever">
+                          <div class="ragerange">
+                              <input type="range" min="0" max="1024" step="256" value="512" class="custom-range" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="wrapper">
+                      <div class="ui-element">
+                        <div class="lever">
+                          <div class="ragerange">
+                              <input type="range" min="0" max="1024" step="256" value="768" class="custom-range" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </footer>
+
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>"></script>
+
+    <script src="js/map.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/slick.min.js"></script>
+    
+</body>
+</html>
