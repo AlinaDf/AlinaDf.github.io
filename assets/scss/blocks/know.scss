@@ -1,0 +1,59 @@
+.know {
+    width: 100%;
+    height: 400px;
+    background: url("../assets/img/know/bg.webp") center no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    border-radius: 2rem;
+}
+.know__container {
+}
+.know__title {
+    font-weight: 700;
+    font-size: 4.2rem;
+    line-height: 100%;
+    color: #FFFFFF; 
+    
+    margin-bottom: 2rem;
+    max-width: 817px;
+
+    @media (max-width: 769px) {
+        font-size: 3.8rem;
+    }
+
+    @media (max-width: 469px) {
+        font-size: 2.2rem;
+    }
+}
+.know__buttons {
+    display: flex;
+
+    @media (max-width: 469px) {
+        flex-direction: column;
+    }
+}
+.know__btn {
+    margin-right: 2rem;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    @media (max-width: 469px) {
+        margin-right: 0;
+        margin-bottom: 5px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+.btn {
+}
+.btn--white {
+}
