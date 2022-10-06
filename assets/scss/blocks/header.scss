@@ -1,0 +1,142 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__left {
+}
+.left-header {
+    display: flex;
+    align-items: center;
+}
+.left-header__logo {
+    margin-right: 6rem;
+
+    @media (max-width: 993px) {
+        margin-right: 2.1rem;
+    }
+}
+.left-header__nav {
+}
+.nav {
+}
+.nav__inner {
+    display: flex;
+    margin-right: 3rem;
+    li {
+        margin-right: 2rem;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    @media (max-width: 635px) {
+        display: none;
+    }
+}
+.nav__link {
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: calc(24 / 20);
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #6E5B55;   
+    position: relative;
+    
+    @media (max-width: 769px) {
+        font-size: 1.6rem;
+    }
+
+    &:after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 2px;
+        background-color: #6E5B55;
+
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        transition: all .2s linear;
+    }
+
+    &:hover {
+        &:after {
+            width: 100%;
+        }
+    }
+}
+.header__right {
+}
+.right-header {
+    display: flex;
+    align-items: center;
+    width: 49%;
+    justify-content: space-between;
+
+    @media (max-width: 769px) {
+        width: 40%;
+    }
+
+    @media (max-width: 635px) {
+        display: none;
+    }
+}
+.right-header__form {
+}
+.header__form {
+    width: 100%;
+    max-width: 526px;
+    min-height: 4rem;
+    display: flex;
+    position: relative;
+    z-index: 1;
+    input {
+        width: 100%;
+        background: #F7F7F7;
+        border-radius: 5px;
+        border: 0;
+
+        &::placeholder {
+            padding: 0 15px;
+            font-family: 'Alegreya Sans', sans-serif;
+            font-size: 1.6rem;
+            line-height: 140%;
+            letter-spacing: 0.02em;
+            color: rgba(34, 34, 34, 0.2);
+        }
+
+        &:focus {
+            outline: 0;
+            padding: 0 15px;
+
+            &::placeholder {
+                font-size: 0;
+            }
+        }
+    }
+
+    img {
+
+    }
+}
+
+.header__form-btn {
+    position: absolute;
+    right: 1.2rem;
+    top: 1.2rem;
+    z-index: 2;
+    cursor: pointer;
+
+    background: none;
+}
+.right-header__icon {
+    cursor: pointer;
+    margin-left: 3rem;
+}
