@@ -1,0 +1,30 @@
+/*# sourceMappingURL=main.css.map */html {font-size: 62.5%;}body,html {margin: 0;padding: 0;height: 100%;}*,*:before,*:after {box-sizing: border-box;}body {font-family: 'Alegreya Sans', sans-serif;} ul, ol, li {list-style: none;margin: 0;padding: 0;}button {border: 0;padding: 0;}h1, h2, h3, h4, h5, h6 {margin: 0;padding:0;}a {text-decoration: none;}p {margin: 0; padding: 0}.wrapper {min-height: 100%;overflow: hidden;display: flex;flex-direction: column;}.main {flex: 1 1 auto;}
+
+[class*="__container"] {
+    width: 100%;
+    padding: 0 15px;
+    margin: auto;
+    max-width: 1320px;
+}
+
+@import "blocks/header";
+@import "blocks/intro";
+@import "blocks/slider";
+
+/* БЭМ */
+
+.header-block__title {
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: calc(29 / 24);
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #6E5B55;
+
+    @media (max-width: 769px) {
+        font-size: 1.6rem;
+    }
+
+    @media (max-width: 551px) {
+        font-size: 1.4rem;
+    }
+} 
