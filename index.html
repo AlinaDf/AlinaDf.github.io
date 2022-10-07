@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:regular,500,700" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+</head>
+<body>
+
+    <!--Sprite-->
+
+    <svg style="display: none">
+        <symbol id="footer__arrow" viewBox="0 0 18 14">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.4037 0.600991L9.80904 1.20198L12.2432 3.65676L14.6774 6.11154L7.62431 6.11154H0.571309L0.57174 7.00424L0.57217 7.89694H7.62518L14.6782 7.89694L12.2464 10.3517L9.81464 12.8065L10.41 13.4076C10.7375 13.7382 11.017 14.0047 11.0313 13.9999C11.0455 13.9952 12.6185 12.4154 14.5267 10.4893L17.9963 6.98738L14.5318 3.49371C12.6263 1.57218 11.0518 0 11.0329 0C11.0139 0 10.7308 0.270453 10.4037 0.600991Z"/>
+        </symbol>
+    </svg>
+
+    <div class="wrapper">
+            <header class="header">
+                <div class="header__container">
+                    <div class="header__left left-header">
+                        <div class="left-header__logo">
+                            <img src="assets/img/header/logo.svg" alt="">
+                        </div>
+                        <nav class="left-header__nav nav">
+                            <ul class="nav__inner">
+                                <li><a href="" class="nav__link">Новости</a></li>
+                                <li><a href="" class="nav__link">Каталог</a></li>
+                                <li><a href="" class="nav__link">Карты</a></li>
+                                <li><a href="" class="nav__link">Промыслы</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="header__right right-header">
+                        <form action="#" class="right-header__form header__form">
+                            <input type="search" placeholder="Искать по сайту">
+                            <button class="header__form-btn">
+                            <img src="assets/img/header/search.svg" alt="">
+                            </button>
+                        </form>
+                        <div class="right-header__icon">
+                            <img src="assets/img/header/icon.svg" alt="">
+                        </div>
+                    </div>
+                    <button class="header__burger">
+                        <span></span>
+                    </button>
+                </div>
+            </header>
+            <main class="main">
+                <section class="intro">
+                    <div class="intro__container">
+                        <h1 class="intro__title">Народные художественные промыслы России</h1>
+                    </div>
+                </section>
+                <section class="slider">
+                    <div class="slider__container">
+                        <div class="slider__header header-block">
+                            <h6 class="slider__title header-block__title">Популярные промыслы</h6>
+                            <div class="slider__header-text">Листай дальше</div>
+                        </div>
+                        <div class="slider__inner">
+                            <div class="slider__item">
+                                <div class="slider__photo">
+                                    <img src="assets/img/slider/1.webp" alt="">
+                                </div>
+                                <div class="slider__text">Дерево</div>
+                            </div>
+                            <div class="slider__item">
+                                <div class="slider__photo">
+                                    <img src="assets/img/slider/2.webp" alt="">
+                                </div>
+                                <div class="slider__text">Керамика</div>
+                            </div>
+                            <div class="slider__item">
+                                <div class="slider__photo">
+                                    <img src="assets/img/slider/3.webp" alt="">
+                                </div>
+                                <div class="slider__text">Стекло</div>
+                            </div>
+                            <div class="slider__item">
+                                <div class="slider__photo">
+                                    <img src="assets/img/slider/4.webp" alt="">
+                                </div>
+                                <div class="slider__text">Миниатюра</div>
+                            </div>
+                            <div class="slider__item">
+                                <div class="slider__photo">
+                                    <img src="assets/img/slider/5.webp" alt="">
+                                </div>
+                                <div class="slider__text">Металл</div>
+                            </div>
+                            <div class="slider__item">
+                                <div class="slider__photo">
+                                    <img src="assets/img/slider/6.webp" alt="">
+                                </div>
+                                <div class="slider__text">Кружево</div>
+                            </div>
+                            <div class="slider__item">
+                                <div class="slider__photo">
+                                    <img src="assets/img/slider/7.webp" alt="">
+                                </div>
+                                <div class="slider__text">Текстиль</div>
+                            </div>
+                            <div class="slider__item">
+                                <div class="slider__photo">
+                                    <img src="assets/img/slider/8.webp" alt="">
+                                </div>
+                                <div class="slider__text">Кость</div>
+                            </div>
+                            <div class="slider__item">
+                                <div class="slider__photo">
+                                    <img src="assets/img/slider/9.webp" alt="">
+                                </div>
+                                <div class="slider__text">Другое</div>
+                            </div>
+                        </div>
+                </section>
+                <section class="articles">
+                    <div class="articles__container">
+                        <div class="articles__inner">
+                            <div class="articles__col">
+                                <div class="articles__item item-articles">
+                                    <div class="item-articles__header articles__header">
+                                        <div class="articles__header-content">
+                                            <div class="item-articles__subtitle">Из словаря</div>
+                                            <h5 class="item-articles__title">Глазу́рь</h5>
+                                        </div>
+                                        <div class="articles__header-arrows">
+                                            <div class="articles__header-arrow">
+                                                <img src="assets/img/articles/arrow-1.svg" alt="">
+                                            </div>
+                                            <div class="articles__header-arrow">
+                                                <img src="assets/img/articles/arrow-2.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item-articles__text">
+                                        <p>Это жидкий состав из толченого до состояния пудры стекла, окислов металлов и воды. В печи такая глазурь расплавлялась, сцеплялась с черепком и запечатывала поры изделия. Так оно становилось прочным и водонепроницаемым.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="articles__col">
+                                <div class="articles__item item-articles item-articles__left">
+                                    <div class="item-articles__content articles__content">
+                                        <h5 class="articles__content-title">Михаил Мишустин дал поручения по итогам совещания с руководителями предприятий НХП в Жостово</h5>
+                                        <div class="articles__content-btn">
+                                            <button class="btn btn--brown-border">Читать далее</button>
+                                        </div>
+                                    </div>
+                                    <div class="item-articles__photo">
+                                        <img src="assets/img/articles/photo.webp" alt="">
+                                        <img src="assets/img/articles/photo-2.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="product">
+                    <div class="product__container">
+                        <div class="product__top top-product">
+                            <div class="top-product__block product__block">
+                                <div class="product__block-photo">
+                                    <img src="assets/img/product/1 (1).webp" alt="">
+                                    <div class="product__block-text">Популярные товары</div>
+                                </div>
+                            </div>
+                            <div class="top-product__block product__block">
+                                <div class="product__block-photo">
+                                    <img src="assets/img/product/2 (1).webp" alt="">
+                                </div>
+                                <div class="product__block-content product-content">
+                                    <div class="product-content__left product-left">
+                                        <div class="product-left__suptitle">Набор "Рождественский"</div>
+                                        <div class="product-left__title">4 990 ₽ <span>5 990 ₽</span></div>
+                                    </div>
+                                    <div class="top-product__btn">
+                                        <button class="btn btn--brown-fill">Купить у производителя</button>
+                                        <button class="btn btn--brown-fill-sm">Купить</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__inner">
+                            <div class="product__col">
+                                <div class="product__item item-product">
+                                    <div class="product__body-content">
+                                        <div class="item-product__photo">
+                                            <img src="assets/img/product/3 (1).webp" alt="">
+                                        </div>
+                                        <div class="item-product__body product__body">
+                                                <div class="product__body-text">Набор "Подарочный - 1"</div>
+                                                <div class="product__body-subtitle">4 990 ₽ <span>5 990 ₽</span></div>
+                                            </div>
+                                    </div>
+                                    <div class="product__body-btn">
+                                        <button class="btn btn--brown-fill-sm">Купить</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__col">
+                                <div class="product__item item-product">
+                                    <div class="product__body-content">
+                                    <div class="item-product__photo">
+                                        <img src="assets/img/product/4 (1).webp" alt="">
+                                    </div>
+                                    <div class="item-product__body product__body">
+                                            <div class="product__body-text">Маска декоративная</div>
+                                            <div class="product__body-subtitle">4 990 ₽</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__body-btn">
+                                        <button class="btn btn--brown-fill-sm">Купить</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__col">
+                                <div class="product__item item-product">
+                                    <div class="product__item item-product">
+                                        <div class="product__body-content">
+                                            <div class="item-product__photo">
+                                                <img src="assets/img/product/5 (1).webp" alt="">
+                                            </div>
+                                            <div class="item-product__body product__body">
+                                                    <div class="product__body-text">Скульптура "Письмо с фронта"</div>
+                                                    <div class="product__body-subtitle">4 990 ₽ <span>5 990 ₽</span></div>
+                                                </div>
+                                        </div>
+                                        <div class="product__body-btn">
+                                            <button class="btn btn--brown-fill-sm">Купить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__col">
+                                <div class="product__item item-product">
+                                        <div class="product__body-content">
+                                            <div class="item-product__photo">
+                                                <img src="assets/img/product/6 (1).webp" alt="">
+                                            </div>
+                                            <div class="item-product__body product__body">
+                                                    <div class="product__body-text">Воротник арт. С 368</div>
+                                                    <div class="product__body-subtitle">4 990 ₽ <span>5 990 ₽</span></div>
+                                                </div>
+                                        </div>
+                                        <div class="product__body-btn">
+                                            <button class="btn btn--brown-fill-sm">Купить</button>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="product__col">
+                                <div class="product__item item-product">
+                                        <div class="product__body-content">
+                                            <div class="item-product__photo">
+                                                <img src="assets/img/product/7 (1).webp" alt="">
+                                            </div>
+                                            <div class="item-product__body product__body">
+                                                    <div class="product__body-text">Скульптура "Слон"</div>
+                                                    <div class="product__body-subtitle">4 990 ₽</div>
+                                                </div>
+                                        </div>
+                                        <div class="product__body-btn">
+                                            <button class="btn btn--brown-fill-sm">Купить</button>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="product__col">
+                                <div class="product__item item-product">
+                                    <div class="item-product__info">
+                                        <div class="item-product__link">Смотреть весь каталог</div>
+                                        <div class="item-product__arrow">
+                                            <img src="assets/img/product/arrow.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="know">
+                    <div class="know__container">
+                        <h2 class="know__title">Каждое изделие народных художественных промыслов защищено QR-кодом и имеет отдельную страницу на портале.</h2>
+                        <div class="know__buttons">
+                            <div class="know__btn">
+                                <button class="btn btn--white">Узнать больше</button>
+                            </div>
+                            <div class="know__btn">
+                                <button class="btn btn--white">Смотреть каталог</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="events events__main">
+                    <div class="events__container">
+                        <div class="events__header header-block">
+                            <h6 class="events__title header-block__title">Последние новости и события</h6>
+                        </div>
+                        <div class="events__top top-events">
+                            <div class="events__col">
+                                <div class="events__item">
+                                    <div class="events__photo">
+                                        <img src="assets/img/events/1.webp" alt="">
+                                        <div class="events__type">НОВОСТИ</div>
+                                    </div>
+                                    <div class="events__text">Конкурс «Дизайн и Ремесло» в Нижегородской области расширил линейку представляемых промыслов</div>
+                                </div>
+                            </div>
+                            <div class="events__col">
+                                <div class="events__item">
+                                    <div class="events__photo">
+                                        <img src="assets/img/events/2.webp" alt="">
+                                        <div class="events__type">НОВОСТИ</div>
+                                    </div>
+                                    <div class="events__text">Круглый стол «Год культурного наследия народов России– культурные коды, креативные индустрии и туризм» прошёл в Общественной палате РФ</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="events__bottom">
+                            <div class="events__col">
+                                <div class="events__item">
+                                    <div class="events__photo">
+                                        <img src="assets/img/events/3.webp" alt="">
+                                        <div class="events__type">НОВОСТИ</div>
+                                    </div>
+                                    <div class="events__text">
+                                        <div class="events__text-block">Фестиваль лозоплетения «Ива-Дивная» пройдёт 29-31 июля в Кирово-Чепецке</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="events__col">
+                                <div class="events__item">
+                                    <div class="events__photo">
+                                        <img src="assets/img/events/4.webp" alt="">
+                                        <div class="events__type">НОВОСТИ</div>
+                                    </div>
+                                    <div class="events__text">
+                                        <div class="events__text-block">15 нижегородских мастеров НХП получат почётные звания</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="events__col">
+                                <div class="events__item">
+                                    <div class="events__photo">
+                                        <img src="assets/img/events/5.webp" alt="">
+                                        <div class="events__type">СОБЫТИЕ</div>
+                                    </div>
+                                    <div class="events__text">
+                                        <div class="events__text-block">Круглый стол на тему «Год культурного наследия народов России – культурные коды, креативные индустрии и туризм» пройдёт 5 июля</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="events__col">
+                                <div class="events__item">
+                                    <div class="events__photo">
+                                        <img src="assets/img/events/6.webp" alt="">
+                                        <div class="events__type">СОБЫТИЕ</div>
+                                    </div>
+                                    <div class="events__text">
+                                        <div class="events__text-block">Фестиваль лозоплетения «Ива-Дивная» пройдёт 29-31 июля в Кирово-Чепецке</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <section class="read">
+                    <div class="read__container">
+                        <h2 class="read__title">«Промыслы ценны любовью»: об уникальности дядьковского хрусталя рассказало руководство предприятия</h2>
+                        <div class="read__btn">
+                            <button class="btn btn--white">Читать далее</button>
+                        </div>
+                    </div>
+                </section>
+                <div class="events history__main">
+                    <div class="events__container">
+                        <div class="events__header header-block">
+                            <h6 class="events__title header-block__title">Больше истории</h6>
+                        </div>
+                        <div class="events__top top-events">
+                            <div class="events__col">
+                                <div class="events__item">
+                                    <div class="events__photo">
+                                        <img src="assets/img/history/1.webp" alt="">
+                                        <div class="events__type">ИСТОРИЯ</div>
+                                    </div>
+                                    <div class="events__text">История на обороте: 190 лет исполняется дулёвскому фарфору</div>
+                                </div>
+                            </div>
+                            <div class="events__col">
+                                <div class="events__item">
+                                    <div class="events__photo">
+                                        <img src="assets/img/history/2.webp" alt="">
+                                        <div class="events__type">ИСТОРИЯ</div>
+                                    </div>
+                                    <div class="events__text">«Надоел безликий массмаркет»: как северные бренды возвращают в моду традиционные ремёсла</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="events__bottom">
+                            <div class="events__col">
+                                <div class="events__item">
+                                    <div class="events__photo">
+                                        <img src="assets/img/history/3.webp" alt="">
+                                        <div class="events__type">НОВОСТИ</div>
+                                    </div>
+                                    <div class="events__text">
+                                        <div class="events__text-block">Как в Татарстане ручной труд вновь сделали прибыльным и красивым</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="events__col">
+                                <div class="events__item">
+                                    <div class="events__photo">
+                                        <img src="assets/img/history/4.webp" alt="">
+                                        <div class="events__type">ИСТОРИЯ</div>
+                                    </div>
+                                    <div class="events__text">
+                                        <div class="events__text-block">«Моя стихия – керамика»: с художественной керамикой Крыма знакомят изделия мастера Александра Черемисова</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="events__col">
+                                <div class="events__item">
+                                    <div class="events__photo">
+                                        <img src="assets/img/history/5.webp" alt="">
+                                        <div class="events__type">ИСТОРИЯ</div>
+                                    </div>
+                                    <div class="events__text">
+                                        <div class="events__text-block">Фарфор от компании «Дельта-Х»: кисловодские мастера хранят секреты создания шедевров</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="events__col">
+                                <div class="events__item">
+                                    <div class="events__photo">
+                                        <img src="assets/img/history/6.webp" alt="">
+                                        <div class="events__type">ИСТОРИЯ</div>
+                                    </div>
+                                    <div class="events__text">
+                                        <div class="events__text-block">«Нет на свете ничего интереснее тамбовского орнамента». О традиционной вышивке Тамбовской губернии</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <section class="proect">
+                    <div class="proect__container">
+                        <div class="proect__body">
+                            <div class="proect__content content-proect">
+                                <div class="content-proect__suptitle">СПЕЦ.ПРОЕКТ</div>
+                                <h2 class="content-proect__title">Народные художественные промыслы в числах</h2>
+                                <div class="content-proect__tex">Итоги развития отрасли в 2021 году.
+                                    Производство, предприятия, поддержка</div>
+                                <div class="content-proect__btn">
+                                    <button class="btn btn--brown-border">Читать далее</button>
+                                </div>
+                            </div>
+                            <div class="proect__photo">
+                                <img src="assets/img/project/map.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="events speach__main">
+                    <div class="events__container">
+                        <div class="events__header header-block">
+                            <h6 class="events__title header-block__title">Прямая речь</h6>
+                        </div>
+                        <div class="events__top top-events">
+                            <div class="events__col">
+                                <div class="events__item">
+                                    <div class="events__photo">
+                                        <img src="assets/img/speach/1.webp" alt="">
+                                        <div class="events__type">ПРЯМАЯ РЕЧЬ</div>
+                                    </div>
+                                    <div class="events__text">Одной цепью связаны: Фаберже, станция «Юпитер» и голограммы</div>
+                                </div>
+                            </div>
+                            <div class="events__col">
+                                <div class="events__item">
+                                    <div class="events__photo">
+                                        <img src="assets/img/speach/2.webp" alt="">
+                                        <div class="events__type">ПРЯМАЯ РЕЧЬ</div>
+                                    </div>
+                                    <div class="events__text">Николай Токарев из села Борское передаёт молодому поколению секреты гончарного ремесла</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="events__bottom">
+                            <div class="events__col">
+                                <div class="events__item">
+                                    <div class="events__photo">
+                                        <img src="assets/img/speach/3.webp" alt="">
+                                        <div class="events__type">ПРЯМАЯ РЕЧЬ</div>
+                                    </div>
+                                    <div class="events__text">
+                                        <div class="events__text-block">И отзовётся душа – как сохраняет традиции Музей народного творчества в Ульяновске</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="events__col">
+                                <div class="events__item">
+                                    <div class="events__photo">
+                                        <img src="assets/img/speach/4.webp" alt="">
+                                        <div class="events__type">ПРЯМАЯ РЕЧЬ</div>
+                                    </div>
+                                    <div class="events__text">
+                                        <div class="events__text-block">Матрёшка для Кеннеди
+                                            Семеновской игрушке 100 лет</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="events__col">
+                                <div class="events__item">
+                                    <div class="events__photo">
+                                        <img src="assets/img/speach/5.webp" alt="">
+                                        <div class="events__type">ПРЯМАЯ РЕЧЬ</div>
+                                    </div>
+                                    <div class="events__text">
+                                        <div class="events__text-block">Сергей Яковлев: половина сувениров к юбилею Нижнего Новгорода изготовлена местными предприятиями НХП</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="events__col">
+                                <div class="events__item">
+                                    <div class="events__photo">
+                                        <img src="assets/img/speach/6.webp" alt="">
+                                        <div class="events__type">ПРЯМАЯ РЕЧЬ</div>
+                                    </div>
+                                    <div class="events__text">
+                                        <div class="events__text-block">Отрасль НХП впервые представили на конкурсе «Лидеры России»</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <section class="roats">
+                    <div class="roats__container">
+                        <div class="roats__header header-block">
+                            <h6 class="roats__title header-block__title">Маршруты</h6>
+                        </div>
+                        <div class="roats__inner">
+                            <div class="roats__col">
+                                <div class="roats__item item-roats">
+                                    <div class="item-roats__photo">
+                                        <img src="assets/img/roats/1.webp" alt="">
+                                    </div>
+                                    <div class="item-roats__town">Семёнов</div>
+                                    <div class="item-roats__content roats__content">
+                                        <div class="roats__content-block">
+                                            <div class="roats__content-icon">
+                                                <img src="assets/img/roats/icon-1.svg" alt="">
+                                            </div>
+                                            <div class="roats__content-text">5 МЕСТ</div>
+                                        </div>
+                                        <div class="roats__content-block">
+                                            <div class="roats__content-icon">
+                                                <img src="assets/img/roats/icon-2.svg" alt="">
+                                            </div>
+                                            <div class="roats__content-text">4 ЧАСА</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="roats__col">
+                                <div class="roats__item item-roats">
+                                    <div class="item-roats__photo">
+                                        <img src="assets/img/roats/2 (6).webp" alt="">
+                                    </div>
+                                    <div class="item-roats__town">Городец</div>
+                                    <div class="item-roats__content roats__content">
+                                        <div class="roats__content-block">
+                                            <div class="roats__content-icon">
+                                                <img src="assets/img/roats/icon-1.svg" alt="">
+                                            </div>
+                                            <div class="roats__content-text">5 МЕСТ</div>
+                                        </div>
+                                        <div class="roats__content-block">
+                                            <div class="roats__content-icon">
+                                                <img src="assets/img/roats/icon-2.svg" alt="">
+                                            </div>
+                                            <div class="roats__content-text">1 ЧАСОВ</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="roats__col">
+                                <div class="roats__item item-roats">
+                                    <div class="item-roats__photo">
+                                        <img src="assets/img/roats/3.webp" alt="">
+                                    </div>
+                                    <div class="item-roats__town">Нижний Новгород</div>
+                                    <div class="item-roats__content roats__content">
+                                        <div class="roats__content-block">
+                                            <div class="roats__content-icon">
+                                                <img src="assets/img/roats/icon-1.svg" alt="">
+                                            </div>
+                                            <div class="roats__content-text">7 МЕСТ</div>
+                                        </div>
+                                        <div class="roats__content-block">
+                                            <div class="roats__content-icon">
+                                                <img src="assets/img/roats/icon-2.svg" alt="">
+                                            </div>
+                                            <div class="roats__content-text">5 ЧАСОВ</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="roats__col">
+                                <div class="roats__item item-roats">
+                                    <div class="item-roats__photo">
+                                        <img src="assets/img/roats/4.webp" alt="">
+                                    </div>
+                                    <div class="item-roats__town">Псков</div>
+                                    <div class="item-roats__content roats__content">
+                                        <div class="roats__content-block">
+                                            <div class="roats__content-icon">
+                                                <img src="assets/img/roats/icon-1.svg" alt="">
+                                            </div>
+                                            <div class="roats__content-text">4 МЕСТа</div>
+                                        </div>
+                                        <div class="roats__content-block">
+                                            <div class="roats__content-icon">
+                                                <img src="assets/img/roats/icon-2.svg" alt="">
+                                            </div>
+                                            <div class="roats__content-text">3 ЧАСА</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="roats__col">
+                                <div class="roats__item item-roats">
+                                    <div class="item-roats__photo">
+                                        <img src="assets/img/roats/5.webp" alt="">
+                                    </div>
+                                    <div class="item-roats__town">Гжель</div>
+                                    <div class="item-roats__content roats__content">
+                                        <div class="roats__content-block">
+                                            <div class="roats__content-icon">
+                                                <img src="assets/img/roats/icon-1.svg" alt="">
+                                            </div>
+                                            <div class="roats__content-text">3 МЕСТа</div>
+                                        </div>
+                                        <div class="roats__content-block">
+                                            <div class="roats__content-icon">
+                                                <img src="assets/img/roats/icon-2.svg" alt="">
+                                            </div>
+                                            <div class="roats__content-text">6 ЧАСОВ</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="roats__col">
+                                <div class="roats__item item-roats">
+                                    <div class="item-roats__photo">
+                                        <img src="assets/img/roats/6.webp" alt="">
+                                    </div>
+                                    <div class="item-roats__town">Тула</div>
+                                    <div class="item-roats__content roats__content">
+                                        <div class="roats__content-block">
+                                            <div class="roats__content-icon">
+                                                <img src="assets/img/roats/icon-1.svg" alt="">
+                                            </div>
+                                            <div class="roats__content-text">7 МЕСТ</div>
+                                        </div>
+                                        <div class="roats__content-block">
+                                            <div class="roats__content-icon">
+                                                <img src="assets/img/roats/icon-2.svg" alt="">
+                                            </div>
+                                            <div class="roats__content-text">6 ЧАСОВ</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer">
+                <div class="footer__container">
+                    <div class="footer__top top-footer">
+                        <div class="top-footer__left footer__left">
+                            <div class="footer__left-logo-1">
+                                <img src="assets/img/footer/logo-1.svg" alt="">
+                            </div>
+                            <div class="footer__left-logo-2">
+                                <img src="assets/img/footer/logo-2.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="top-footer__right footer__right">
+                            <div class="footer__right-text">Подпишитесь на рассылку
+                                лучших материалов </div>
+                            <form action="#" class="footer__form form-footer">
+                                <input type="email" placeholder="E-mail">
+                                <button class="form-footer__btn footer__btn">
+                                    <div class="footer__btn-text">Подписаться</div>
+                                    <div class="footer__btn-icon">
+                                        <svg>
+                                            <use xlink:href="#footer__arrow"></use>
+                                        </svg>
+                                    </div>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="footer__main main-footer">
+                        <nav class="main-footer__list list">
+                            <nav class="list__block">
+                                <div class="list__title">Разделы</div>
+                                <ul class="list__inner">
+                                    <li><a href="#" class="list__link">Промыслы</a></li>
+                                    <li><a href="#" class="list__link">Интерактивные карты</a></li>
+                                    <li><a href="#" class="list__link">Маршруты</a></li>
+                                    <li><a href="#" class="list__link">Новости</a></li>
+                                    <li><a href="event.html" class="list__link">События</a></li>
+                                    <li><a href="#" class="list__link">Истории</a></li>
+                                    <li><a href="#" class="list__link">Прямая речь</a></li>
+                                    <li><a href="#" class="list__link">Экспертная площадка</a></li>
+                                </ul>
+                            </nav>
+                            <nav class="list__block">
+                                <div class="list__title">Информация</div>
+                                <ul class="list__inner">
+                                    <li><a href="" class="list__link">О проекте</a></li>
+                                    <li><a href="" class="list__link">Поддержка</a></li>
+                                    <li><a href="" class="list__link">Предприятия</a></li>
+                                    <li><a href="" class="list__link">Каталог</a></li>
+                                    <li><a href="" class="list__link">Образование</a></li>
+                                    <li><a href="" class="list__link">Документы</a></li>
+                                    <li><a href="" class="list__link">Открытые данные</a></li>
+                                    <li class="list__item"><a href="" class="list__link">
+                                        <div class="list__link-icon">
+                                            <img src="assets/img/footer/icon.svg" alt="">
+                                        </div>
+                                        <div class="list__link-text">Личный кабинет</div></a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </nav>
+                        <div class="main-footer__body">
+                            <div class="top-footer__right footer__right">
+                                <div class="footer__right-text">Подпишитесь на рассылку
+                                    лучших материалов </div>
+                                <form action="#" class="footer__form form-footer">
+                                    <input type="email" placeholder="E-mail">
+                                    <button class="form-footer__btn footer__btn">
+                                        <div class="footer__btn-text">Подписаться</div>
+                                        <div class="footer__btn-icon">
+                                            <svg>
+                                                <use xlink:href="#footer__arrow"></use>
+                                            </svg>
+                                        </div>
+                                    </button>
+                                </form>
+                            </div>
+                            <div class="main-footer__right main-right">
+                                <div class="main-block__content">
+                                    <div class="main-block__text">Отправьте Ваш пресс-релиз или любую новость на тему народных художественных промыслов</div>
+                                    <div class="main-block__content-body">
+                                        <div class="main-block__email">news@prom.sl</div>
+                                        <a href="" class="main-block__link main__link">
+                                            <div class="main__link-text">Или свяжитесь с нами в <span>WhatsApp</span></div>
+                                            <div class="main__link-arrow">
+                                                <svg>
+                                                    <use xlink:href="#footer__arrow"></use>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="main-right__qr">
+                                    <img src="assets/img/footer/qr.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__bottom bottom-footer">
+                        <div class="bottom-footer__text">Нашли ошибку? Выделите её и нажмите Ctrl+Enter</div>
+                        <div class="bottom-footer__text">2022
+                            ©
+                            Все права защищены</div>
+                    </div>
+                </div>
+            </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/slick.min.js"></script>
+    
+</body>
+</html>
