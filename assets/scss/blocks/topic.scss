@@ -1,0 +1,22 @@
+.topic {
+    margin-top: 8rem;
+}
+.topic__container {
+}
+.topic__title {
+    margin-bottom: 2rem;
+
+    font-weight: 700;
+    font-size: 4.2rem;
+    line-height: calc(50 / 42);
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #6E5B55;  
+    
+    @media (max-width: 769px) {
+        font-size: 3.2rem;
+    }
+
+    @media (max-width: 421px) {
+        font-size: 2.2rem;
+    }
+}
