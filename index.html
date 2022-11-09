@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:regular,500,700" rel="stylesheet" />
+</head>
+<body>
+
+    <!--Sprite-->
+
+    <svg style="display: none">
+        <symbol viewBox="0 0 12 8" id="arrow-body">
+            <path d="M1.41 0.579987L6 5.16999L10.59 0.579987L12 1.99999L6 7.99999L0 1.99999L1.41 0.579987Z"/>
+        </symbol>
+        <symbol viewBox="0 0 46 46" id="arrow-mob">
+            <path d="M17.645 19.01L23 24.365L28.355 19.01L30 20.6667L23 27.6667L16 20.6667L17.645 19.01Z"/>
+        </symbol>
+    </svg>
+
+    <div class="wrapper">
+        <main class="main">
+            <section class="cab">
+                <div class="cab__header">
+                    <div class="cab__header-links">
+                        <div class="cab__header-link">
+                            <a href="#">Главная</a>
+                        </div>
+                        <div class="cab__header-link">
+                            <a href="#">Личный кабинет</a>
+                        </div>
+                        <div class="cab__header-link">
+                            <a href="#">Мой кабинет</a>
+                        </div>
+                    </div>
+                    <h1 class="cab__title">Личный кабинет</h1>
+                </div>
+                <div class="cab__container">
+                    <div class="cab__tabs">
+                        <div class="cab__tab" id="button1">Основная информация</div>
+                        <div class="cab__tab" id="button2">Текущие заказы</div>
+                        <div class="cab__tab" id="button3">Личные данные</div>
+                        <div class="cab__tab" id="button4">История заказов</div>
+                        <div class="cab__tab" id="button5">Профили заказов</div>
+                        <div class="cab__tab" id="button6">Корзина</div>
+                        <div class="cab__tab" id="button7">...</div>
+                    </div>
+                    <table class="cab__table">
+                        <tbody>
+                            <tr class="cab__table-header">
+                                <td class="cab__table-item">
+                                    <span class="cab__table-header-text">Ваши заказы</span>
+                                    <span class="cab__table-header-icon">
+                                        <img src="/assets/img/arrows.svg" alt="">
+                                    </span>
+                                </td>
+                                <th class="cab__table-item">
+                                    <span class="cab__table-header-text">Дата заказа</span>
+                                    <span class="cab__table-header-icon">
+                                        <img src="/assets/img/arrows-gray.svg" alt="">
+                                    </span>
+                                </th>
+                                <th class="cab__table-item">
+                                    <span class="cab__table-header-text">Статус заказа</span>
+                                    <span class="cab__table-header-icon">
+                                        <img src="/assets/img/arrows-gray.svg" alt="">
+                                    </span>
+                                </th>
+                                <th class="cab__table-item">
+                                    <span class="cab__table-header-text">Сумма</span>
+                                    <span class="cab__table-header-icon">
+                                        <img src="/assets/img/arrows-gray.svg" alt="">
+                                    </span>
+                                </th>
+                                <th class="cab__table-item">
+                                    <span class="cab__table-header-text">Товары</span>
+                                    <span class="cab__table-header-icon">
+                                        <img src="/assets/img/arrows-gray.svg" alt="">
+                                    </span>
+                                </th>
+                            </tr>
+                            <tbody>
+                                <tr class="cab__table-body cab__table-body--bg">
+                                    <th class="cab__table-link">
+                                        <a href="">Заказ №326174</a>
+                                    </th>
+                                    <th class="cab__table-info">31.01.2022</th>
+                                    <th class="cab__table-info">Отгружен в службу доставки</th>
+                                    <th class="cab__table-info">789,71 руб.</th>
+                                    <th class="cab__table-info">1 шт</th>
+                                    <th>
+                                        <button class="cab__table-btn">Оплатить заказ</button>
+                                    </th>
+                                    <th class="cab__table-arrow">
+                                        <button id="arrow1">
+                                            <svg>
+                                                <use xlink:href="#arrow-body"></use>
+                                            </svg>
+                                        </button>
+                                    </th>
+                                </tr>
+                                <tbody class="table__block">
+                                    <tr class="cab__table-spoiler cab__table-spoiler-1">
+                                        <td class="cab__table-spoiler-img">
+                                            <img src="/assets/img/book-1.svg" alt="">
+                                        </td>
+                                        <td class="cab__table-spoiler-text" colspan="2">"Английский в фокусе (Spotlight)" Рабочая<br>тетрадь для 6 класса.</td>
+                                        <td class="cab__table-spoiler-value">333.99 руб.</td>
+                                        <td class="cab__table-spoiler-value">1 шт</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="cab__table-spoiler cab__table-spoiler-1">
+                                        <td class="cab__table-spoiler-img">
+                                            <img src="/assets/img/book-2.svg" alt="">
+                                        </td>
+                                        <td class="cab__table-spoiler-text" colspan="2">Английский в фокусе (Spotlight); Книга для <br> учителя. 3 класс (ФГОС)</td>
+                                        <td class="cab__table-spoiler-value">333.99 руб.</td>
+                                        <td class="cab__table-spoiler-value">1 шт</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="cab__table-spoiler cab__table-spoiler-1">
+                                        <td class="cab__table-spoiler-img">
+                                            <img src="/assets/img/book-3.svg" alt="">
+                                        </td>
+                                        <td class="cab__table-spoiler-text" colspan="2">"Английский в фокусе (Spotlight)" Рабочая <br> тетрадь для 6 класса.</td>
+                                        <td class="cab__table-spoiler-value">333.99 руб.</td>
+                                        <td class="cab__table-spoiler-value">1 шт</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                                <tr class="cab__table-bottom">
+                                    <th colspan="3" class="cab__table-bottom-item">Забрать заказ можно <span>11 октября</span></th>
+                                    <th class="cab__table-bottom-notpay" colspan="4">
+                                        <div>Неоплаченный заказ будет отменен автоматически</div>
+                                    </th>
+                                </tr>
+                                <tr class="cab__table-body cab__table-show-2">
+                                    <th class="cab__table-link">
+                                        <a href="">Заказ №326174</a>
+                                    </th>
+                                    <th class="cab__table-info">31.01.2022</th>
+                                    <th class="cab__table-info">Отгружен в службу доставки</th>
+                                    <th class="cab__table-info">789,71 руб.</th>
+                                    <th class="cab__table-info">1 шт</th>
+                                    <th class="cab__table-pay">
+                                        <div class="cab__table-info-payed">Оплачено</div>
+                                        <div class="cab__table-info-date">Дата оплаты: 31.01.2022</div>
+                                    </th>
+                                    <th class="cab__table-arrow">
+                                        <button id="arrow2">
+                                            <svg>
+                                                <use xlink:href="#arrow-body"></use>
+                                            </svg>
+                                        </button>
+                                        <tbody class="table__block">
+                                            <tr class="cab__table-spoiler cab__table-spoiler-2">
+                                                <td class="cab__table-spoiler-img">
+                                                    <img src="/assets/img/book-1.svg" alt="">
+                                                </td>
+                                                <td class="cab__table-spoiler-text" colspan="2">"Английский в фокусе (Spotlight)" Рабочая<br>тетрадь для 6 класса.</td>
+                                                <td class="cab__table-spoiler-value">333.99 руб.</td>
+                                                <td class="cab__table-spoiler-value">1 шт</td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr class="cab__table-spoiler cab__table-spoiler-2">
+                                                <td class="cab__table-spoiler-img">
+                                                    <img src="/assets/img/book-2.svg" alt="">
+                                                </td>
+                                                <td class="cab__table-spoiler-text" colspan="2">Английский в фокусе (Spotlight); Книга для <br> учителя. 3 класс (ФГОС)</td>
+                                                <td class="cab__table-spoiler-value">333.99 руб.</td>
+                                                <td class="cab__table-spoiler-value">1 шт</td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr class="cab__table-spoiler cab__table-spoiler-2">
+                                                <td class="cab__table-spoiler-img">
+                                                    <img src="/assets/img/book-3.svg" alt="">
+                                                </td>
+                                                <td class="cab__table-spoiler-text" colspan="2">"Английский в фокусе (Spotlight)" Рабочая <br> тетрадь для 6 класса.</td>
+                                                <td class="cab__table-spoiler-value">333.99 руб.</td>
+                                                <td class="cab__table-spoiler-value">1 шт</td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </th>
+                                </tr>
+                                <tr class="cab__table-bottom-notbg">
+                                    <th colspan="7" class="cab__table-bottom-item">Заказ отправлен компанией <span>CDEK 09.10.2022</span>  трек номер <span>123456890 <a href="#">(отследить)</a></span></th>
+                                </tr>
+                                <tr class="cab__table-body cab__table-show-3">
+                                    <th class="cab__table-link">
+                                        <a href="">Заказ №326174</a>
+                                    </th>
+                                    <th class="cab__table-info">31.01.2022</th>
+                                    <th class="cab__table-info">Отгружен в службу доставки</th>
+                                    <th class="cab__table-info">789,71 руб.</th>
+                                    <th class="cab__table-info">1 шт</th>
+                                    <th class="cab__table-pay">
+                                        <div class="cab__table-info-payed">Оплачено</div>
+                                        <div class="cab__table-info-date">Дата оплаты: 31.01.2022</div>
+                                    </th>
+                                    <th class="cab__table-arrow">
+                                        <button id="arrow3">
+                                            <svg>
+                                                <use xlink:href="#arrow-body"></use>
+                                            </svg>
+                                        </button>
+                                        <tbody class="table__block">
+                                            <tr class="cab__table-spoiler cab__table-spoiler-3">
+                                                <td class="cab__table-spoiler-img">
+                                                    <img src="/assets/img/book-1.svg" alt="">
+                                                </td>
+                                                <td class="cab__table-spoiler-text" colspan="2">"Английский в фокусе (Spotlight)" Рабочая<br>тетрадь для 6 класса.</td>
+                                                <td class="cab__table-spoiler-value">333.99 руб.</td>
+                                                <td class="cab__table-spoiler-value">1 шт</td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr class="cab__table-spoiler cab__table-spoiler-3">
+                                                <td class="cab__table-spoiler-img">
+                                                    <img src="/assets/img/book-2.svg" alt="">
+                                                </td>
+                                                <td class="cab__table-spoiler-text" colspan="2">Английский в фокусе (Spotlight); Книга для <br> учителя. 3 класс (ФГОС)</td>
+                                                <td class="cab__table-spoiler-value">333.99 руб.</td>
+                                                <td class="cab__table-spoiler-value">1 шт</td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr class="cab__table-spoiler cab__table-spoiler-3">
+                                                <td class="cab__table-spoiler-img">
+                                                    <img src="/assets/img/book-3.svg" alt="">
+                                                </td>
+                                                <td class="cab__table-spoiler-text" colspan="2">"Английский в фокусе (Spotlight)" Рабочая <br> тетрадь для 6 класса.</td>
+                                                <td class="cab__table-spoiler-value">333.99 руб.</td>
+                                                <td class="cab__table-spoiler-value">1 шт</td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </th>
+                                </tr>
+                                <tr class="cab__table-body cab__table-show-4">
+                                    <th class="cab__table-link">
+                                        <a href="">Заказ №326174</a>
+                                    </th>
+                                    <th class="cab__table-info">31.01.2022</th>
+                                    <th class="cab__table-info">Отгружен в службу доставки</th>
+                                    <th class="cab__table-info">789,71 руб.</th>
+                                    <th class="cab__table-info">1 шт</th>
+                                    <th class="cab__table-pay">
+                                        <div class="cab__table-info-payed">Оплачено</div>
+                                        <div class="cab__table-info-date">Дата оплаты: 31.01.2022</div>
+                                    </th>
+                                    <th class="cab__table-arrow">
+                                        <button id="arrow4">
+                                            <svg>
+                                                <use xlink:href="#arrow-body"></use>
+                                            </svg>
+                                        </button>
+                                        <tbody class="table__block">
+                                            <tr class="cab__table-spoiler cab__table-spoiler-4">
+                                                <td class="cab__table-spoiler-img">
+                                                    <img src="/assets/img/book-1.svg" alt="">
+                                                </td>
+                                                <td class="cab__table-spoiler-text" colspan="2">"Английский в фокусе (Spotlight)" Рабочая<br>тетрадь для 6 класса.</td>
+                                                <td class="cab__table-spoiler-value">333.99 руб.</td>
+                                                <td class="cab__table-spoiler-value">1 шт</td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr class="cab__table-spoiler cab__table-spoiler-4">
+                                                <td class="cab__table-spoiler-img">
+                                                    <img src="/assets/img/book-2.svg" alt="">
+                                                </td>
+                                                <td class="cab__table-spoiler-text" colspan="2">Английский в фокусе (Spotlight); Книга для <br> учителя. 3 класс (ФГОС)</td>
+                                                <td class="cab__table-spoiler-value">333.99 руб.</td>
+                                                <td class="cab__table-spoiler-value">1 шт</td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr class="cab__table-spoiler cab__table-spoiler-4">
+                                                <td class="cab__table-spoiler-img">
+                                                    <img src="/assets/img/book-3.svg" alt="">
+                                                </td>
+                                                <td class="cab__table-spoiler-text" colspan="2">"Английский в фокусе (Spotlight)" Рабочая <br> тетрадь для 6 класса.</td>
+                                                <td class="cab__table-spoiler-value">333.99 руб.</td>
+                                                <td class="cab__table-spoiler-value">1 шт</td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </th>
+                                </tr>
+                                <tr class="cab__table-bottom-notbg">
+                                    <th colspan="7" class="cab__table-bottom-item">Забрать заказ можно <span>11 октября</span></th>
+                                </tr>
+                                <tr class="cab__table-body cab__table-show-5">
+                                    <th class="cab__table-link">
+                                        <a href="">Заказ №326174</a>
+                                    </th>
+                                    <th class="cab__table-info">31.01.2022</th>
+                                    <th class="cab__table-info">Отгружен в службу доставки</th>
+                                    <th class="cab__table-info">789,71 руб.</th>
+                                    <th class="cab__table-info">1 шт</th>
+                                    <th class="cab__table-pay">
+                                        <div class="cab__table-info-payed">Оплачено</div>
+                                        <div class="cab__table-info-date">Дата оплаты: 31.01.2022</div>
+                                    </th>
+                                    <th class="cab__table-arrow">
+                                        <button id="arrow5">
+                                            <svg>
+                                                <use xlink:href="#arrow-body"></use>
+                                            </svg>
+                                        </button>
+                                        <tbody class="table__block">
+                                            <tr class="cab__table-spoiler cab__table-spoiler-5">
+                                                <td class="cab__table-spoiler-img">
+                                                    <img src="/assets/img/book-1.svg" alt="">
+                                                </td>
+                                                <td class="cab__table-spoiler-text" colspan="2">"Английский в фокусе (Spotlight)" Рабочая<br>тетрадь для 6 класса.</td>
+                                                <td class="cab__table-spoiler-value">333.99 руб.</td>
+                                                <td class="cab__table-spoiler-value">1 шт</td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr class="cab__table-spoiler cab__table-spoiler-5">
+                                                <td class="cab__table-spoiler-img">
+                                                    <img src="/assets/img/book-2.svg" alt="">
+                                                </td>
+                                                <td class="cab__table-spoiler-text" colspan="2">Английский в фокусе (Spotlight); Книга для <br> учителя. 3 класс (ФГОС)</td>
+                                                <td class="cab__table-spoiler-value">333.99 руб.</td>
+                                                <td class="cab__table-spoiler-value">1 шт</td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr class="cab__table-spoiler cab__table-spoiler-5">
+                                                <td class="cab__table-spoiler-img">
+                                                    <img src="/assets/img/book-3.svg" alt="">
+                                                </td>
+                                                <td class="cab__table-spoiler-text" colspan="2">"Английский в фокусе (Spotlight)" Рабочая <br> тетрадь для 6 класса.</td>
+                                                <td class="cab__table-spoiler-value">333.99 руб.</td>
+                                                <td class="cab__table-spoiler-value">1 шт</td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </th>
+                                </tr>
+                                <tr class="cab__table-bottom-notbg">
+                                    <th colspan="7" class="cab__table-bottom-item">Заказ отправлен компанией <span>CDEK 09.10.2022</span>  трек номер <span>123456890 <a href="#">(отследить)</a></span></th>
+                                </tr>
+                                <tr class="cab__table-body cab__table-body--bg">
+                                    <th class="cab__table-link">
+                                        <a href="">Заказ №326174</a>
+                                    </th>
+                                    <th class="cab__table-info">31.01.2022</th>
+                                    <th class="cab__table-info">Отгружен в службу доставки</th>
+                                    <th class="cab__table-info">789,71 руб.</th>
+                                    <th class="cab__table-info">1 шт</th>
+                                    <th>
+                                        <button class="cab__table-btn">Оплатить заказ</button>
+                                    </th>
+                                    <th class="cab__table-arrow">
+                                        <button id="arrow6">
+                                            <svg>
+                                                <use xlink:href="#arrow-body"></use>
+                                            </svg>
+                                        </button>
+                                        <tbody class="table__block">
+                                            <tr class="cab__table-spoiler cab__table-spoiler-6">
+                                                <td class="cab__table-spoiler-img">
+                                                    <img src="/assets/img/book-1.svg" alt="">
+                                                </td>
+                                                <td class="cab__table-spoiler-text" colspan="2">"Английский в фокусе (Spotlight)" Рабочая<br>тетрадь для 6 класса.</td>
+                                                <td class="cab__table-spoiler-value">333.99 руб.</td>
+                                                <td class="cab__table-spoiler-value">1 шт</td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr class="cab__table-spoiler cab__table-spoiler-6">
+                                                <td class="cab__table-spoiler-img">
+                                                    <img src="/assets/img/book-2.svg" alt="">
+                                                </td>
+                                                <td class="cab__table-spoiler-text" colspan="2">Английский в фокусе (Spotlight); Книга для <br> учителя. 3 класс (ФГОС)</td>
+                                                <td class="cab__table-spoiler-value">333.99 руб.</td>
+                                                <td class="cab__table-spoiler-value">1 шт</td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr class="cab__table-spoiler cab__table-spoiler-6">
+                                                <td class="cab__table-spoiler-img">
+                                                    <img src="/assets/img/book-3.svg" alt="">
+                                                </td>
+                                                <td class="cab__table-spoiler-text" colspan="2">"Английский в фокусе (Spotlight)" Рабочая <br> тетрадь для 6 класса.</td>
+                                                <td class="cab__table-spoiler-value">333.99 руб.</td>
+                                                <td class="cab__table-spoiler-value">1 шт</td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </th>
+                                </tr>
+                                <tr class="cab__table-bottom">
+                                    <th colspan="3" class="cab__table-bottom-item">Забрать заказ можно <span>11 октября</span></th>
+                                    <th class="cab__table-bottom-notpay" colspan="4">
+                                        <div>Неоплаченный заказ будет отменен автоматически</div>
+                                    </th>
+                                </tr>
+                            </tbody>
+                        </tbody>
+                    </table>
+                    <div class="cab__mob">
+                        <div class="cab__mob-header">Мой кабинет</div>
+                        <div class="cab__mob-top">Ваши заказы</div>
+                        <table class="cab__mob-table">
+                            <tbody class="cab__mob-block cab__mob-block-bg">
+                                <tr class="cab__mob-header-mob">
+                                    <td colspan="7" class="cab__table-link">
+                                        <a href="">Заказ №326174</a>
+                                    </td>
+                                </tr>
+                                <tr lass="cab__mob-header-mob cab__mob-block-bg">
+                                    <td colspan="6" class="cab__table-bottom-item">Забрать заказ можно <span>11 октября</span></td>
+                                </tr>
+                                <tr class="cab__mob-body cab__mob-body-header">
+                                    <td class="cab__table-link">
+                                        <a href="">Заказ №326174</a>
+                                    </td>
+                                    <td colspan="6" class="cab__table-bottom-item">Забрать заказ можно <span>11 октября</span></td>
+                                </tr>
+                                <tr class="cab__mob-body">
+                                    <td class="cab__table-info">Дата заказа</td>
+                                    <td colspan="6" class="cab__table-info">31.01.2022</td>
+                                </tr>
+                                <tr class="cab__mob-body">
+                                    <td class="cab__table-info">Статус заказа</td>
+                                    <td colspan="6"  class="cab__table-info">Отгружен в службу доставки</td>
+                                </tr>
+                                <tr class="cab__mob-body">
+                                    <td class="cab__table-info">Сумма</td>
+                                    <td colspan="6"  class="cab__table-info">789,71 руб.</td>
+                                </tr>
+                                <tr class="cab__mob-body">
+                                    <td class="cab__table-info">Товары</td>
+                                    <td colspan="6"  class="cab__table-info">1 шт</td>
+                                </tr>
+                                <tr class="cab__mob-body">
+                                    <td class="cab__table-info">Оплата</td>
+                                    <td class="cab__table-info">
+                                        <button class="cab__table-btn">Оплатить заказ</button>
+                                    </td>
+                                    <td colspan="7" rowspan="4" class="cab__arrow-mob">
+                                        <button id="arrowMob1">
+                                            <svg>
+                                                <use xlink:href="#arrow-mob"></use>
+                                            </svg>
+                                        </button>
+                                        <tbody class="table__block">
+                                            <tr class="cab__table-spoiler cab__table-spoiler-mob-1">
+                                                <td class="cab__table-spoiler-img">
+                                                    <img src="/assets/img/book-1.svg" alt="">
+                                                </td>
+                                                <td class="cab__table-spoiler-text">"Английский в фокусе (Spotlight)"<br> Рабочая тетрадь для 6 класса.</td>
+                                                <td class="cab__table-spoiler-value">333.99 руб.</td>
+                                                <td class="cab__table-spoiler-value">1 шт</td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr class="cab__table-spoiler cab__table-spoiler-mob-1">
+                                                <td class="cab__table-spoiler-img">
+                                                    <img src="/assets/img/book-1.svg" alt="">
+                                                </td>
+                                                <td class="cab__table-spoiler-text">"Английский в фокусе (Spotlight)"<br> Рабочая тетрадь для 6 класса.</td>
+                                                <td class="cab__table-spoiler-value">333.99 руб.</td>
+                                                <td class="cab__table-spoiler-value">1 шт</td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr class="cab__table-spoiler cab__table-spoiler-mob-1">
+                                                <td class="cab__table-spoiler-img">
+                                                    <img src="/assets/img/book-1.svg" alt="">
+                                                </td>
+                                                <td class="cab__table-spoiler-text">"Английский в фокусе (Spotlight)"<br> Рабочая тетрадь для 6 класса.</td>
+                                                <td class="cab__table-spoiler-value">333.99 руб.</td>
+                                                <td class="cab__table-spoiler-value">1 шт</td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr class="cab__table-bottom">
+                                    <th class="cab__table-bottom-notpay" colspan="7">
+                                        <div>Неоплаченный заказ будет отменен автоматически</div>
+                                    </th>
+                                </tr>
+                            </tbody>
+                            <tbody class="cab__mob-block cab__mob-block-bg-2">
+                                <tr class="cab__mob-header-mob">
+                                    <td colspan="7" class="cab__table-link">
+                                        <a href="">Заказ №326174</a>
+                                    </td>
+                                </tr>
+                                <tr lass="cab__mob-header-mob cab__mob-block-bg">
+                                    <td colspan="6" class="cab__table-bottom-item">Забрать заказ можно <span>11 октября</span></td>
+                                </tr>
+                                <tr class="cab__mob-body cab__mob-body-header">
+                                    <td class="cab__table-link">
+                                        <a href="">Заказ №326174</a>
+                                    </td>
+                                    <td colspan="6" class="cab__table-bottom-item">Забрать заказ можно <span>11 октября</span></td>
+                                </tr>
+                                <tr class="cab__mob-body">
+                                    <td class="cab__table-info">Дата заказа</td>
+                                    <td colspan="6" class="cab__table-info">31.01.2022</td>
+                                </tr>
+                                <tr class="cab__mob-body">
+                                    <td class="cab__table-info">Статус заказа</td>
+                                    <td colspan="6"  class="cab__table-info">Отгружен в службу доставки</td>
+                                </tr>
+                                <tr class="cab__mob-body">
+                                    <td class="cab__table-info">Сумма</td>
+                                    <td colspan="6"  class="cab__table-info">789,71 руб.</td>
+                                </tr>
+                                <tr class="cab__mob-body">
+                                    <td class="cab__table-info">Товары</td>
+                                    <td colspan="6"  class="cab__table-info">1 шт</td>
+                                </tr>
+                                <tr class="cab__mob-body">
+                                    <td class="cab__table-info">Оплата</td>
+                                    <td class="cab__mob-pay">
+                                        <div class="cab__mob-info-payed">Оплачено</div>
+                                        <div class="cab__mob-info-date">Дата оплаты: 31.01.2022</div>
+                                    </td>
+                                    <td colspan="7" rowspan="4" class="cab__arrow-mob">
+                                        <button id="arrowMob2">
+                                            <svg>
+                                                <use xlink:href="#arrow-mob"></use>
+                                            </svg>
+                                        </button>
+                                        <tbody class="table__block">
+                                            <tr class="cab__table-spoiler cab__table-spoiler-mob-2">
+                                                <td class="cab__table-spoiler-img">
+                                                    <img src="/assets/img/book-1.svg" alt="">
+                                                </td>
+                                                <td class="cab__table-spoiler-text">"Английский в фокусе (Spotlight)" Рабочая<br>тетрадь для 6 класса.</td>
+                                                <td class="cab__table-spoiler-value">333.99 руб.</td>
+                                                <td class="cab__table-spoiler-value">1 шт</td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr class="cab__table-spoiler cab__table-spoiler-mob-2">
+                                                <td class="cab__table-spoiler-img">
+                                                    <img src="/assets/img/book-1.svg" alt="">
+                                                </td>
+                                                <td class="cab__table-spoiler-text">"Английский в фокусе (Spotlight)" Рабочая<br>тетрадь для 6 класса.</td>
+                                                <td class="cab__table-spoiler-value">333.99 руб.</td>
+                                                <td class="cab__table-spoiler-value">1 шт</td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr class="cab__table-spoiler cab__table-spoiler-mob-2">
+                                                <td class="cab__table-spoiler-img">
+                                                    <img src="/assets/img/book-1.svg" alt="">
+                                                </td>
+                                                <td class="cab__table-spoiler-text">"Английский в фокусе (Spotlight)" Рабочая<br>тетрадь для 6 класса.</td>
+                                                <td class="cab__table-spoiler-value">333.99 руб.</td>
+                                                <td class="cab__table-spoiler-value">1 шт</td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tbody class="cab__mob-block cab__mob-block-bg-3">
+                                <tr class="cab__mob-header-mob">
+                                    <td colspan="7" class="cab__table-link">
+                                        <a href="">Заказ №326174</a>
+                                    </td>
+                                </tr>
+                                <tr lass="cab__mob-header-mob cab__mob-block-bg">
+                                    <td colspan="6" class="cab__table-bottom-item">Забрать заказ можно <span>11 октября</span></td>
+                                </tr>
+                                <tr class="cab__mob-body cab__mob-body-header">
+                                    <td class="cab__table-link">
+                                        <a href="">Заказ №326174</a>
+                                    </td>
+                                    <td colspan="6" class="cab__table-bottom-item">Забрать заказ можно <span>11 октября</span></td>
+                                </tr>
+                                <tr class="cab__mob-body">
+                                    <td class="cab__table-info">Дата заказа</td>
+                                    <td colspan="6" class="cab__table-info">31.01.2022</td>
+                                </tr>
+                                <tr class="cab__mob-body">
+                                    <td class="cab__table-info">Статус заказа</td>
+                                    <td colspan="6"  class="cab__table-info">Отгружен в службу доставки</td>
+                                </tr>
+                                <tr class="cab__mob-body">
+                                    <td class="cab__table-info">Сумма</td>
+                                    <td colspan="6"  class="cab__table-info">789,71 руб.</td>
+                                </tr>
+                                <tr class="cab__mob-body">
+                                    <td class="cab__table-info">Товары</td>
+                                    <td colspan="6"  class="cab__table-info">3 шт</td>
+                                </tr>
+                                <tr class="cab__mob-body">
+                                    <td class="cab__table-info">Оплата</td>
+                                    <td class="cab__mob-pay">
+                                        <div class="cab__mob-info-payed">Оплачено</div>
+                                        <div class="cab__mob-info-date">Дата оплаты: 31.01.2022</div>
+                                    </td>
+                                    <td colspan="7" rowspan="4" class="cab__arrow-mob">
+                                        <button id="arrowMob3">
+                                            <svg>
+                                                <use xlink:href="#arrow-mob"></use>
+                                            </svg>
+                                        </button>
+                                        <tbody class="table__block">
+                                            <tr class="cab__table-spoiler cab__table-spoiler-mob-3">
+                                                <td class="cab__table-spoiler-img">
+                                                    <img src="/assets/img/book-1.svg" alt="">
+                                                </td>
+                                                <td class="cab__table-spoiler-text">"Английский в фокусе (Spotlight)" Рабочая<br>тетрадь для 6 класса.</td>
+                                                <td class="cab__table-spoiler-value">333.99 руб.</td>
+                                                <td class="cab__table-spoiler-value">1 шт</td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr class="cab__table-spoiler cab__table-spoiler-mob-3">
+                                                <td class="cab__table-spoiler-img">
+                                                    <img src="/assets/img/book-1.svg" alt="">
+                                                </td>
+                                                <td class="cab__table-spoiler-text">"Английский в фокусе (Spotlight)" Рабочая<br>тетрадь для 6 класса.</td>
+                                                <td class="cab__table-spoiler-value">333.99 руб.</td>
+                                                <td class="cab__table-spoiler-value">1 шт</td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr class="cab__table-spoiler cab__table-spoiler-mob-3">
+                                                <td class="cab__table-spoiler-img">
+                                                    <img src="/assets/img/book-1.svg" alt="">
+                                                </td>
+                                                <td class="cab__table-spoiler-text">"Английский в фокусе (Spotlight)" Рабочая<br>тетрадь для 6 класса.</td>
+                                                <td class="cab__table-spoiler-value">333.99 руб.</td>
+                                                <td class="cab__table-spoiler-value">1 шт</td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tbody class="cab__mob-block cab__mob-block-bg-4">
+                                <tr class="cab__mob-body">
+                                    <td class="cab__table-link">
+                                        <a href="">Заказ №326174</a>
+                                    </td>
+                                    <td colspan="7" class="cab__table-bottom-item">Забрать заказ можно <span>11 октября</span> </td>
+                                </tr>
+                                <tr class="cab__mob-body">
+                                    <td class="cab__table-info">Дата заказа</td>
+                                    <td colspan="6" class="cab__table-info">31.01.2022</td>
+                                </tr>
+                                <tr class="cab__mob-body">
+                                    <td class="cab__table-info">Статус заказа</td>
+                                    <td colspan="6"  class="cab__table-info">Отгружен в службу доставки</td>
+                                </tr>
+                                <tr class="cab__mob-body">
+                                    <td class="cab__table-info">Сумма</td>
+                                    <td colspan="6"  class="cab__table-info">789,71 руб.</td>
+                                </tr>
+                                <tr class="cab__mob-body">
+                                    <td class="cab__table-info">Товары</td>
+                                    <td colspan="6"  class="cab__table-info">3 шт</td>
+                                </tr>
+                                <tr class="cab__mob-body">
+                                    <td class="cab__table-info">Оплата</td>
+                                    <td class="cab__mob-pay">
+                                        <div class="cab__mob-info-payed">Оплачено</div>
+                                        <div class="cab__mob-info-date">Дата оплаты: 31.01.2022</div>
+                                    </td>
+                                    <td colspan="7" rowspan="4" class="cab__arrow-mob">
+                                        <button id="arrowMob4">
+                                            <svg>
+                                                <use xlink:href="#arrow-mob"></use>
+                                            </svg>
+                                        </button>
+                                        <tbody class="table__block">
+                                            <tr class="cab__table-spoiler cab__table-spoiler-mob-4">
+                                                <td class="cab__table-spoiler-img">
+                                                    <img src="/assets/img/book-1.svg" alt="">
+                                                </td>
+                                                <td class="cab__table-spoiler-text">"Английский в фокусе (Spotlight)" Рабочая<br>тетрадь для 6 класса.</td>
+                                                <td class="cab__table-spoiler-value">333.99 руб.</td>
+                                                <td class="cab__table-spoiler-value">1 шт</td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr class="cab__table-spoiler cab__table-spoiler-mob-4">
+                                                <td class="cab__table-spoiler-img">
+                                                    <img src="/assets/img/book-1.svg" alt="">
+                                                </td>
+                                                <td class="cab__table-spoiler-text">"Английский в фокусе (Spotlight)" Рабочая<br>тетрадь для 6 класса.</td>
+                                                <td class="cab__table-spoiler-value">333.99 руб.</td>
+                                                <td class="cab__table-spoiler-value">1 шт</td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr class="cab__table-spoiler cab__table-spoiler-mob-4">
+                                                <td class="cab__table-spoiler-img">
+                                                    <img src="/assets/img/book-1.svg" alt="">
+                                                </td>
+                                                <td class="cab__table-spoiler-text">"Английский в фокусе (Spotlight)" Рабочая<br>тетрадь для 6 класса.</td>
+                                                <td class="cab__table-spoiler-value">333.99 руб.</td>
+                                                <td class="cab__table-spoiler-value">1 шт</td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
