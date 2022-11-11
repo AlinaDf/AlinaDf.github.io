@@ -1,0 +1,506 @@
+@charset "UTF-8";
+html {
+  font-size: 62.5%;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Circe", sans-serif;
+  background-color: #1D1D1D;
+}
+
+ul, ol, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: 0;
+  padding: 0;
+  background: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  border: 0;
+  background: none;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+address {
+  font-style: normal;
+}
+
+[class*=__container] {
+  width: 100%;
+  padding: 0 15px;
+  margin: auto;
+  max-width: 1789px;
+}
+
+/* ШРИФТЫ */
+@font-face {
+  font-family: "Commissioner";
+  src: url("/fonts/Commissioner-Light.woff2") format("woff2"), url("/fonts/Commissioner-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Commissioner";
+  src: url("/fonts/Commissioner-Regular.woff2") format("woff2"), url("/fonts/Commissioner-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Commissioner";
+  src: url("/fonts/Commissioner-ExtraBold.woff2") format("woff2"), url("/fonts/Commissioner-ExtraBold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Commissioner";
+  src: url("/fonts/Commissioner-SemiBold.woff2") format("woff2"), url("/fonts/Commissioner-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Circe";
+  src: url("/fonts/Circe-Bold.woff2") format("woff2"), url("/fonts/Circe-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Commissioner";
+  src: url("/fonts/Commissioner-Bold.woff2") format("woff2"), url("/fonts/Commissioner-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Circe Extra";
+  src: url("/fonts/Circe-ExtraBold.woff2") format("woff2"), url("/fonts/Circe-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Circe";
+  src: url("/fonts/Circe-Light.woff2") format("woff2"), url("/fonts/Circe-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Circe";
+  src: url("/fonts/Circe-Regular.woff2") format("woff2"), url("/fonts/Circe-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+/* IMPORT */
+.header {
+  padding-top: 3.7rem;
+  width: 100%;
+  position: absolute;
+  z-index: 1000;
+}
+
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 768px) {
+  .social {
+    display: none;
+  }
+}
+
+.social__item {
+  margin-right: 1.9rem;
+}
+.social__item:last-child {
+  margin-right: 0;
+}
+.social__item svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+@media (max-width: 768px) {
+  .header__nav {
+    display: none;
+  }
+}
+
+.nav__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.nav__inner li:nth-child(2) {
+  padding: 0px 110px 0px 0;
+}
+.nav__inner li:nth-child(2) a::after {
+  display: none;
+}
+@media (max-width: 992px) {
+  .nav__inner li:nth-child(2) {
+    padding: 0px 50px 0px 0;
+  }
+}
+@media (max-width: 840px) {
+  .nav__inner li:nth-child(2) {
+    padding: 0px 30px 0px 0;
+  }
+}
+.nav__inner li:nth-child(3) {
+  padding: 0px 0 0px 110px;
+}
+.nav__inner li:last-child a:after {
+  display: none;
+}
+
+.nav__link {
+  font-family: "Commissioner", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.4;
+  letter-spacing: -0.4px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  white-space: nowrap;
+}
+.nav__link:after {
+  content: "|";
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 250%;
+  letter-spacing: -0.4px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: 0 4rem;
+}
+@media (max-width: 1191px) {
+  .nav__link:after {
+    margin: 0 2rem;
+  }
+}
+@media (max-width: 992px) {
+  .nav__link:after {
+    font-size: 1.4rem;
+    margin: 0 1rem;
+  }
+}
+@media (max-width: 840px) {
+  .nav__link:after {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 1191px) {
+  .nav__link {
+    font-size: 1.6rem;
+    vertical-align: middle;
+  }
+}
+@media (max-width: 992px) {
+  .nav__link {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 840px) {
+  .nav__link {
+    font-size: 1.2rem;
+  }
+}
+
+.header__logo {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 0;
+  width: 15rem;
+}
+@media (max-width: 992px) {
+  .header__logo {
+    width: 13rem;
+  }
+  .header__logo img {
+    width: 100%;
+  }
+}
+.header__logo img {
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .header__logo {
+    width: 8.2rem;
+  }
+}
+@media (max-width: 490px) {
+  .header__logo {
+    width: 6rem;
+  }
+}
+
+.header__pers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 768px) {
+  .header__pers {
+    display: none;
+  }
+}
+
+.header__pers-item {
+  margin-right: 2.2rem;
+}
+.header__pers-item:last-child {
+  margin-right: 0;
+}
+.header__pers-item svg {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.intro {
+  position: relative;
+}
+
+.intro__body {
+  position: absolute;
+  z-index: 100;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  max-width: 1126px;
+  padding-top: 3rem;
+}
+@media (max-width: 1430px) {
+  .intro__body {
+    max-width: 600px;
+  }
+}
+@media (max-width: 992px) {
+  .intro__body {
+    max-width: 400px;
+  }
+}
+@media (max-width: 768px) {
+  .intro__body {
+    max-width: 20rem;
+  }
+}
+
+.intro__title {
+  font-size: 10rem;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 0px 40px #553930;
+  margin-bottom: 5rem;
+}
+@media (max-width: 1430px) {
+  .intro__title {
+    font-size: 5rem;
+  }
+}
+@media (max-width: 1200px) {
+  .intro__title {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 992px) {
+  .intro__title {
+    font-size: 2.8rem;
+  }
+}
+@media (max-width: 992px) {
+  .intro__title {
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .intro__title {
+    font-size: 2rem;
+  }
+}
+
+.intro__text {
+  font-size: 4.8rem;
+  line-height: 1.25;
+  letter-spacing: -0.015em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 0px 40px #553930;
+}
+@media (max-width: 1430px) {
+  .intro__text {
+    font-size: 2.4rem;
+  }
+}
+@media (max-width: 768px) {
+  .intro__text {
+    font-size: 1.4rem;
+  }
+}
+
+.intro__image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.intro__image img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 768px) {
+  .intro__image img {
+    width: 150%;
+  }
+}
+
+/* Слайдер */
+/* Слайдер запущен */
+/* Слайдер с точками */
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* Слайд */
+/* Слайд активный (показывается) 
+*/
+/* Слайд основной */
+/* Слайд по центру */
+/* Клонированный слайд */
+/* Стрелка */
+/* Стрелка влево */
+/* Стрелка вправо */
+/* Стрелка не активная */
+/* Точки (булиты) */
+.slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: 4.6rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+@media (max-width: 768px) {
+  .slick-dots {
+    bottom: 2.4rem;
+  }
+}
+
+.slick-dots li {
+  background: #FFFFFF;
+  width: 2.1rem;
+  height: 2.1rem;
+  border-radius: 50%;
+  margin-right: 2.6rem;
+  cursor: pointer;
+}
+.slick-dots li:last-child {
+  margin-right: 0;
+}
+@media (max-width: 992px) {
+  .slick-dots li {
+    width: 8px;
+    height: 8px;
+    margin-right: 1rem;
+  }
+}
+
+/* Активная точка */
+.slick-dots li.slick-active {
+  background-color: #000000;
+}
+
+/* Элемент точки */
+.slick-dots li button {
+  font-size: 0;
+}
