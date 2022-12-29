@@ -1,0 +1,189 @@
+.intro {
+    background-color: #ECECEC;
+    z-index: -1;
+    border-radius: 30px;
+}
+.intro__container {
+    display: flex;
+    position: relative;
+
+    @media (max-width: 1024px) {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+.intro__content {
+    width: 50%;
+    padding-top: 100px;
+    position: relative;
+    z-index: 10;
+
+    @media (max-width: 1024px) {
+        width: 100%;
+        text-align: center;
+    }
+
+    @media (max-width: 550px) {
+        padding-top: 30px;
+    }
+}
+.intro__title {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 130%;
+    color: #161616;
+
+    @media (max-width: 550px) {
+        font-size: 25px;
+    }
+}
+.intro__inner {
+    display: flex;  
+    align-items: center;
+    margin: 18px 0 44px;
+
+    @media (max-width: 1024px) {
+        justify-content: center;
+    }
+
+    @media (max-width: 550px) {
+        flex-direction: column;
+    }
+}
+.intro__subtitle {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 130%;
+    color: #161616;
+    
+    margin-right: 14px;
+
+    @media (max-width: 550px) {
+        margin-bottom: 20px;
+    }
+}
+.intro__discount {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 130%;
+    color: #161616;
+
+    border-radius: 12px;
+    padding: 10px 24px;
+    position: relative;
+    z-index: 10;
+
+    background: url("../assets/img/intro/bg.svg") center no-repeat;
+    width: 138px;
+    height: 50px;
+    background-size: cover;
+    -webkit-background-size: cover;
+}
+.intro__bottom {
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 1024px) {
+        justify-content: center;
+    }
+
+    @media (max-width: 550px) {
+        flex-direction: column;
+        align-items: start;
+        max-width: 250px;
+        margin: auto;
+    }
+}
+.intro__button {
+    width: 100%;
+    max-width: 242px;
+    margin-right: 39px;
+    button {
+        width: 100%;
+        font-family: 'Roboto';
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 140%;
+        color: #FFFFFF;
+
+        min-height: 58px;
+        background: #04C8F2;
+        box-shadow: 0px 8px 19px rgba(4, 200, 242, 0.32);
+        border-radius: 4px;
+        cursor: pointer;
+
+        &:hover {
+            background: darken(#04C8F2, 5%);
+        }
+    }
+
+    @media (max-width: 550px) {
+        margin-bottom: 10px;
+    }
+}
+.intro__btn {
+}
+.intro__info {
+    display: flex;
+    align-items: center;
+}
+.intro__info-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    margin-right: 15px;
+}
+.intro__info-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    color: #8292A0;
+}
+.intro__photo {
+    width: 50%;
+
+    @media (max-width: 1024px) {
+        width: 100%;
+        position: relative;
+        margin-top: -50px;
+    } 
+
+    @media (max-width: 550px) {
+        margin: 0;
+    }
+}
+.intro__decor {
+    position: absolute;
+    top: 0;
+    right: -20%;
+    z-index: 1;
+
+    @media (max-width: 1024px) {
+        display: none;
+    }
+}
+.intro__truck {
+    position: relative;
+    z-index: 2;
+    right: 200px;
+
+    @media (max-width: 1024px) {
+        right: 0;
+        width: 100%;
+        max-width: 700px;
+        margin: auto;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 768px) {
+        max-width: 500px;
+    }
+}
