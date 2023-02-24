@@ -1,0 +1,199 @@
+.modal {
+    width: 100%;
+    display: none;
+    height: 100%;
+    position: fixed;
+    background: rgba(0, 0, 0, .7);
+    z-index: 1000;
+    top: 0;
+    left: 0;
+
+    padding: 0 1rem;
+}
+.modal__dialog {
+    width: 100%;
+    max-width: 50rem;
+    margin: auto;
+    background-color: #1C2121;
+
+    padding: 4.5rem 0 7.5rem 0;
+    position: relative;
+}
+.modal__close {
+    position: absolute;
+    top: 3.5rem;
+    right: 3.7rem;
+    cursor: pointer;
+    transition: all .2s linear;
+
+    &:hover {
+        transform: translateY(-.5rem);
+    }
+
+    @media (max-width: 480px) {
+        top: 2rem;
+        right: 2rem;
+    }
+}
+.modal__title {
+    font-weight: 500;
+    font-size: 3.2rem;
+    line-height: calc(44 / 32);
+    text-align: center;
+    color: #FFFFFF;
+
+    margin-bottom: 1.6rem;
+
+    @media (max-width: 480px) {
+        font-size: 2.5rem;
+    }
+}
+.modal__subtitle {
+    font-size: 1.8rem;
+    line-height: 156%;
+    color: #FFFFFF;
+    text-align: center;
+
+    margin-bottom: 3.4rem;
+
+    @media (max-width: 480px) {
+        font-size: 1.4rem;
+    }
+}
+.modal__form {
+    width: 100%;
+    max-width: 36.3rem;
+    margin: auto;
+
+    @media (max-width: 480px) {
+        max-width: 30rem;
+        padding: 0 1rem;
+    }
+}
+.modal__item {
+    margin-bottom: 2.5rem;
+    
+    label {
+        font-family: 'Manrope';
+        font-weight: 400;
+        font-size: 1.4rem;
+        line-height: calc(19 / 14);
+        color: #FFFFFF;
+
+        margin-left: 4.7rem;
+        margin-bottom: 1.2rem;
+        display: block;
+
+        @media (max-width: 480px) {
+            margin-left: 2rem;
+        }
+    }
+
+    input {
+        width: 100%;
+        background: #FAFAFA;
+        box-shadow: inset 0px 0px 2.1rem rgba(255, 255, 255, 0.4);
+        border-radius: 7.3rem;
+        min-height: 8.5rem;
+        outline: 0;
+
+        padding: 0 4.7rem;
+
+        font-family: 'Manrope';
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 133%;
+        letter-spacing: 0.03em;
+        color: #B0B0B1;
+
+        &._error {
+            box-shadow: 0 0 15px red;
+        }
+
+        &::placeholder {
+            font-family: 'Manrope';
+            font-weight: 400;
+            font-size: 1.8rem;
+            line-height: 133%;
+            letter-spacing: 0.03em;
+            color: #B0B0B1;
+        }
+
+        @media (max-width: 480px) {
+            min-height: 6rem;
+            padding: 0 2rem;
+        }
+    }
+}
+.modal__btn {
+    width: 100%;
+
+    button {
+        width: 100%;
+        min-height: 8.5rem;
+
+        @media (max-width: 480px) {
+            min-height: 6rem;
+            font-size: 1.6rem;
+        }
+    }
+}
+
+.modal__checkbox {
+    position: relative;
+    input {
+        display: none;
+    }
+}
+.modal__checkbox-body {
+    position: relative;
+    height: 1.5rem;
+    &:before {
+        content: "";
+        width: 2rem;
+        height: 2rem;
+        background-color: #fff;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: .5rem;
+        z-index: 2;
+        cursor: pointer;
+    }
+
+    &.active {
+        &:before {
+            background-color: #FD2016;
+        }
+
+        .modal__checkbox-mark {
+            opacity: 1;
+            z-index: 3;
+        }
+    }
+}
+.modal__checkbox-text {
+    font-size: 1.4rem;
+    padding-left: 3rem;
+    line-height: 136%;
+    color: #FFFFFF;
+
+    a {
+        color: #FD2016;
+    }
+}
+.modal__checkbox-mark {
+    width: 1.5rem;
+    height: 1.5rem;
+    display: block;
+    position: absolute;
+    top: .3rem;
+    left: .6rem;
+    cursor: pointer;
+
+    img {
+        width: .8rem;
+        height: .6rem;
+    }
+}
