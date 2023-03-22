@@ -1,0 +1,66 @@
+.intro {
+}
+.intro__container {
+}
+.intro__content {
+    max-width: 88.2rem;
+}
+.intro__title {
+    font-weight: 900;
+    font-size: 5.5rem;
+    line-height: 135%;
+    text-transform: uppercase;
+    color: $white;
+
+    max-width: 71.1rem;
+
+    span {
+        background-color: $red;
+        padding: 0 1.9rem;
+    }
+}
+.intro__text {
+    margin: 2.5rem 0 4.5rem;
+    max-width: 67.2rem;
+}
+.intro__buttons {
+    display: flex;
+}
+.intro__button {
+    margin-right: 3.5rem;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+.btn {
+}
+.btn--red {
+}
+.intro__preview {
+}
+
+.intro__road {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -2;
+}
+
+.intro__car {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%, 50%);
+    transition: all .5s linear;
+
+    &._active {
+        transform: translateX(0);
+    }
+}
+
+.intro__decor {
+    position: absolute;
+    top: 10.4rem;
+    right: -7.4rem;
+}
