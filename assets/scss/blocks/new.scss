@@ -1,0 +1,134 @@
+.new {
+    border-top: 0.5px solid $black;
+    border-bottom: 0.5px solid $black;
+    padding: 2.3rem 0;
+
+    margin-bottom: 3.8rem;
+
+    @media (max-width: $tablet) {
+        border: 0;
+
+    }
+}
+.new__container {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &:before,
+    &:after {
+        content: "";
+        width: 0.1rem;
+        height: 130%;
+        background-color: $black;
+
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &:before {
+        left: .2rem;
+    }
+
+    &:after {
+        right: .3rem;
+    }
+
+    @media (max-width: $tablet) {
+        flex-direction: column;
+
+        &:before,
+        &:after {
+            display: none;
+        }
+    }
+}
+.new__photos {
+    display: flex;
+    align-items: center;
+    width: 50%;
+
+    @media (max-width: $tablet) {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 5.6rem;
+    }
+}
+.new__photo-preview {
+    position: relative;
+    img {
+        width: 100%;
+    }
+}
+.new__photo-book {
+    img {
+        width: 100%;
+    }
+}
+.new__content {
+    width: 50%;
+    margin-left: 1rem;
+
+    @media (max-width: $tablet) {
+        margin-left: 0;
+        margin-top: 5.6rem;
+        width: 100%;
+    }
+}
+.new__content-body {
+    max-width: 70rem;
+    margin: auto;
+    position: relative;
+}
+.new__text {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 800;
+    font-size: 3rem;
+    line-height: 133%;
+    text-transform: uppercase;
+    color: #000000;
+
+    @media (max-width: $dekstop) {
+        font-size: 2.5rem;
+    }
+
+    @media (max-width: $tablet) {
+        font-size: 1.8rem;
+    }
+}
+.new__decors {
+}
+.new__decor-1 {
+    top: -2.6rem;
+    left: 0;
+    position: absolute;
+}
+.new__decor-2 {
+    top: -6rem;
+    right: 8.3rem;
+    position: absolute;
+}
+.new__decor-3 {
+    position: absolute;
+    right: 0;
+    top: -1rem;
+}
+.new__decor-4 {
+    position: absolute;
+    right: 10.7rem;
+    bottom: -3.7rem;
+
+    @media (max-width: $tablet) {
+        right: 40rem;
+    }
+}
+.new__decor-5 {
+    position: absolute;
+    right: 23.8rem;
+    bottom: -6rem;
+
+    @media (max-width: $tablet) {
+        bottom: -3rem;
+    }
+}

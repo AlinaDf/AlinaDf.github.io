@@ -1,0 +1,18 @@
+.swiper-button-prev {
+    &::after {
+        display: none;
+    }
+
+    @media (max-width: $mobile) {
+        top: 12rem;
+    }
+}
+.swiper-button-next {
+    &::after {
+        display: none;
+    }
+
+    @media (max-width: $mobile) {
+        top: 12rem;
+    }
+}

@@ -1,0 +1,62 @@
+.button {
+    display: flex;
+    align-items: center;
+}
+.btn {
+    font-family: 'Courier New';
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: calc(23 / 20);
+    color: $black;
+    border: 1px solid $black;
+
+    min-height: 3.8rem;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    cursor: pointer;
+
+    svg {
+        width: 2.1rem;
+        height: 1.9rem;
+        stroke: $black;
+    }
+
+    &:first-child {
+        width: 100%;
+        max-width: 17.6rem;
+        position: relative;
+        border-right: 0;
+
+        &:before {
+            content: "";
+            width: 0.1rem;
+            height: 130%;
+            background-color: $black;
+
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 0;
+        }
+    }
+
+    &:last-child {
+        width: 100%;
+        max-width: 6.4rem;
+        border-left: 0;
+    }
+
+    &:hover {
+        background-color: $green-light;
+        color: $white;
+        border: 1px solid $green-light;
+
+        svg {
+            stroke: $white;
+        }
+    }
+}

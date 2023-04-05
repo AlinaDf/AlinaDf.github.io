@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/scss/style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+</head>
+<body>
+
+    <svg style="display: none">
+        <symbol id="search" viewBox="0 0 35 30">
+            <path d="M34.2999 11C33.2999 7.2 30.7999 4 27.2999 2C23.8999 0 19.8999 -0.5 15.9999 0.5C12.1999 1.5 8.99995 4 6.99995 7.5C4.99995 11 4.49995 15 5.59995 18.8C5.89995 19.7 6.19995 20.7 6.59995 21.5L0.899948 25.3C-5.14984e-05 26 -0.300052 27.2 0.299948 28.1C0.699948 28.7 1.29995 29 1.89995 29C2.29995 29 2.59995 28.9 2.99995 28.7L8.79995 24.9C9.89995 26.1 11.0999 27.2 12.5999 28C14.8999 29.3 17.4999 30 19.9999 30C25.1999 30 30.1999 27.3 32.9999 22.5C34.8999 18.9 35.3999 14.8 34.2999 11ZM29.5999 20.4C26.5999 25.7 19.7999 27.6 14.4999 24.5C11.8999 23 10.0999 20.7 9.29995 17.8C8.49995 15 8.89995 12 10.2999 9.4C11.7999 6.9 14.1999 5 16.9999 4.2C17.9999 4 18.9999 3.8 19.9999 3.8C21.8999 3.8 23.7999 4.3 25.4999 5.3C28.0999 6.8 29.9 9.1 30.6999 12C31.4999 14.9 30.9999 17.8 29.5999 20.4Z"/>
+        </symbol>
+        <symbol viewBox="0 0 33 29" id="heart">
+            <path d="M24.6607 0C23.1119 0 21.6823 0.364017 20.491 1.09205C18.5848 2.1841 17.1552 4.12552 16.5596 6.30962C15.9639 4.00418 14.5343 2.1841 12.6282 1.09205C11.3177 0.364017 9.88809 0 8.45848 0C3.81227 0 0 3.88284 0 8.61506C0 10.1925 0.357401 11.6485 1.0722 12.8619C1.0722 12.9833 2.1444 14.318 3.45487 15.7741C6.90975 19.6569 14.1769 26.6946 16.2022 28.7573C16.3213 28.8787 16.4404 29 16.4404 29C16.5596 28.8787 16.5596 28.8787 16.6787 28.7573C18.704 26.8159 25.9711 19.6569 29.426 15.7741C30.7365 14.318 31.8087 12.9833 31.8087 12.8619C32.5235 11.6485 32.8809 10.1925 32.8809 8.61506C33 3.88284 29.3069 0 24.6607 0Z"/>
+        </symbol>
+        <symbol viewBox="0 0 33 33" id="profile">
+            <g clip-path="url(#clip0_118_231)">
+                <path d="M31.9963 16.4373C31.9963 7.90496 25.0952 1.00381 16.5628 1.00381C8.03052 1.00381 1.00391 7.90496 1.00391 16.4373C1.00391 21.0799 3.13699 25.346 6.39934 28.232C6.39934 28.1065 6.39934 27.981 6.39934 27.8555C6.39934 24.7186 8.156 21.8327 10.6655 20.2015C12.1712 21.5818 14.1788 22.3346 16.4374 22.3346C18.6959 22.3346 20.7035 21.5818 22.2092 20.2015C24.8442 21.9582 26.4754 24.7186 26.4754 27.8555C26.4754 27.981 26.4754 28.1065 26.4754 28.232C29.8632 25.346 31.9963 21.2053 31.9963 16.4373Z"/>
+                <path d="M16.4373 20.2015C20.1794 20.2015 23.213 17.168 23.213 13.4259C23.213 9.68378 20.1794 6.65021 16.4373 6.65021C12.6952 6.65021 9.66162 9.68378 9.66162 13.4259C9.66162 17.168 12.6952 20.2015 16.4373 20.2015Z" fill="white"/>
+                <path d="M22.2093 20.2015C20.7036 21.5818 18.696 22.3346 16.4374 22.3346C14.1789 22.3346 12.1713 21.5818 10.6656 20.2015C8.03059 21.9582 6.39941 24.7186 6.39941 27.8555C6.39941 27.981 6.39941 28.1065 6.39941 28.232C9.15987 30.4905 12.6732 31.9962 16.4374 31.9962C20.2017 31.9962 23.8405 30.616 26.4755 28.232C26.4755 28.1065 26.4755 27.981 26.4755 27.8555C26.6009 24.7186 24.8443 21.8327 22.2093 20.2015Z" fill="white"/>
+                <path d="M16.4374 31.8707C24.961 31.8707 31.8708 24.9609 31.8708 16.4373C31.8708 7.91361 24.961 1.00381 16.4374 1.00381C7.9137 1.00381 1.00391 7.91361 1.00391 16.4373C1.00391 24.9609 7.9137 31.8707 16.4374 31.8707Z" stroke-width="1.618" stroke-miterlimit="10" fill="none"/>
+                </g>
+        </symbol>
+        <symbol id="busket" viewBox="0 0 38 34">
+            <path d="M13.8296 27.6803C12.0853 27.6803 10.7148 29.0706 10.7148 30.8401C10.7148 32.6097 12.0853 34 13.8296 34C15.5739 34 16.9444 32.6097 16.9444 30.8401C16.9444 29.0706 15.4493 27.6803 13.8296 27.6803Z"/>
+            <path d="M28.7803 27.6803C27.036 27.6803 25.6655 29.0706 25.6655 30.8401C25.6655 32.6097 27.036 34 28.7803 34C30.5245 34 31.895 32.6097 31.895 30.8401C31.895 29.0706 30.5245 27.6803 28.7803 27.6803Z"/>
+            <path d="M11.0886 11.6283L17.9411 22.7509L25.7903 17.8216L18.9378 6.69888L11.0886 11.6283ZM20.0591 10.6171L13.9542 14.4089L13.0821 12.8922L19.187 9.10037L20.0591 10.6171Z"/>
+            <path d="M31.3967 15.0409C28.5312 15.0409 26.0393 13.6505 24.6689 11.3755H23.423L26.9115 17.0632C27.0361 17.316 27.1607 17.6952 27.0361 18.0743C26.9115 18.4535 26.7869 18.7063 26.4131 18.9591L18.5639 23.8885C18.3148 24.0149 18.0656 24.1413 17.8164 24.1413C17.6918 24.1413 17.5672 24.1413 17.5672 24.1413C17.1934 24.0149 16.9443 23.8885 16.6951 23.5093L9.84262 12.3866C9.71803 12.1338 9.71803 11.7546 9.71803 11.3755L8.09836 6.57248C7.84918 5.81412 7.22623 5.43494 6.47869 5.43494H1.61967C0.747541 5.43494 0 6.1933 0 7.07806C0 7.96282 0.747541 8.72118 1.61967 8.72118H5.23279L6.60328 13.0186L9.21967 23.5093C9.59344 24.8996 10.7148 25.9108 12.2098 25.9108H30.2754C31.7705 25.9108 33.0164 24.8996 33.2656 23.5093L35.0098 15.1673C35.1344 14.7881 35.1344 14.5353 35.0098 14.1561C34.0131 14.6617 32.7672 15.0409 31.3967 15.0409Z"/>
+        </symbol>
+        <symbol id="heartSlider" viewBox="0 0 21 19">
+            <path d="M18.3922 10.021C16.3614 12.4489 12.0259 16.7805 10.4993 18.2883C8.98268 16.7842 4.70837 12.4477 2.60035 10.0144L2.60035 10.0144L2.59849 10.0122C2.18179 9.53671 1.80399 9.08212 1.53191 8.7386C1.39536 8.56621 1.28852 8.42567 1.21755 8.32629C1.19827 8.29931 1.18299 8.27722 1.17121 8.25969L1.13307 8.18655C0.709171 7.37357 0.5 6.57074 0.5 5.61181C0.5 2.7399 2.67285 0.5 5.3645 0.5C6.27251 0.5 7.02235 0.716974 7.70431 1.14501L7.71037 1.14882L7.71655 1.15245C8.81765 1.80038 9.66279 2.9675 10.0158 4.2971L10.4991 6.11701L10.9824 4.2971C11.3351 2.96864 12.1791 1.80237 13.2788 1.15411C14.0497 0.71483 14.807 0.5 15.7103 0.5C18.4037 0.5 20.5685 2.73918 20.4983 5.59956L20.4982 5.59956V5.61181C20.4982 6.56483 20.2916 7.42451 19.896 8.1314C19.8815 8.14944 19.8685 8.16652 19.8588 8.17921L19.858 8.18022C19.8303 8.21652 19.795 8.26364 19.7547 8.31762L19.7362 8.34233C19.6569 8.44853 19.5547 8.58524 19.4323 8.74531C19.168 9.0909 18.8114 9.54247 18.3997 10.0122L18.3996 10.0122L18.3922 10.021Z" fill="none"/>
+        </symbol>
+    </svg>
+
+    <div class="wrapper">
+            <header class="header">
+                <div class="header__container">
+                    <div class="header__body">
+                        <div class="header__main">
+                            <div class="header__logo">
+                                <img src="assets/img/header/logo.svg" alt="cover">
+                            </div>
+                            <div class="header__search">
+                                <div class="header__search-input">
+                                    <input type="search" placeholder="Искать...">
+                                </div>
+                                <button class="header__search-button">
+                                    <svg>
+                                        <use xlink:href="#search"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="header__right">
+                            <div class="header__note">
+                                <a href="#" class="header__note-item">
+                                    <div class="header__note-text">EUR</div>
+                                    <div class="header__note-arrow">
+                                        <img src="assets/img/header/arrow.svg" alt="cover">
+                                    </div>
+                                </a>
+                                <a href="#" class="header__note-item">
+                                    <div class="header__note-text">HUF</div>
+                                    <div class="header__note-arrow">
+                                        <img src="assets/img/header/arrow.svg" alt="cover">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="header__icons">
+                                <a href="#" class="header__icon">
+                                    <svg>
+                                        <use xlink:href="#heart"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="header__icon">
+                                    <svg>
+                                        <use xlink:href="#profile"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="header__icon">
+                                    <svg>
+                                        <use xlink:href="#busket"></use>
+                                    </svg>
+                                    <div class="header__icon-count">5</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li><a href="" class="header__link">Новинки</a></li>
+                        <li><a href="" class="header__link">Книги</a></li>
+                        <li><a href="" class="header__link">Игры</a></li>
+                        <li><a href="" class="header__link">Sale</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main class="main">
+                <div class="intro">
+                    <div class="intro__container">
+                        <div class="intro__photo">
+                            <img src="assets/img/intro/kids.svg" alt="cover">
+                        </div>
+                        <div class="intro__text">
+                            <img src="assets/img/intro/text.svg" alt="cover">
+                        </div>
+                    </div>
+                </div>
+                <div class="new">
+                    <div class="new__container">
+                        <div class="new__photos">
+                            <div class="new__photo-preview">
+                                <img src="assets/img/intro/preview.svg" alt="cover">
+                            </div>
+                            <div class="new__photo-book">
+                                <img src="assets/img/intro/photo.webp" alt="cover">
+                            </div>
+                        </div>
+                        <div class="new__content">
+                            <div class="new__content-body">
+                                <div class="new__text">— Дети должны быть очень
+                                    снисходительными к взрослым</div>
+                                <div class="new__decors">
+                                    <div class="new__decor-1">
+                                        <img src="assets/img/intro/decor-1.svg" alt="cover">
+                                    </div>
+                                    <div class="new__decor-2">
+                                        <img src="assets/img/intro/decor-2.svg" alt="cover">
+                                    </div>
+                                    <div class="new__decor-3">
+                                        <img src="assets/img/intro/decor-3.svg" alt="cover">
+                                    </div>
+                                    <div class="new__decor-4">
+                                        <img src="assets/img/intro/decor-4.svg" alt="cover">
+                                    </div>
+                                    <div class="new__decor-5">
+                                        <img src="assets/img/intro/decor-5.svg" alt="cover">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="slider__container">
+                        <div class="swiper">
+                            <div class="slider__inner swiper-wrapper">
+                                <div class="slider__col swiper-slide">
+                                    <div class="slider__item">
+                                        <div class="slider__photo">
+                                            <img src="assets/img/slider/photo-1.webp" alt="cover">
+                                        </div>
+                                        <div class="slider__text">Когда я выросту, 
+                                            я буду Дедом Морозом </div>
+                                        <div class="slider__author">Грегуар Золотарефф</div>
+                                        <div class="slider__cost">$45</div>
+                                        <div class="slider__button button">
+                                            <button class="btn">Купить</button>
+                                            <button class="btn">
+                                                <svg>
+                                                    <use xlink:href="#heartSlider"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="slider__decor">
+                                            <img src="assets/img/slider/decor.svg" alt="cover">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider__col swiper-slide">
+                                    <div class="slider__item">
+                                        <div class="slider__photo">
+                                            <img src="assets/img/slider/photo-2.webp" alt="cover">
+                                        </div>
+                                        <div class="slider__text">Когда я выросту, 
+                                            я буду Дедом Морозом </div>
+                                        <div class="slider__author">Грегуар Золотарефф</div>
+                                        <div class="slider__cost">$45</div>
+                                        <div class="slider__button button">
+                                            <button class="btn">Купить</button>
+                                            <button class="btn">
+                                                <svg>
+                                                    <use xlink:href="#heartSlider"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="slider__decor">
+                                            <img src="assets/img/slider/decor.svg" alt="cover">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider__col swiper-slide">
+                                    <div class="slider__item">
+                                        <div class="slider__photo">
+                                            <img src="assets/img/slider/photo-3.webp" alt="cover">
+                                        </div>
+                                        <div class="slider__text">Когда я выросту, 
+                                            я буду Дедом Морозом </div>
+                                        <div class="slider__author">Грегуар Золотарефф</div>
+                                        <div class="slider__cost">$45</div>
+                                        <div class="slider__button button">
+                                            <button class="btn">Купить</button>
+                                            <button class="btn">
+                                                <svg>
+                                                    <use xlink:href="#heartSlider"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="slider__decor">
+                                            <img src="assets/img/slider/decor.svg" alt="cover">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider__col swiper-slide">
+                                    <div class="slider__item">
+                                        <div class="slider__photo">
+                                            <img src="assets/img/slider/photo-4.webp" alt="cover">
+                                        </div>
+                                        <div class="slider__text">Когда я выросту, 
+                                            я буду Дедом Морозом </div>
+                                        <div class="slider__author">Грегуар Золотарефф</div>
+                                        <div class="slider__cost">$45</div>
+                                        <div class="slider__button button">
+                                            <button class="btn">Купить</button>
+                                            <button class="btn">
+                                                <svg>
+                                                    <use xlink:href="#heartSlider"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="slider__decor">
+                                            <img src="assets/img/slider/decor.svg" alt="cover">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider__col swiper-slide">
+                                    <div class="slider__item">
+                                        <div class="slider__photo">
+                                            <img src="assets/img/slider/photo-1.webp" alt="cover">
+                                        </div>
+                                        <div class="slider__text">Когда я выросту, 
+                                            я буду Дедом Морозом </div>
+                                        <div class="slider__author">Грегуар Золотарефф</div>
+                                        <div class="slider__cost">$45</div>
+                                        <div class="slider__button button">
+                                            <button class="btn">Купить</button>
+                                            <button class="btn">
+                                                <svg>
+                                                    <use xlink:href="#heartSlider"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="slider__decor">
+                                            <img src="assets/img/slider/decor.svg" alt="cover">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider__col swiper-slide">
+                                    <div class="slider__item">
+                                        <div class="slider__photo">
+                                            <img src="assets/img/slider/photo-2.webp" alt="cover">
+                                        </div>
+                                        <div class="slider__text">Когда я выросту, 
+                                            я буду Дедом Морозом </div>
+                                        <div class="slider__author">Грегуар Золотарефф</div>
+                                        <div class="slider__cost">$45</div>
+                                        <div class="slider__button button">
+                                            <button class="btn">Купить</button>
+                                            <button class="btn">
+                                                <svg>
+                                                    <use xlink:href="#heartSlider"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="slider__decor">
+                                            <img src="assets/img/slider/decor.svg" alt="cover">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider__col swiper-slide">
+                                    <div class="slider__item">
+                                        <div class="slider__photo">
+                                            <img src="assets/img/slider/photo-3.webp" alt="cover">
+                                        </div>
+                                        <div class="slider__text">Когда я выросту, 
+                                            я буду Дедом Морозом </div>
+                                        <div class="slider__author">Грегуар Золотарефф</div>
+                                        <div class="slider__cost">$45</div>
+                                        <div class="slider__button button">
+                                            <button class="btn">Купить</button>
+                                            <button class="btn">
+                                                <svg>
+                                                    <use xlink:href="#heartSlider"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="slider__decor">
+                                            <img src="assets/img/slider/decor.svg" alt="cover">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider__col swiper-slide">
+                                    <div class="slider__item">
+                                        <div class="slider__photo">
+                                            <img src="assets/img/slider/photo-4.webp" alt="cover">
+                                        </div>
+                                        <div class="slider__text">Когда я выросту, 
+                                            я буду Дедом Морозом </div>
+                                        <div class="slider__author">Грегуар Золотарефф</div>
+                                        <div class="slider__cost">$45</div>
+                                        <div class="slider__button button">
+                                            <button class="btn">Купить</button>
+                                            <button class="btn">
+                                                <svg>
+                                                    <use xlink:href="#heartSlider"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="slider__decor">
+                                            <img src="assets/img/slider/decor.svg" alt="cover">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev">
+                                <img src="assets/img/slider/arrow-left.svg" alt="cover">
+                            </div>
+                            <div class="swiper-button-next">
+                                <img src="assets/img/slider/arrow-right.svg" alt="cover">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer class="footer"></footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
