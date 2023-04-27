@@ -1,0 +1,240 @@
+*,*:before,*:after {box-sizing: border-box;} 
+.info {
+}
+.info__body {
+    max-width: 900px;
+    width: 100%;
+    background: #BDE6E1;
+    border-radius: 20px;
+    padding: 30px 50px 10px;
+}
+.info__title {
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 133%;
+    color: #5A5E71;
+}
+.info__inner {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px -10px 0;
+}
+.info__col {
+    flex: 0 1 50%;
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+.info__item {
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+    padding: 20px 15px;
+    width: 100%;
+    height: 100%;
+}
+.info__icon {
+}
+.info__text {
+    font-family: 'Verdana', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: calc(18 / 15);
+    
+    color: #5A5E71;
+    margin-top: 10px;
+}
+
+.discount {
+    width: 100%;
+    max-width: 1000px;
+
+    background: #FFFFFF;
+    box-shadow: inset 4px 4px 24px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+
+    position: relative;
+    overflow: hidden;
+
+    margin-top: 30px;
+}
+.discount__body {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.discount__content {
+    padding: 30px 0 30px 60px;
+    position: relative;
+    z-index: 2;
+}
+.discount__title {
+    font-family: 'Arial', sans-serif;
+    font-weight: 700;
+    font-size: 3.75vw;
+    line-height: calc(52 / 45);
+    text-transform: uppercase;
+    color: #787C8E;
+
+    display: flex;
+    align-items: flex-end;
+}
+.discount__title span {
+    font-family: 'Verdana', sans-serif;
+    font-weight: 400;
+    font-size: 1.25vw;
+    color: #787C8E;
+
+    margin-left: 30px;
+    margin-bottom: 8px;
+}
+.discount__text {
+    font-family: 'Verdana', sans-serif;
+    font-weight: 400;
+    font-size: 1.3vw;
+    line-height: calc(19 / 16);
+    color: #787C8E;
+
+    margin-top: 20px;
+}
+.discount__btn {
+    margin-top: 50px;
+
+    background: #787C8E;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+    min-height: 54px;
+
+    font-family: 'Verdana', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: calc(18 / 15);
+    color: #FFFFFF;
+
+    display: flex;
+    align-items: center;
+
+    cursor: pointer;
+    outline: 0;
+    border: 0;
+    padding: 0 20px;
+    transition: all .2s linear;
+}
+.discount__btn:hover {
+    background: #5d606d;
+}
+.discount__btn-icon {
+    margin-right: 12px;
+}
+.discount__btn-text {
+}
+.discount__photo {
+    position: relative;
+    z-index: 2;
+}
+.discount__photo-heart {
+    width: 100%;
+    max-width: 233px;
+    margin-left: 32px;
+}
+.discount__photo-heart img {
+    width: 100%;
+}
+.discount__photo-decor {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+@media (min-width: 1280px) {
+    .discount__title {
+        font-size: 45px;
+    }
+
+    .discount__title span {
+        font-size: 15px;
+    }
+
+    .discount__text {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 769px) {
+    .info__body {
+        padding: 20px 20px 0;
+    }
+    .info__title {
+        font-size: 25px;
+    }
+
+    .info__inner {
+        margin: 20px 0 0;
+    }
+
+    .info__col {
+        flex: 1 1 100%;
+        padding: 0;
+    }
+
+    .info__text {
+        font-size: 11px;
+    }
+
+    .discount__title {
+        font-size: 30px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .discount__body {
+        justify-content: space-between;
+    }
+
+    .discount__content {
+        padding: 20px 0 23px 20px;
+    }
+
+    .discount__title span {
+        font-size: 11px;
+        margin: 0;
+        display: block;
+        margin-top: 10px;
+    }
+
+    .discount__text {
+        font-size: 11px;
+        margin-top: 10px;
+    }
+
+    .discount__btn {
+        margin-top: 20px;
+    }
+
+    .discount__photo {
+        padding-right: 12px;
+    }
+
+    .discount__photo-heart {
+        max-width: 92px;
+        margin-left: 0;
+    }
+
+    .discount__btn {
+        font-size: 11px;
+        min-height: 40px;
+        padding: 0 15px;
+    }
+
+    .discount__btn-icon {
+        width: 18px;
+    }
+
+    .discount__btn-icon img {
+        width: 100%;
+    }
+}
