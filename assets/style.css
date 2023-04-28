@@ -1,0 +1,187 @@
+*,*:before,*:after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+table {
+    width: 100%;
+    max-width: 1200px;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+tbody {
+    vertical-align: top;
+} 
+
+td {
+    border-right: 3px solid #fff;
+}
+
+th {
+    padding-bottom: 16px;
+}
+
+.table__head {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: calc(24 / 20);
+    text-transform: uppercase;
+    color: #000000;
+    vertical-align: middle;
+}
+
+.table__top {
+    display: flex;
+}
+
+.table__kind {
+    margin-right: 11px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: calc(24 / 20);
+    text-transform: uppercase;
+
+    display: flex;
+    align-items: center;
+}
+
+.table__kind::before {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.table__kind:first-child {
+    color: #61977C;
+}
+
+.table__kind:first-child:before {
+    background-color: #61977C;
+}
+
+.table__kind:nth-child(2) {
+    color: #917791;
+}
+
+.table__kind:nth-child(2):before {
+    background-color: #917791;
+}
+
+.table__kind:nth-child(3) {
+    color: #CB619D;
+}
+
+.table__kind:nth-child(3):before {
+    background-color: #CB619D;
+}
+
+.table__kind:nth-child(4) {
+    color: #603311;
+}
+
+.table__kind:nth-child(4):before {
+    background-color: #603311;
+}
+
+.table__timetable {
+    display: flex;
+    border: 3px solid #012E60;
+}
+
+.table__content {
+    padding-left: 11px;
+}
+
+.table__time {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: calc(29 / 24);
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    background: #012E60;
+    padding: 0 6px 0 14px;
+}
+
+.table__date {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: calc(29 / 24);
+    text-transform: uppercase;
+    color: #012E60;
+
+    padding: 0 0 0 5px;
+}
+
+.table__main {
+}
+
+.table__block {
+    max-width: 672px;
+}
+
+.table__block-top {
+    display: flex;
+}
+
+.table__icon {
+    margin: 0 5px;
+}
+.table__clock {
+    margin-right: 11px;
+}
+.table__message {
+    margin-right: 9px;
+}
+.table__block {
+    margin-top: 8px;
+}
+.table__text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: calc(24 / 20);
+    color: #000000;
+}
+
+.table__bold {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: calc(39 / 32);
+    color: #FFFFFF;
+}
+
+.table__thin {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: calc(29 / 24);
+    color: #FFFFFF;
+    
+}
+
+.table__item {
+    border-right: 3px solid #FFFFFF;
+}
+
+.table__pirple {
+    background: rgba(145, 119, 145, 0.8);
+}
+
+.table__green {
+    background: #61977C;
+}
+
+.table__info {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: calc(29 / 24);
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
