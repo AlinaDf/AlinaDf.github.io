@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/scss/style.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+            <header class="header">
+                <div class="header__container">
+                    <a href="#" class="header__logo">
+                        <picture>
+                            <source srcset="assets/img/header/logo.webp" type="img/webp">
+                            <img src="assets/img/header/logo.png" alt="cover" loading="lazy">
+                        </picture>
+                    </a>
+                    <ul class="header__list">
+                        <li><a href="#" class="header__link">УСЛУГИ</a></li>
+                        <li><a href="#" class="header__link">О КОМПАНИИ</a></li>
+                        <li><a href="#" class="header__link">ГДЕ МЫ НАХОДИМСЯ?</a></li>
+                    </ul>
+                    <div class="header__contacts">
+                        <div class="header__phone">+7 (0000) 00-00-00</div>
+                        <div class="header__place">
+                            <div class="header__place-icon">
+                                <img src="assets/img/header/map.svg" alt="cover">
+                            </div>
+                            <div class="header__place-text">Чебоксары</div>
+                        </div>
+                    </div>
+                    <div class="header__btn">
+                        <button class="btn btn--orange" data-modal="#modal">Свяжитесь со мной</button>
+                    </div>
+                </div>
+            </header>
+            <main class="main">
+                <section class="intro">
+                    <div class="intro__body">
+                        <div class="intro__container">
+                            <div class="intro__slider active">
+                                <div class="intro__content">
+                                    <h1 class="intro__title">Узнайте стоимость КАСКО онлайн</h1>
+                                    <div class="intro__text">Рассчитаем стоимость вашего полиса за 5 минут не выходя из дома.</div>
+                                    <div class="intro__btn">
+                                        <button class="btn btn--orange">Рассчитать и оформить</button>
+                                    </div>
+                                </div>
+                                <div class="intro__photo">
+                                    <picture>
+                                        <source srcset="assets/img/intro/men.webp" type="img/webp">
+                                        <img src="assets/img/intro/men.png" alt="cover" loading="lazy">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="intro__slider">
+                                <div class="intro__content">
+                                    <h2 class="intro__title">Оформите ОСАГО без визита в офис</h2>
+                                    <div class="intro__text">Узнаем стоимость вашего ОСАГО в 10 банках и предложим вам самый выгодный вариант</div>
+                                    <div class="intro__btn">
+                                        <button class="btn btn--orange">Рассчитать и оформить</button>
+                                    </div>
+                                </div>
+                                <div class="intro__photo">
+                                    <picture>
+                                        <source srcset="assets/img/intro/car.webp" type="img/webp">
+                                        <img src="assets/img/intro/car.png" alt="cover" loading="lazy">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="intro__slider">
+                                <div class="intro__content">
+                                    <h1 class="intro__title">Узнайте стоимость КАСКО онлайн</h1>
+                                    <div class="intro__text">Рассчитаем стоимость вашего полиса за 5 минут не выходя из дома.</div>
+                                    <div class="intro__btn">
+                                        <button class="btn btn--orange">Рассчитать и оформить</button>
+                                    </div>
+                                </div>
+                                <div class="intro__photo">
+                                    <picture>
+                                        <source srcset="assets/img/intro/children.webp" type="img/webp">
+                                        <img src="assets/img/intro/children.png" alt="cover" loading="lazy">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="intro__slider">
+                                <div class="intro__content">
+                                    <h1 class="intro__title">Узнайте стоимость КАСКО онлайн</h1>
+                                    <div class="intro__text">Рассчитаем стоимость вашего полиса за 5 минут не выходя из дома.</div>
+                                    <div class="intro__btn">
+                                        <button class="btn btn--orange">Рассчитать и оформить</button>
+                                    </div>
+                                </div>
+                                <div class="intro__photo">
+                                    <picture>
+                                        <source srcset="assets/img/intro/house.webp" type="img/webp">
+                                        <img src="assets/img/intro/house.png" alt="cover" loading="lazy">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="intro__slider">
+                                <div class="intro__content">
+                                    <h1 class="intro__title">Узнайте стоимость КАСКО онлайн</h1>
+                                    <div class="intro__text">Рассчитаем стоимость вашего полиса за 5 минут не выходя из дома.</div>
+                                    <div class="intro__btn">
+                                        <button class="btn btn--orange">Рассчитать и оформить</button>
+                                    </div>
+                                </div>
+                                <div class="intro__photo">
+                                    <picture>
+                                        <source srcset="assets/img/intro/family.webp" type="img/webp">
+                                        <img src="assets/img/intro/family.png" alt="cover" loading="lazy">
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="intro__container">
+                        <div class="intro__dots">
+                            <div class="intro__dot active">
+                                <div class="intro__item">
+                                    <div class="intro__dot-text">ОСАГО</div>
+                                    <div class="intro__dot-icon">
+                                        <img src="assets/img/intro/car.svg" alt="cover">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="intro__dot">
+                                <div class="intro__item">
+                                    <div class="intro__dot-text">КАСКО</div>
+                                    <div class="intro__dot-icon">
+                                        <img src="assets/img/intro/kasko.svg" alt="cover">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="intro__dot">
+                                <div class="intro__item">
+                                    <div class="intro__dot-text">Ипотека</div>
+                                    <div class="intro__dot-icon">
+                                        <img src="assets/img/intro/home.svg" alt="cover">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="intro__dot">
+                                <div class="intro__item">
+                                    <div class="intro__dot-text">Недвижимость</div>
+                                    <div class="intro__dot-icon">
+                                        <img src="assets/img/intro/bildings.svg" alt="cover">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="intro__dot">
+                                <div class="intro__item">
+                                    <div class="intro__dot-text">Жизнь</div>
+                                    <div class="intro__dot-icon">
+                                        <img src="assets/img/intro/life.svg" alt="cover">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- <section class="service">
+                    <div class="service__container">
+                        <h2 class="service__title title-block">Какая услуга Вас интересует?</h2>
+                        <div class="service__inner">
+                            <div class="service__col">
+                                <div class="service__item">
+                                    <div class="service__item-content">
+                                        <div class="service__item-title">ОСАГО</div>
+                                        <div class="service__item-text">Обязательное страхование гражданской ответственности владельцев транспортных средств</div>
+                                        <div class="service__item-btn">
+                                            <button class="btn btn--white">Рассчитать и оформить</button>
+                                        </div>
+                                    </div>
+                                    <div class="service__item-photo">
+                                        <picture>
+                                            <source srcset="assets/img/service/osago.webp" type="img/webp">
+                                            <img src="assets/img/service/osago.png" alt="cover" loading="lazy">
+                                        </picture>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="service__col">
+                                <div class="service__item">
+                                    <div class="service__item-content">
+                                        <div class="service__item-title">КАСКО</div>
+                                        <div class="service__item-text">Страхование транспортного средства от ущерба, хищения или угона</div>
+                                        <div class="service__item-btn">
+                                            <button class="btn btn--white">Рассчитать и оформить</button>
+                                        </div>
+                                    </div>
+                                    <div class="service__item-photo">
+                                        <picture>
+                                            <source srcset="assets/img/service/kasko.webp" type="img/webp">
+                                            <img src="assets/img/service/kasko.png" alt="cover" loading="lazy">
+                                        </picture>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="service__col">
+                                <div class="service__item">
+                                    <div class="service__item-content">
+                                        <div class="service__item-title">Ипотека</div>
+                                        <div class="service__item-text">Защита имущества, жизни и титула в рамках ипотечного страхования</div>
+                                        <div class="service__item-btn">
+                                            <button class="btn btn--white">Рассчитать и оформить</button>
+                                        </div>
+                                    </div>
+                                    <div class="service__item-photo">
+                                        <picture>
+                                            <source srcset="assets/img/service/ipoteka.webp" type="img/webp">
+                                            <img src="assets/img/service/ipoteka.png" alt="cover" loading="lazy">
+                                        </picture>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="service__col">
+                                <div class="service__item">
+                                    <div class="service__item-content">
+                                        <div class="service__item-title">Недвижимость</div>
+                                        <div class="service__item-text">Страхование вашей недвижимости от всех видов рисков</div>
+                                        <div class="service__item-btn">
+                                            <button class="btn btn--white">Рассчитать и оформить</button>
+                                        </div>
+                                    </div>
+                                    <div class="service__item-photo">
+                                        <picture>
+                                            <source srcset="assets/img/service/bildings.webp" type="img/webp">
+                                            <img src="assets/img/service/bildings.png" alt="cover" loading="lazy">
+                                        </picture>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="service__col">
+                                <div class="service__item">
+                                    <div class="service__item-content">
+                                        <div class="service__item-title">Жизнь</div>
+                                        <div class="service__item-text">Страхование жизни и здоровья
+                                            от последствий несчастных случаев</div>
+                                        <div class="service__item-btn">
+                                            <button class="btn btn--white">Рассчитать и оформить</button>
+                                        </div>
+                                    </div>
+                                    <div class="service__item-photo">
+                                        <picture>
+                                            <source srcset="assets/img/service/life.webp" type="img/webp">
+                                            <img src="assets/img/service/life.png" alt="cover" loading="lazy">
+                                        </picture>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="advantages">
+                    <div class="advantages__container">
+                        <h2 class="advantages__title title-block">Наши преимущества</h2>
+                        <div class="advantages__inner">
+                            <div class="advantages__col">
+                                <div class="advantages__item">
+                                    <div class="advantages__icon">
+                                        <div class="advantages__icon-block">
+                                            <img src="assets/img/advantages/evacuator.svg" alt="cover">
+                                        </div>
+                                    </div>
+                                    <div class="advantages__text"><span>Бесплатный</span> аварийный
+                                        комиссар и эвакуатор при оформлении ОСАГО</div>
+                                </div>
+                            </div>
+                            <div class="advantages__col">
+                                <div class="advantages__item">
+                                    <div class="advantages__icon">
+                                        <div class="advantages__icon-block">
+                                            <img src="assets/img/advantages/strahovanie.svg" alt="cover">
+                                        </div>
+                                    </div>
+                                    <div class="advantages__text"><span>Удаленное</span> оформление страхования всех видов</div>
+                                </div>
+                            </div>
+                            <div class="advantages__col">
+                                <div class="advantages__item">
+                                    <div class="advantages__icon">
+                                        <div class="advantages__icon-block">
+                                            <img src="assets/img/advantages/star.svg" alt="cover">
+                                        </div>
+                                    </div>
+                                    <div class="advantages__text">Подберем <span>выгодное предложение</span> по цене и качеству</div>
+                                </div>
+                            </div>
+                            <div class="advantages__col">
+                                <div class="advantages__item">
+                                    <div class="advantages__icon">
+                                        <div class="advantages__icon-block">
+                                            <img src="assets/img/advantages/present.svg" alt="cover">
+                                        </div>
+                                    </div>
+                                    <div class="advantages__text">Нашим клиентам доступным <span>бонусы</span> от наших партнеров</div>
+                                </div>
+                            </div>
+                            <div class="advantages__col">
+                                <div class="advantages__item">
+                                    <div class="advantages__icon">
+                                        <div class="advantages__icon-block">
+                                            <img src="assets/img/advantages/rating.svg" alt="cover">
+                                        </div>
+                                    </div>
+                                    <div class="advantages__text">С нами <span>вы сэкономите до 60%</span> по сравнению
+                                        с банкам</div>
+                                </div>
+                            </div>
+                            <div class="advantages__col">
+                                <div class="advantages__item">
+                                    <div class="advantages__icon">
+                                        <div class="advantages__icon-block">
+                                            <img src="assets/img/advantages/document.svg" alt="cover">
+                                        </div>
+                                    </div>
+                                    <div class="advantages__text">Служба <span>пролонгации</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section> -->
+            </main>
+            <footer class="footer"></footer>
+    </div>
+
+    <div class="modal" id="#modal">
+        <div class="modal__dialog">
+            <div class="modal__close">
+                <img src="assets/img/modal/close.svg" alt="cover">
+            </div>
+            <div class="modal__header">
+                <div class="modal__title">Заполните форму</div>
+                <div class="modal__subtitle">Наш администратор свяжется с вами в ближайшее время!</div>
+            </div>
+            <form action="#" class="modal__form">
+                <div class="modal__form-item">
+                    <input type="text" placeholder="Введите имя">
+                </div>
+                <div class="modal__form-item">
+                    <input type="tel" name="tel" data-validate-field="tel" placeholder="+7 (999) 999-99-99">
+                </div>
+            </form>
+            <div class="modal__politic">Нажимая кнопку “Отправить”, вы соглашаетесь с
+                <a href="#">политикой обработки персональных данных</a></div>
+            <div class="modal__btn">
+                <button class="btn btn--orange">Отправить</button>
+            </div>
+        </div>
+    </div>
+    <div class="modal">
+        <div class="modal__dialog">
+            <div class="modal__close">
+                <img src="assets/img/modal/close.svg" alt="cover">
+            </div>
+            <div class="modal__main">
+                <div class="modal__icon">
+                    <img src="assets/img/modal/mark.svg" alt="cover">
+                </div>
+                <div class="modal__body">
+                    <div class="modal__title">Заполните форму</div>
+                    <div class="modal__subtitle">Наш администратор свяжется с вами в ближайшее время!</div>
+                </div>
+                <div class="modal__btn">
+                    <button class="btn btn--orange">Вернуться на главную</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal">
+        <div class="modal__dialog">
+            <div class="modal__close">
+                <img src="assets/img/modal/close.svg" alt="cover">
+            </div>
+            <div class="modal__main">
+                <div class="modal__icon">
+                    <img src="assets/img/modal/error.svg" alt="cover">
+                </div>
+                <div class="modal__body">
+                    <div class="modal__title">Отправка заявки не удалась!</div>
+                    <div class="modal__subtitle">Попробуйте отправить заявку позднее или позвоните по номеру +7(0000) 00-00-00</div>
+                </div>
+                <div class="modal__btn">
+                    <button class="btn btn--orange">Вернуться на главную</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/inputmask.min.js"></script>
+    <script src="js/script.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,31 @@
+.btn {
+    min-height: 5rem;
+    border-radius: .5rem;
+    
+    font-family: 'Cera Pro', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: calc(20 / 16);
+
+    cursor: pointer;
+    transition: all .2s linear;
+    
+    &--orange {
+        background-color: $orange;
+        color: $white;
+
+        &:hover {
+            background-color: darken($orange, 5%);
+        }
+    }
+
+    &--white {
+        color: $orange;
+        border: .1rem solid $orange;
+
+        &:hover {
+            background-color: $orange;
+            color: $white;
+        }
+    }
+}
