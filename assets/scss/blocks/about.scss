@@ -1,0 +1,57 @@
+.about {
+    margin-top: 4rem;
+}
+.about__container {
+}
+.about__body {
+    display: flex;
+    align-items: center;
+
+    background-color: $secondary;
+    border-radius: 2rem;
+
+    padding: 0 8rem 0 6rem;
+}
+.about__content {
+    width: 50%;
+}
+.about__title {
+    margin-bottom: 3.5rem;
+}
+.title-block {
+}
+.about__text {
+    font-size: 24px;
+    line-height: 135%;
+
+    span {
+        font-weight: 700;
+    }
+    p {
+        margin-bottom: 3.5rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+.about__photo {
+    width: 50%;
+
+    img {
+        width: 100%;
+    }
+}
+
+.about__inner {
+    display: flex;
+    margin-top: 3.5rem;
+}
+.about__item {
+    flex: 0 1 16.666%;
+    text-align: center;
+
+    picture {
+        filter: grayscale(100%); 
+    }
+}

@@ -1,0 +1,109 @@
+.contacts {
+    margin-top: 8rem;
+}
+.contacts__container {
+}
+.contacts__body {
+    display: flex;
+
+    background-color: $secondary;
+    border-radius: 2rem;
+
+    padding: 6rem 2rem 0 6rem;
+}
+.contacts__photo {
+    width: 50%;
+
+    img {
+        width: 100%;
+        max-width: 55.8rem;
+    }
+
+    source {
+        width: 100%;
+        max-width: 55.8rem;
+    }
+}
+.contacts__content {
+    width: 50%;
+}
+.contacts__header {
+    max-width: 51.9rem;
+}
+.contacts__title {
+}
+.title-block {
+}
+.contacts__text {
+    font-size: 1.8rem;
+    line-height: 135%;
+    color: $black;
+
+    margin: .8rem 0 2.5rem;
+}
+.contacts__form {
+    margin-bottom: 2.5rem;
+    max-width: 47.1rem;
+}
+.contacts__form-item {
+    margin-bottom: 2.5rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    label {
+        font-size: 1.6rem;
+        font-family: 'Cera Pro', sans-serif;
+        line-height: 135%;
+        display: block;
+        margin-bottom: 0.8rem;
+    }
+
+    input {
+        min-height: 5rem;
+        width: 100%;
+        background: $white;
+        border: 1px solid #AEAEAE;
+        border-radius: .5rem;
+        display: block;
+
+        font-family: 'Cera Pro', sans-serif;
+        font-size: 1.6rem;
+        line-height: 135%;
+        color: $primary;
+
+        padding: 0 2rem;
+
+        outline: 0;
+
+        &:focus {
+            border: .1rem solid $orange;
+        }
+    }
+}
+.contacts__politic {
+    font-size: 1.6rem;
+    line-height: 135%;
+    color: $primary;
+
+    max-width: 44.1rem;
+
+    a {
+        color: $orange;
+        border-bottom: 1px solid $orange;
+    }
+}
+.contacts__btn {
+    width: 100%;
+    max-width: 25rem;
+    margin-top: 2.5rem;
+
+    button {
+        width: 100%;
+    }
+}
+.btn {
+}
+.btn--orange {
+}
