@@ -1,0 +1,13 @@
+.map {
+    margin-top: 8rem;
+}
+.map__container {
+}
+.map__body {
+    width: 100%;
+    height: 50rem;
+}
+
+[class*="ground-pane"] {
+    -webkit-filter: grayscale(100%);
+}

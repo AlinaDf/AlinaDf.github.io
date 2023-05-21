@@ -1,25 +1,45 @@
 .news {
     margin-top: 8rem;
+
+    @media (max-width: $mobile) {
+        margin-top: 4rem;
+    }
 }
 .news__container {
+    max-width: 135rem;
+    position: relative;
 }
 .news__title {
     margin-bottom: 3.5rem;
+    margin-left: 2rem;
+
+    @media (max-width: $mobile) {
+        margin-bottom: 1.8rem;
+    }
 }
 .title-block {
 }
 .news__inner {
     display: flex;
-    margin: 0 -2rem;
 }
 .news__col {
     flex: 0 1 33.333%;
     padding: 0 2rem;
+
+    @media (max-width: $mobile) {
+        flex: 0 1 80%;
+
+        padding: 0 .9rem;
+    }
 }
 .news__item {
     background-color: $secondary;
     border-radius: 2rem;
     padding: 3.5rem;
+
+    @media (max-width: $mobile) {
+        padding: 2.5rem;
+    }
 }
 .news__photo {
     source {
@@ -29,9 +49,20 @@
     img {
         border-radius: 2rem;
     }
+
+    @media (max-width: $mobile) {
+
+        img {
+            width: 100%;
+        }
+    }
 }
 .news__content {
     margin-top: 2.5rem;
+
+    @media (max-width: $mobile) {
+        margin-top: 1.8rem;
+    }
 }
 .news__date {
     font-size: 1.4rem;
@@ -39,6 +70,11 @@
     color: #828282;
 
     margin-bottom: 0.8rem;
+
+    @media (max-width: $mobile) {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
 }
 .news__content-title {
     font-weight: 700;
@@ -47,6 +83,11 @@
     color: $primary;
 
     margin-bottom: 0.8rem;
+
+    @media (max-width: $mobile) {
+        font-size: 1.8rem;
+        margin-bottom: 1.2rem;
+    }
 }
 .news__content-text {
     font-size: 1.8rem;
@@ -54,6 +95,10 @@
     color: $primary;
 
     margin-bottom: 1.2rem;
+
+    @media (max-width: $mobile) {
+        font-size: 1.2rem;
+    }
 }
 .news__content-link {
     font-size: 1.8rem;
@@ -63,5 +108,40 @@
 
     &:hover {
         border-bottom: 0;
+    }
+
+    @media (max-width: $mobile) {
+        font-size: 1.2rem;
+    }
+}
+.news__container .swiper-button-prev {
+    &:after {
+        content: "";
+        font-size: 0;
+    }
+}
+
+.news__container .swiper-button-next {
+    &:after {
+        content: "";
+        font-size: 0;
+    }
+}
+.news__col.swiper-slide {
+    width: 100% !important;
+}
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+    left: 2.5rem !important;
+    transform: translateY(50%);
+}
+
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+    right: 2.5rem !important;
+    transform: translateY(50%);
+}
+
+.swiper-navigation {
+    @media (max-width: $tablet) {
+        display: none;
     }
 }

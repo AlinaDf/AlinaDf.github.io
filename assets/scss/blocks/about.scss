@@ -5,23 +5,49 @@
 }
 .about__body {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
 
     background-color: $secondary;
     border-radius: 2rem;
 
     padding: 0 8rem 0 6rem;
+
+    @media (max-width: $tablet) {
+        padding: 0 3rem;
+    }
+
+    @media (max-width: $ipad) {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    @media (max-width: $mobile) {
+        padding: 2.5rem 2.5rem 0;
+    }
 }
 .about__content {
     width: 50%;
+    padding: 6rem 0;
+
+    @media (max-width: $ipad) {
+        width: 100%;
+    }
+
+    @media (max-width: $mobile) {
+        padding: 0;
+    }
 }
 .about__title {
     margin-bottom: 3.5rem;
+
+    @media (max-width: $mobile) {
+        margin-bottom: 1.4rem;
+    }
 }
 .title-block {
 }
 .about__text {
-    font-size: 24px;
+    font-size: 2.4rem;
     line-height: 135%;
 
     span {
@@ -34,6 +60,18 @@
             margin-bottom: 0;
         }
     }
+
+    @media (max-width: $tablet) {
+        font-size: 2rem;
+    }
+
+    @media (max-width: $mobile) {
+        font-size: 1.4rem;
+
+        p {
+            margin-bottom: 1.4rem;
+        }
+    }
 }
 .about__photo {
     width: 50%;
@@ -41,17 +79,61 @@
     img {
         width: 100%;
     }
+
+    @media (max-width: $ipad) {
+        width: 100%;
+        margin: auto;
+        max-width: 40rem;
+    }
 }
 
 .about__inner {
     display: flex;
     margin-top: 3.5rem;
+    width: 100%;
+    white-space: nowrap;
+    margin: 3.5rem -2rem 0;
+    justify-content: space-between;
+
+    @media (max-width: $tablet) {
+        overflow: auto;
+
+        &::-webkit-scrollbar {
+            -webkit-appearance: none;
+            width: 0;
+            height: 0;
+        }    
+    }
+
+    @media (max-width: $mobile) {
+        margin: 2.4rem -1rem 0;
+    }
 }
 .about__item {
     flex: 0 1 16.666%;
     text-align: center;
+    white-space: nowrap;
+    padding: 0 2rem;
 
     picture {
         filter: grayscale(100%); 
     }
+
+    img {
+        white-space: nowrap;
+    }
+
+    @media (max-width: $mobile) {
+        flex: 0 1 auto;
+        max-width: 11rem;
+        padding: 0 1rem;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.about__brands .swiper-wrapper {
+    align-items: center;
 }

@@ -1,81 +1,189 @@
 .intro {
 }
-.intro__body {
+.intro__container {
+}
+.intro__main {
     background-color: $secondary;
     position: relative;
-    min-height: 48.3rem;
 
+    @media (max-width: $ipad) {
+        padding-top: 4rem;
+    }
+}
+.intro__body {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.intro__container {
-}
-.intro__slider {
-    align-items: center;
-    justify-content: space-between;
-    display: none;
-    height: 100%;
-
-    &.active {
-        display: flex;
-    }
-
-    &:nth-child(2) {
-        .intro__photo {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            right: 0;
-        }
-    }
-}
-.intro__content {
-    max-width: 46rem;
-}
-.intro__title {
-    font-weight: 900;
-    font-size: 4.8rem;
-    line-height: 125%;
-    color: $primary;
-
-    margin-bottom: 1.8rem;
-}
-.intro__text {
-    font-size: 2rem;
-    line-height: 135%;
-    color: $primary;
-
-    margin-bottom: 3.4rem;
-}
-.intro__btn {
-    width: 100%;
-    max-width: 25rem;
-
-    button {
-        width: 100%;
-    }
-}
-.btn {
-}
-.btn--orange {
-}
-.intro__photo {
-}
-.intro__dots {
-    display: flex;
-    margin: 2.5rem -1.8rem 0;
-}
-.intro__dot {
+.intro__body .swiper-pagination-bullet {
     flex: 0 1 20%;
     min-height: 7.6rem;
     padding: 0 1.8rem;
+    border-radius: 0;
+
+    background: #F7F7F7;
+    border-radius: 10px;
 
     &.active {
         .intro__item {
             box-shadow: 0px 12px 18px rgba(41, 41, 41, 0.13);
         }
     }
+
+    &:first-child {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &:before {
+            content: "ОСАГО";
+            font-weight: 700;
+            font-size: 1.6rem;
+            line-height: calc(20 / 16);
+            color: #1B263B;
+        }
+
+        &:after {
+            content: "";
+            width: 4.2rem;
+            height: 4.2rem;
+            background-color: #E9E9E9;
+            border-radius: 50%;
+            background: url("/assets/img/intro/car.svg") center #E9E9E9;
+            background-repeat: no-repeat;
+        
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    &:nth-child(2) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &:before {
+            content: "КАСКО";
+            font-weight: 700;
+            font-size: 1.6rem;
+            line-height: calc(20 / 16);
+            color: #1B263B;
+        }
+
+        &:after {
+            content: "";
+            width: 4.2rem;
+            height: 4.2rem;
+            background-color: #E9E9E9;
+            border-radius: 50%;
+            background: url("/assets/img/intro/kasko.svg") center #E9E9E9;
+            background-repeat: no-repeat;
+        
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    &:nth-child(3) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &:before {
+            content: "Ипотека";
+            font-weight: 700;
+            font-size: 1.6rem;
+            line-height: calc(20 / 16);
+            color: #1B263B;
+        }
+
+        &:after {
+            content: "";
+            width: 4.2rem;
+            height: 4.2rem;
+            background-color: #E9E9E9;
+            border-radius: 50%;
+            background: url("/assets/img/intro/home.svg") center #E9E9E9;
+            background-repeat: no-repeat;
+        
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    &:nth-child(4) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &:before {
+            content: "Недвижимость";
+            font-weight: 700;
+            font-size: 1.6rem;
+            line-height: calc(20 / 16);
+            color: #1B263B;
+        }
+
+        &:after {
+            content: "";
+            width: 4.2rem;
+            height: 4.2rem;
+            background-color: #E9E9E9;
+            border-radius: 50%;
+            background: url("/assets/img/intro/bildings.svg") center #E9E9E9;
+            background-repeat: no-repeat;
+        
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    &:nth-child(5) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &:before {
+            content: "Жизнь";
+            font-weight: 700;
+            font-size: 1.6rem;
+            line-height: calc(20 / 16);
+            color: #1B263B;
+        }
+
+        &:after {
+            content: "";
+            width: 4.2rem;
+            height: 4.2rem;
+            background-color: #E9E9E9;
+            border-radius: 50%;
+            background: url("/assets/img/intro/life.svg") center #E9E9E9;
+            background-repeat: no-repeat;
+        
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+.intro__body .swiper-pagination-bullet-active {
+    background: #F7F7F7;
+    box-shadow: 0px 12px 18px rgba(41, 41, 41, 0.13);
+    border-radius: 10px;
+}
+.intro__body .swiper-pagination-bullet-active {
+    background: #F7F7F7;
+    box-shadow: 0px 12px 18px rgba(41, 41, 41, 0.13);
+    border-radius: 10px;
+}
+.intro__body .swiper-pagination {
+    display: flex;
+}
+.intro__dots {
+    display: flex;
+    margin: 2.5rem -1.8rem 0;
+}
+.intro__dot {
+
 }
 .intro__item {
     border-radius: 1rem;
@@ -109,4 +217,343 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+.intro__container {
+    display: flex;
+}
+.intro__slider.swiper-slide.swiper-slide-active {
+    width: 100% !important;
+}
+.intro__block {
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    display: flex;
+
+    &:nth-child(2) {
+        .intro__photo {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 0;
+        }
+    }
+
+    @media (max-width: $ipad) {
+        flex-direction: column;
+        align-items: start;
+    }
+}
+.intro__content {
+    max-width: 46rem;
+
+    @media (max-width: $tablet) {
+        max-width: 38rem;
+    }
+
+    @media (max-width: $mobile) {
+        max-width: 26.2rem;
+    }
+}
+.intro__title {
+    font-weight: 900;
+    font-size: 4.8rem;
+    line-height: 125%;
+    color: $primary;
+
+    margin-bottom: 1.8rem;
+
+    @media (max-width: $tablet) {
+        font-size: 4rem;
+    }
+
+    @media (max-width: $mobile) {
+        font-size: 2.8rem;
+    }
+}
+.intro__text {
+    font-size: 2rem;
+    line-height: 135%;
+    color: $primary;
+
+    margin-bottom: 3.4rem;
+
+    @media (max-width: $mobile) {
+        font-size: 1.4rem;
+    }
+}
+.intro__btn {
+    width: 100%;
+    max-width: 25rem;
+
+    button {
+        width: 100%;
+    }
+
+    @media (max-width: $mobile) {
+        max-width: 17.8rem;
+    }
+}
+.btn {
+}
+.btn--orange {
+}
+.intro__photo {
+    display: flex;
+    align-items: flex-end;
+    width: 50%;
+    height: 100%;
+
+    img {
+        width: 100%;
+    }
+
+    @media (max-width: $ipad) {
+        justify-content: center;
+        margin: auto;
+        width: 100%;
+        max-width: 40rem;
+    }
+}
+
+.dots {
+    margin-top: 2.5rem;
+}
+
+.dot {
+    flex: 0 1 20%;
+    background: #F7F7F7;
+    margin-right: 3.6rem;
+    border-radius: 1rem;
+    min-height: 7.6rem;
+    padding: 0 2.5rem;
+    cursor: pointer;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    @media (max-width: $mobile) {
+        min-height: 5.5rem;
+        padding: 0 1.5rem;
+        margin-right: 1.5rem;
+    }
+    
+    &:first-child {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &:before {
+            content: "ОСАГО";
+            font-weight: 700;
+            font-size: 1.6rem;
+            line-height: calc(20 / 16);
+            color: #1B263B;
+
+            margin-right: 1.5rem;
+
+            @media (max-width: $mobile) {
+                font-size: 1.2rem;
+            }
+        }
+
+        &:after {
+            content: "";
+            width: 4.2rem;
+            height: 4.2rem;
+            background-color: #E9E9E9;
+            border-radius: 50%;
+            background: url("/assets/img/intro/car.svg") center #E9E9E9;
+            background-repeat: no-repeat;
+        
+            display: flex;
+            justify-content: center;
+
+            @media (max-width: $mobile) {
+                width: 3.5rem;
+                height: 3.5rem;
+                background-size: 2rem;
+            }
+        }
+    }
+
+    &:nth-child(2) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &:before {
+            content: "КАСКО";
+            font-weight: 700;
+            font-size: 1.6rem;
+            line-height: calc(20 / 16);
+            color: #1B263B;
+
+            margin-right: 1.5rem;
+
+            @media (max-width: $mobile) {
+                font-size: 1.2rem;
+            }
+        }
+
+        &:after {
+            content: "";
+            width: 4.2rem;
+            height: 4.2rem;
+            background-color: #E9E9E9;
+            border-radius: 50%;
+            background: url("/assets/img/intro/kasko.svg") center #E9E9E9;
+            background-repeat: no-repeat;
+        
+            display: flex;
+            justify-content: center;
+
+            @media (max-width: $mobile) {
+                width: 3.5rem;
+                height: 3.5rem;
+                background-size: 2rem;
+            }
+        }
+    }
+
+    &:nth-child(3) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &:before {
+            content: "Ипотека";
+            font-weight: 700;
+            font-size: 1.6rem;
+            line-height: calc(20 / 16);
+            color: #1B263B;
+
+            margin-right: 1.5rem;
+
+            @media (max-width: $mobile) {
+                font-size: 1.2rem;
+            }
+        }
+
+        &:after {
+            content: "";
+            width: 4.2rem;
+            height: 4.2rem;
+            background-color: #E9E9E9;
+            border-radius: 50%;
+            background: url("/assets/img/intro/home.svg") center #E9E9E9;
+            background-repeat: no-repeat;
+        
+            display: flex;
+            justify-content: center;
+
+            @media (max-width: $mobile) {
+                width: 3.5rem;
+                height: 3.5rem;
+                background-size: 2rem;
+            }
+        }
+    }
+
+    &:nth-child(4) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &:before {
+            content: "Недвижимость";
+            font-weight: 700;
+            font-size: 1.6rem;
+            line-height: calc(20 / 16);
+            color: #1B263B;
+
+            margin-right: 1.5rem;
+
+            @media (max-width: $mobile) {
+                font-size: 1.2rem;
+            }
+        }
+
+        &:after {
+            content: "";
+            width: 4.2rem;
+            height: 4.2rem;
+            background-color: #E9E9E9;
+            border-radius: 50%;
+            background: url("/assets/img/intro/bildings.svg") center #E9E9E9;
+            background-repeat: no-repeat;
+        
+            display: flex;
+            justify-content: center;
+
+            @media (max-width: $mobile) {
+                width: 3.5rem;
+                height: 3.5rem;
+                background-size: 2rem;
+            }
+        }
+    }
+
+    &:nth-child(5) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &:before {
+            content: "Жизнь";
+            font-weight: 700;
+            font-size: 1.6rem;
+            line-height: calc(20 / 16);
+            color: #1B263B;
+            
+            margin-right: 1.5rem;
+
+            @media (max-width: $mobile) {
+                font-size: 1.2rem;
+            }
+        }
+
+        &:after {
+            content: "";
+            width: 4.2rem;
+            height: 4.2rem;
+            background-color: #E9E9E9;
+            border-radius: 50%;
+            background: url("/assets/img/intro/life.svg") center #E9E9E9;
+            background-repeat: no-repeat;
+        
+            display: flex;
+            justify-content: center;
+
+            @media (max-width: $mobile) {
+                width: 3.5rem;
+                height: 3.5rem;
+                background-size: 2rem;
+            }
+        }
+    }
+}
+
+.dots {
+    display: flex;
+
+    &::-webkit-scrollbar {
+        -webkit-appearance: none;
+        width: 0;
+        height: 0;
+    }    
+
+    @media (max-width: $laptop) {
+        width: 100%;
+        overflow: auto;
+    }
+}
+.dot {
+    @media (max-width: $laptop) {
+        white-space: nowrap;
+    }
+}
+.dot_active {
+    box-shadow: 0px 12px 18px rgba(41, 41, 41, 0.13);
 }

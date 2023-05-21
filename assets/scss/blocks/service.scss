@@ -1,10 +1,18 @@
 .service {
     margin-top: 8rem;
+
+    @media (max-width: $mobile) {
+        margin-top: 4rem;
+    }
 }
 .service__container {
 }
 .service__title {
     margin-bottom: 3.5rem;
+
+    @media (max-width: $mobile) {
+        margin-bottom: 1.8rem;
+    }
 }
 .service__inner {
     display: flex;
@@ -27,6 +35,19 @@
             }
         }
     }
+
+    @media (max-width: $ipad) {
+        flex: 1 1 100%;
+    }
+
+    @media (max-width: $mobile) {
+        min-height: 19.8rem;
+        margin-bottom: 1.8rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
 }
 .service__item {
     display: flex;
@@ -40,12 +61,28 @@
 }
 .service__item-content {
     max-width: 34.3rem;
+
+    @media (max-width: $tablet) {
+        max-width: 23rem;
+    }
+
+    @media (max-width: $mobile) {
+        max-width: 17.6rem;
+    }
 }
 .service__item-title {
     font-weight: 700;
     font-size: 2.4rem;
     line-height: 135%;
     color: $primary;
+
+    @media (max-width: $tablet) {
+        font-size: 2rem;
+    }
+
+    @media (max-width: $mobile) {
+        font-size: 1.8rem;
+    }
 }
 .service__item-text {
     font-size: 1.8rem;
@@ -53,6 +90,15 @@
     color: $primary;
 
     margin: 1.2rem 0 2.5rem;
+
+    @media (max-width: $tablet) {
+        font-size: 1.6rem;
+    }
+
+    @media (max-width: $mobile) {
+        font-size: 1.2rem;
+        margin: 1.2rem 0 1.8rem;
+    }
 }
 .service__item-btn {
     width: 100%;
@@ -61,10 +107,23 @@
     button {
         width: 100%;
     }
+
+    @media (max-width: $tablet) {
+        max-width: 20rem;
+    }
+
+    @media (max-width: $mobile) {
+        max-width: 17.8rem;
+    }
 }
 .btn {
 }
 .btn--white {
 }
 .service__item-photo {
+    width: 35%;
+
+    img {
+        width: 100%;
+    }
 }

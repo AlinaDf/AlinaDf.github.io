@@ -28,4 +28,8 @@
             color: $white;
         }
     }
+
+    @media (max-width: $mobile) {
+        font-size: 1.4rem;
+    }
 }

@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="date=no">
+    <meta name="format-detection" content="address=no">
+    <meta name="format-detection" content="email=no">
     <title>Document</title>
     <link rel="stylesheet" href="assets/scss/style.css">
+    <link rel="stylesheet" href="assets/scss/swiper-bundle.min.css">
 </head>
 <body>
     
@@ -39,128 +44,101 @@
             </header>
             <main class="main">
                 <section class="intro">
-                    <div class="intro__body">
+                    <div class="intro__main">
                         <div class="intro__container">
-                            <div class="intro__slider active">
-                                <div class="intro__content">
-                                    <h1 class="intro__title">Узнайте стоимость КАСКО онлайн</h1>
-                                    <div class="intro__text">Рассчитаем стоимость вашего полиса за 5 минут не выходя из дома.</div>
-                                    <div class="intro__btn">
-                                        <button class="btn btn--orange">Рассчитать и оформить</button>
+                            <div class="intro__body swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="intro__slider swiper-slide">
+                                        <div class="intro__block">
+                                            <div class="intro__content">
+                                                <h1 class="intro__title">Узнайте стоимость КАСКО онлайн</h1>
+                                                <div class="intro__text">Рассчитаем стоимость вашего полиса за 5 минут не выходя из дома.</div>
+                                                <div class="intro__btn">
+                                                    <button class="btn btn--orange">Рассчитать и оформить</button>
+                                                </div>
+                                            </div>
+                                            <div class="intro__photo">
+                                                <picture>
+                                                    <source srcset="assets/img/intro/men.webp" type="img/webp">
+                                                    <img src="assets/img/intro/men.png" alt="cover" loading="lazy">
+                                                </picture>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="intro__photo">
-                                    <picture>
-                                        <source srcset="assets/img/intro/men.webp" type="img/webp">
-                                        <img src="assets/img/intro/men.png" alt="cover" loading="lazy">
-                                    </picture>
-                                </div>
-                            </div>
-                            <div class="intro__slider">
-                                <div class="intro__content">
-                                    <h2 class="intro__title">Оформите ОСАГО без визита в офис</h2>
-                                    <div class="intro__text">Узнаем стоимость вашего ОСАГО в 10 банках и предложим вам самый выгодный вариант</div>
-                                    <div class="intro__btn">
-                                        <button class="btn btn--orange">Рассчитать и оформить</button>
+                                    <div class="intro__slider swiper-slide">
+                                        <div class="intro__block">
+                                            <div class="intro__content">
+                                                <h2 class="intro__title">Оформите ОСАГО без визита в офис</h2>
+                                                <div class="intro__text">Узнаем стоимость вашего ОСАГО в 10 банках и предложим вам самый выгодный вариант</div>
+                                                <div class="intro__btn">
+                                                    <button class="btn btn--orange">Рассчитать и оформить</button>
+                                                </div>
+                                            </div>
+                                            <div class="intro__photo">
+                                                <picture>
+                                                    <source srcset="assets/img/intro/car.webp" type="img/webp">
+                                                    <img src="assets/img/intro/car.png" alt="cover" loading="lazy">
+                                                </picture>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="intro__photo">
-                                    <picture>
-                                        <source srcset="assets/img/intro/car.webp" type="img/webp">
-                                        <img src="assets/img/intro/car.png" alt="cover" loading="lazy">
-                                    </picture>
-                                </div>
-                            </div>
-                            <div class="intro__slider">
-                                <div class="intro__content">
-                                    <h1 class="intro__title">Узнайте стоимость КАСКО онлайн</h1>
-                                    <div class="intro__text">Рассчитаем стоимость вашего полиса за 5 минут не выходя из дома.</div>
-                                    <div class="intro__btn">
-                                        <button class="btn btn--orange">Рассчитать и оформить</button>
+                                    <div class="intro__slider swiper-slide">
+                                        <div class="intro__block">
+                                            <div class="intro__content">
+                                                <h1 class="intro__title">Узнайте стоимость КАСКО онлайн</h1>
+                                                <div class="intro__text">Рассчитаем стоимость вашего полиса за 5 минут не выходя из дома.</div>
+                                                <div class="intro__btn">
+                                                    <button class="btn btn--orange">Рассчитать и оформить</button>
+                                                </div>
+                                            </div>
+                                            <div class="intro__photo">
+                                                <picture>
+                                                    <source srcset="assets/img/intro/children.webp" type="img/webp">
+                                                    <img src="assets/img/intro/children.png" alt="cover" loading="lazy">
+                                                </picture>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="intro__photo">
-                                    <picture>
-                                        <source srcset="assets/img/intro/children.webp" type="img/webp">
-                                        <img src="assets/img/intro/children.png" alt="cover" loading="lazy">
-                                    </picture>
-                                </div>
-                            </div>
-                            <div class="intro__slider">
-                                <div class="intro__content">
-                                    <h1 class="intro__title">Узнайте стоимость КАСКО онлайн</h1>
-                                    <div class="intro__text">Рассчитаем стоимость вашего полиса за 5 минут не выходя из дома.</div>
-                                    <div class="intro__btn">
-                                        <button class="btn btn--orange">Рассчитать и оформить</button>
+                                    <div class="intro__slider swiper-slide">
+                                        <div class="intro__block">
+                                            <div class="intro__content">
+                                                <h1 class="intro__title">Узнайте стоимость КАСКО онлайн</h1>
+                                                <div class="intro__text">Рассчитаем стоимость вашего полиса за 5 минут не выходя из дома.</div>
+                                                <div class="intro__btn">
+                                                    <button class="btn btn--orange">Рассчитать и оформить</button>
+                                                </div>
+                                            </div>
+                                            <div class="intro__photo">
+                                                <picture>
+                                                    <source srcset="assets/img/intro/house.webp" type="img/webp">
+                                                    <img src="assets/img/intro/house.png" alt="cover" loading="lazy">
+                                                </picture>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="intro__photo">
-                                    <picture>
-                                        <source srcset="assets/img/intro/house.webp" type="img/webp">
-                                        <img src="assets/img/intro/house.png" alt="cover" loading="lazy">
-                                    </picture>
-                                </div>
-                            </div>
-                            <div class="intro__slider">
-                                <div class="intro__content">
-                                    <h1 class="intro__title">Узнайте стоимость КАСКО онлайн</h1>
-                                    <div class="intro__text">Рассчитаем стоимость вашего полиса за 5 минут не выходя из дома.</div>
-                                    <div class="intro__btn">
-                                        <button class="btn btn--orange">Рассчитать и оформить</button>
+                                    <div class="intro__slider swiper-slide">
+                                        <div class="intro__block">
+                                            <div class="intro__content">
+                                                <h1 class="intro__title">Узнайте стоимость КАСКО онлайн</h1>
+                                                <div class="intro__text">Рассчитаем стоимость вашего полиса за 5 минут не выходя из дома.</div>
+                                                <div class="intro__btn">
+                                                    <button class="btn btn--orange">Рассчитать и оформить</button>
+                                                </div>
+                                            </div>
+                                            <div class="intro__photo">
+                                                <picture>
+                                                    <source srcset="assets/img/intro/family.webp" type="img/webp">
+                                                    <img src="assets/img/intro/family.png" alt="cover" loading="lazy">
+                                                </picture>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="intro__photo">
-                                    <picture>
-                                        <source srcset="assets/img/intro/family.webp" type="img/webp">
-                                        <img src="assets/img/intro/family.png" alt="cover" loading="lazy">
-                                    </picture>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="intro__container">
-                        <div class="intro__dots">
-                            <div class="intro__dot active">
-                                <div class="intro__item">
-                                    <div class="intro__dot-text">ОСАГО</div>
-                                    <div class="intro__dot-icon">
-                                        <img src="assets/img/intro/car.svg" alt="cover">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="intro__dot">
-                                <div class="intro__item">
-                                    <div class="intro__dot-text">КАСКО</div>
-                                    <div class="intro__dot-icon">
-                                        <img src="assets/img/intro/kasko.svg" alt="cover">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="intro__dot">
-                                <div class="intro__item">
-                                    <div class="intro__dot-text">Ипотека</div>
-                                    <div class="intro__dot-icon">
-                                        <img src="assets/img/intro/home.svg" alt="cover">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="intro__dot">
-                                <div class="intro__item">
-                                    <div class="intro__dot-text">Недвижимость</div>
-                                    <div class="intro__dot-icon">
-                                        <img src="assets/img/intro/bildings.svg" alt="cover">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="intro__dot">
-                                <div class="intro__item">
-                                    <div class="intro__dot-text">Жизнь</div>
-                                    <div class="intro__dot-icon">
-                                        <img src="assets/img/intro/life.svg" alt="cover">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <div class="dots" data-slider-dots></div>
                     </div>
                 </section>
                 <section class="service">
@@ -424,54 +402,160 @@
                 <section class="news">
                     <div class="news__container">
                         <h2 class="news__title title-block">Новости</h2>
-                        <div class="news__inner">
-                            <div class="news__col">
-                                <div class="news__item">
-                                    <div class="news__photo">
-                                        <picture>
-                                            <source srcset="assets/img/news/article.webp" type="img/webp">
-                                            <img src="assets/img/news/article.png" alt="cover" loading="lazy">
-                                        </picture>
+                        <div class="news__slider swiper">
+                            <div class="news__inner swiper-wrapper">
+                                <div class="news__col swiper-slide">
+                                    <div class="news__item">
+                                        <div class="news__photo">
+                                            <picture>
+                                                <source srcset="assets/img/news/article.webp" type="img/webp">
+                                                <img src="assets/img/news/article.png" alt="cover" loading="lazy">
+                                            </picture>
+                                        </div>
+                                        <div class="news__content">
+                                            <div class="news__date">18.05.2023</div>
+                                            <div class="news__content-title">5 причин купить каско</div>
+                                            <div class="news__content-text">Автомобиль — серьезная инвестиция, поэтому экономить на защите от непредвиденных ситуаций не стоит, особенно в непростые времена.</div>
+                                            <a href="#" class="news__content-link">Читать подробнее</a>
+                                        </div>
                                     </div>
-                                    <div class="news__content">
-                                        <div class="news__date">18.05.2023</div>
-                                        <div class="news__content-title">5 причин купить каско</div>
-                                        <div class="news__content-text">Автомобиль — серьезная инвестиция, поэтому экономить на защите от непредвиденных ситуаций не стоит, особенно в непростые времена.</div>
-                                        <a href="#" class="news__content-link">Читать подробнее</a>
+                                </div>
+                                <div class="news__col swiper-slide">
+                                    <div class="news__item">
+                                        <div class="news__photo">
+                                            <picture>
+                                                <source srcset="assets/img/news/article.webp" type="img/webp">
+                                                <img src="assets/img/news/article.png" alt="cover" loading="lazy">
+                                            </picture>
+                                        </div>
+                                        <div class="news__content">
+                                            <div class="news__date">18.05.2023</div>
+                                            <div class="news__content-title">5 причин купить каско</div>
+                                            <div class="news__content-text">Автомобиль — серьезная инвестиция, поэтому экономить на защите от непредвиденных ситуаций не стоит, особенно в непростые времена.</div>
+                                            <a href="#" class="news__content-link">Читать подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="news__col swiper-slide">
+                                    <div class="news__item">
+                                        <div class="news__photo">
+                                            <picture>
+                                                <source srcset="assets/img/news/article.webp" type="img/webp">
+                                                <img src="assets/img/news/article.png" alt="cover" loading="lazy">
+                                            </picture>
+                                        </div>
+                                        <div class="news__content">
+                                            <div class="news__date">18.05.2023</div>
+                                            <div class="news__content-title">5 причин купить каско</div>
+                                            <div class="news__content-text">Автомобиль — серьезная инвестиция, поэтому экономить на защите от непредвиденных ситуаций не стоит, особенно в непростые времена.</div>
+                                            <a href="#" class="news__content-link">Читать подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="news__col swiper-slide">
+                                    <div class="news__item">
+                                        <div class="news__photo">
+                                            <picture>
+                                                <source srcset="assets/img/news/article.webp" type="img/webp">
+                                                <img src="assets/img/news/article.png" alt="cover" loading="lazy">
+                                            </picture>
+                                        </div>
+                                        <div class="news__content">
+                                            <div class="news__date">18.05.2023</div>
+                                            <div class="news__content-title">5 причин купить каско</div>
+                                            <div class="news__content-text">Автомобиль — серьезная инвестиция, поэтому экономить на защите от непредвиденных ситуаций не стоит, особенно в непростые времена.</div>
+                                            <a href="#" class="news__content-link">Читать подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="news__col swiper-slide">
+                                    <div class="news__item">
+                                        <div class="news__photo">
+                                            <picture>
+                                                <source srcset="assets/img/news/article.webp" type="img/webp">
+                                                <img src="assets/img/news/article.png" alt="cover" loading="lazy">
+                                            </picture>
+                                        </div>
+                                        <div class="news__content">
+                                            <div class="news__date">18.05.2023</div>
+                                            <div class="news__content-title">5 причин купить каско</div>
+                                            <div class="news__content-text">Автомобиль — серьезная инвестиция, поэтому экономить на защите от непредвиденных ситуаций не стоит, особенно в непростые времена.</div>
+                                            <a href="#" class="news__content-link">Читать подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="news__col swiper-slide">
+                                    <div class="news__item">
+                                        <div class="news__photo">
+                                            <picture>
+                                                <source srcset="assets/img/news/article.webp" type="img/webp">
+                                                <img src="assets/img/news/article.png" alt="cover" loading="lazy">
+                                            </picture>
+                                        </div>
+                                        <div class="news__content">
+                                            <div class="news__date">18.05.2023</div>
+                                            <div class="news__content-title">5 причин купить каско</div>
+                                            <div class="news__content-text">Автомобиль — серьезная инвестиция, поэтому экономить на защите от непредвиденных ситуаций не стоит, особенно в непростые времена.</div>
+                                            <a href="#" class="news__content-link">Читать подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="news__col swiper-slide">
+                                    <div class="news__item">
+                                        <div class="news__photo">
+                                            <picture>
+                                                <source srcset="assets/img/news/article.webp" type="img/webp">
+                                                <img src="assets/img/news/article.png" alt="cover" loading="lazy">
+                                            </picture>
+                                        </div>
+                                        <div class="news__content">
+                                            <div class="news__date">18.05.2023</div>
+                                            <div class="news__content-title">5 причин купить каско</div>
+                                            <div class="news__content-text">Автомобиль — серьезная инвестиция, поэтому экономить на защите от непредвиденных ситуаций не стоит, особенно в непростые времена.</div>
+                                            <a href="#" class="news__content-link">Читать подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="news__col swiper-slide">
+                                    <div class="news__item">
+                                        <div class="news__photo">
+                                            <picture>
+                                                <source srcset="assets/img/news/article.webp" type="img/webp">
+                                                <img src="assets/img/news/article.png" alt="cover" loading="lazy">
+                                            </picture>
+                                        </div>
+                                        <div class="news__content">
+                                            <div class="news__date">18.05.2023</div>
+                                            <div class="news__content-title">5 причин купить каско</div>
+                                            <div class="news__content-text">Автомобиль — серьезная инвестиция, поэтому экономить на защите от непредвиденных ситуаций не стоит, особенно в непростые времена.</div>
+                                            <a href="#" class="news__content-link">Читать подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="news__col swiper-slide">
+                                    <div class="news__item">
+                                        <div class="news__photo">
+                                            <picture>
+                                                <source srcset="assets/img/news/article.webp" type="img/webp">
+                                                <img src="assets/img/news/article.png" alt="cover" loading="lazy">
+                                            </picture>
+                                        </div>
+                                        <div class="news__content">
+                                            <div class="news__date">18.05.2023</div>
+                                            <div class="news__content-title">5 причин купить каско</div>
+                                            <div class="news__content-text">Автомобиль — серьезная инвестиция, поэтому экономить на защите от непредвиденных ситуаций не стоит, особенно в непростые времена.</div>
+                                            <a href="#" class="news__content-link">Читать подробнее</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="news__col">
-                                <div class="news__item">
-                                    <div class="news__photo">
-                                        <picture>
-                                            <source srcset="assets/img/news/article.webp" type="img/webp">
-                                            <img src="assets/img/news/article.png" alt="cover" loading="lazy">
-                                        </picture>
-                                    </div>
-                                    <div class="news__content">
-                                        <div class="news__date">18.05.2023</div>
-                                        <div class="news__content-title">5 причин купить каско</div>
-                                        <div class="news__content-text">Автомобиль — серьезная инвестиция, поэтому экономить на защите от непредвиденных ситуаций не стоит, особенно в непростые времена.</div>
-                                        <a href="#" class="news__content-link">Читать подробнее</a>
-                                    </div>
-                                </div>
+                        </div>
+                        <div class="swiper-navigation">
+                            <div class="swiper-button-prev">
+                                <img src="assets/img/news/left.svg" alt="cover">
                             </div>
-                            <div class="news__col">
-                                <div class="news__item">
-                                    <div class="news__photo">
-                                        <picture>
-                                            <source srcset="assets/img/news/article.webp" type="img/webp">
-                                            <img src="assets/img/news/article.png" alt="cover" loading="lazy">
-                                        </picture>
-                                    </div>
-                                    <div class="news__content">
-                                        <div class="news__date">18.05.2023</div>
-                                        <div class="news__content-title">5 причин купить каско</div>
-                                        <div class="news__content-text">Автомобиль — серьезная инвестиция, поэтому экономить на защите от непредвиденных ситуаций не стоит, особенно в непростые времена.</div>
-                                        <a href="#" class="news__content-link">Читать подробнее</a>
-                                    </div>
-                                </div>
+                            <div class="swiper-button-next">
+                                <img src="assets/img/news/right.svg" alt="cover">
                             </div>
                         </div>
                     </div>
@@ -511,6 +595,11 @@
                         </div>
                     </div>
                 </section>
+                <div class="map">
+                    <div class="map__container">
+                        <div class="map__body" id="map"></div>
+                    </div>
+                </div>
             </main>
             <footer class="footer">
                 <div class="footer__container">
@@ -541,7 +630,6 @@
                             <li><div class="footer__text">Контакты:</div></li>
                             <li><a href="telto:+7 (0000) 00-00-00" class="footer__link">+7 (0000) 00-00-00</a></li>
                             <li><a href="mailto:example@gmail.com" class="footer__link">example@gmail.com</a></li>
-                            <li><a href="#" class="footer__link">Новости</a></li>
                         </ul>
                         <div class="footer__socials">
                             <a href="#" class="footer__social">
@@ -681,11 +769,106 @@
             </div>
         </div>
     </div>
+    <div class="calc" style="display: none;">
+        <div class="calc__body">
+            <div class="calc__header">
+                <div class="calc__back">
+                    <img src="assets/img/calc/back.svg" alt="cover">
+                </div>
+                <div class="calc__title">Калькулятор ОСАГО</div>
+            </div>
+            <div class="calc__quiz">
+                <div class="calc__inner">
+                    <div class="calc__item active">
+                        <div class="calc__value">1</div>
+                        <div class="calc__item-text">Собственник</div>
+                    </div>
+                    <div class="calc__item">
+                        <div class="calc__value">2</div>
+                        <div class="calc__item-text">Автомобиль</div>
+                    </div>
+                    <div class="calc__item">
+                        <div class="calc__value">3</div>
+                        <div class="calc__item-text">Водитель</div>
+                    </div>
+                </div>
+                <div class="calc__block">
+                    <div class="calc__content active">
+                        <div class="calc__content-title">Собственник</div>
+                        <form action="#" class="calc__form">
+                            <div class="calc__form-item">
+                                <label for="">Населенный пункт регистрации собственника</label>
+                                <select name="" id="">
+                                    <option value="1">Город / Населенный пункт</option>
+                                </select>
+                            </div>
+                            <div class="calc__form-item">
+                                <label for="">Дата рождения собственника</label>
+                                <input type="date">
+                            </div>
+                        </form>
+                        <div class="calc__buttons">
+                            <div class="calc__button">
+                                <button class="btn btn--white">Вернуться к услугам</button>
+                            </div>
+                            <div class="calc__button">
+                                <button class="btn btn--orange btn-next" id="btn-next">Продолжить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="calc__content">
+                        <div class="calc__content-title">Собственник</div>
+                        <div class="calc__buttons">
+                            <div class="calc__button">
+                                <button class="btn btn--white">Вернуться к услугам</button>
+                            </div>
+                            <div class="calc__button">
+                                <button class="btn btn--orange btn-next">Продолжить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="calc__content">
+                        <div class="calc__content-title">Собственник</div>
+                        <form action="#" class="calc__form">
+                            <div class="calc__form-item">
+                                <label for="">Населенный пункт регистрации собственника</label>
+                                <select name="" id="">
+                                    <option value="1">Город / Населенный пункт</option>
+                                </select>
+                            </div>
+                            <div class="calc__form-item">
+                                <label for="">Дата рождения собственника</label>
+                                <input type="date">
+                            </div>
+                        </form>
+                        <div class="calc__buttons">
+                            <div class="calc__button">
+                                <button class="btn btn--white">Вернуться к услугам</button>
+                            </div>
+                            <div class="calc__button">
+                                <button class="btn btn--orange btn-next">Продолжить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <link rel="stylesheet" href="assets/scss/swiper-bundle.min.css">
+    <script>
+        /* Маска номера телефона */
+
+        let inputs = document.querySelectorAll('input[type="tel"]');
+        let im = new Inputmask('+7 (999) 999-99-99');
+        im.mask(inputs);
+    </script>
+    
+
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>"></script>
     <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/inputmask.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/inputmask.min.js"></script>
+    <script src="js/map.js"></script>
     
 </body>
 </html>

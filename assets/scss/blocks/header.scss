@@ -3,6 +3,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media (max-width: $mobile) {
+        min-height: 6.2rem;
+    }
 }
 .header__container {
     display: flex;
@@ -10,6 +14,19 @@
     justify-content: space-between;
 }
 .header__logo {
+    margin-right: 1rem;
+
+    @media (max-width: $tablet) {
+        width: 15rem;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: $mobile) {
+        width: 12.3rem;
+    } 
 }
 .header__list {
     display: flex;
@@ -20,6 +37,18 @@
         &:last-child {
             margin-right: 0;
         }
+
+        @media (max-width: $laptop) {
+            margin-right: 4rem;
+        }
+
+        @media (max-width: $tablet) {
+            margin-right: 1.5rem;
+        }
+    }
+
+    @media (max-width: $ipad) {
+        display: none;
     }
 }
 .header__link {
@@ -28,11 +57,19 @@
     color: $primary;
     transition: all .2s linear;
 
+    white-space: nowrap;
+
     &:hover {
         color: $orange;
     }
+
+    @media (max-width: $tablet) {
+        font-size: 1.4rem;
+    }
 }
 .header__contacts {
+    margin: 0 1rem;
+    white-space: nowrap;
 }
 .header__phone {
     font-weight: 700;
@@ -41,6 +78,15 @@
     color: $orange;
 
     margin-bottom: 0.8rem;
+
+    @media (max-width: $tablet) {
+        font-size: 1.4rem;
+    }
+
+    @media (max-width: $mobile) {
+        font-size: 1.2rem;
+        margin-bottom: 0.2rem;
+    }
 }
 .header__place {
     display: flex;
@@ -49,12 +95,29 @@
 .header__place-icon {
     display: flex;
     margin-right: 0.8rem;
+
+    @media (max-width: $mobile) {
+        width: 1rem;
+        margin-right: 0.3rem;
+
+        img {
+            width: 100%;
+        }
+    }
 }
 .header__place-text {
     font-weight: 400;
     font-size: 1.6rem;
     line-height: calc(20 / 16);
     color: $orange;
+
+    @media (max-width: $tablet) {
+        font-size: 1.4rem;
+    }
+
+    @media (max-width: $mobile) {
+        font-size: 1rem;
+    } 
 }
 .header__btn {
     width: 100%;
@@ -62,6 +125,14 @@
 
     button {
         width: 100%;
+    }
+
+    @media (max-width: $tablet) {
+        max-width: 16rem;
+    }
+
+    @media (max-width: $ipad) {
+        display: none;
     }
 }
 .btn {

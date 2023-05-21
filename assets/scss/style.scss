@@ -18,8 +18,10 @@
 @import "blocks/about";
 @import "blocks/news";
 @import "blocks/contacts";
+@import "blocks/map";
 @import "blocks/footer";
 @import "blocks/decrioption";
+@import "blocks/calc";
 @import "blocks/modal";
 
 body {
@@ -33,6 +35,10 @@ body {
     font-size: 3.6rem;
     line-height: 135%;
     color: $primary;
+
+    @media (max-width: $mobile) {
+        font-size: 2.8rem;
+    }
 }
 
 @font-face {
@@ -115,4 +121,3 @@ body {
     font-style: normal;
     font-display: swap;
 }
-

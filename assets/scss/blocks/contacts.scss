@@ -1,18 +1,34 @@
 .contacts {
     margin-top: 8rem;
+
+    @media (max-width: $mobile) {
+        margin-top: 4rem;
+    }
 }
 .contacts__container {
 }
 .contacts__body {
     display: flex;
+    align-items: flex-end;
 
     background-color: $secondary;
     border-radius: 2rem;
 
     padding: 6rem 2rem 0 6rem;
+
+    @media (max-width: $tablet) {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    @media (max-width: $ipad) {
+        padding: 2.5rem;
+        align-items: start;
+    }
 }
 .contacts__photo {
     width: 50%;
+    margin-right: 2rem;
 
     img {
         width: 100%;
@@ -23,9 +39,17 @@
         width: 100%;
         max-width: 55.8rem;
     }
+
+    @media (max-width: $ipad) {
+        display: none;
+    }
 }
 .contacts__content {
     width: 50%;
+
+    @media (max-width: $ipad) {
+        width: 100%;
+    }
 }
 .contacts__header {
     max-width: 51.9rem;
@@ -40,6 +64,11 @@
     color: $black;
 
     margin: .8rem 0 2.5rem;
+
+    @media (max-width: $mobile) {
+        font-size: 1.4rem;
+        margin: 1.4rem 0 1.8rem;
+    }
 }
 .contacts__form {
     margin-bottom: 2.5rem;
@@ -58,6 +87,10 @@
         line-height: 135%;
         display: block;
         margin-bottom: 0.8rem;
+
+        @media (max-width: $mobile) {
+            font-size: 1.4rem;
+        }
     }
 
     input {
@@ -80,6 +113,16 @@
         &:focus {
             border: .1rem solid $orange;
         }
+
+        @media (max-width: $mobile) {
+            font-size: 1.4rem;
+            min-height: 4rem;
+            padding: 0 1.5rem;
+        }
+    }
+
+    @media (max-width: $mobile) {
+        margin-bottom: 1.8rem;
     }
 }
 .contacts__politic {
@@ -93,6 +136,10 @@
         color: $orange;
         border-bottom: 1px solid $orange;
     }
+
+    @media (max-width: $mobile) {
+        font-size: 1.2rem;
+    }
 }
 .contacts__btn {
     width: 100%;
@@ -101,6 +148,10 @@
 
     button {
         width: 100%;
+    }
+
+    @media (max-width: $mobile) {
+        max-width: 100%;
     }
 }
 .btn {

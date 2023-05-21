@@ -1,0 +1,193 @@
+.calc {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.55);
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    display: flex;
+
+    padding: 0 8rem;
+}
+.calc__body {
+    background-color: $white;
+    width: 100%;
+    margin: auto;
+    min-height: 48.3rem;
+
+    border-radius: 2rem;
+    padding: 6rem;
+
+    position: relative;
+}
+.calc__header {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 3.5rem;
+}
+.calc__back {
+    margin-right: 2.5rem;
+    display: flex;
+    align-items: center;
+}
+.calc__title {
+    font-weight: 700;
+    font-size: 4.4rem;
+    line-height: 135%;
+    color: $primary;
+}
+.calc__inner {
+    display: flex;
+    justify-content: space-between;
+}
+.calc__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &.active {
+        .calc__value {
+            background-color: $orange;
+        }
+    }
+}
+.calc__value {
+    font-weight: 700;
+    font-size: 5rem;
+    line-height: 135%;
+    color: #E9E9E9;
+
+    background-color: #F7F7F7;
+    border-radius: 50%;
+    width: 8.5rem;
+    height: 8.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.calc__item-text {
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 135%;
+
+    margin-top: 2rem;
+}
+.calc__content {
+    margin-top: 3.5rem;
+    padding: 3.5rem;
+
+    border-radius: 2rem;
+    background-color: $secondary;
+    display: none;
+
+    &.active {
+        display: block;
+    }
+}
+.calc__content-title {
+    font-weight: 700;
+    font-size: 2.8rem;
+    line-height: 135%;
+    color: $primary;
+
+    margin-bottom: 2.5rem;
+}
+.calc__form {
+    display: flex;
+}
+.calc__form-item {
+    &:first-child {
+        max-width: 72.4rem;
+        width: 100%;
+        margin-right: 3.5rem;
+    }
+
+    &:last-child {
+        max-width: 47.1rem;
+        width: 100%;
+    }
+
+    label {
+        font-family: 'Cera Pro', sans-serif;
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 135%;
+
+        display: block;
+    }
+
+    select {
+        display: block;
+        width: 100%;
+        min-height: 7rem;
+        margin-top: 1.4rem;
+
+        font-family: 'Cera Pro', sans-serif;
+        font-weight: 400;
+        font-size: 1.8rem;
+        color: $primary;
+        line-height: 135%;
+
+        padding: 0 2.3rem;
+        outline: 0;
+
+        border-radius: .5rem;
+        border: 1px solid #AEAEAE;
+        background-color: $white;
+
+        &:focus {
+            border: .1rem solid $orange;
+        }
+    }
+
+    input {
+        display: block;
+        width: 100%;
+        min-height: 7rem;
+        margin-top: 1.4rem;
+
+        font-family: 'Cera Pro', sans-serif;
+        font-weight: 400;
+        font-size: 1.8rem;
+        color: $primary;
+        line-height: 135%;
+
+        padding: 0 2.3rem;
+        outline: 0;
+
+        border-radius: .5rem;
+        border: 1px solid #AEAEAE;
+        background-color: $white;
+
+        &:focus {
+            border: .1rem solid $orange;
+        }
+    }
+
+    option {
+        display: block;
+        width: 100%;
+        min-height: 7rem;
+    }
+}
+.calc__buttons {
+    display: flex;
+    margin-top: 3.5rem;
+}
+.calc__button {
+    max-width: 28.9rem;
+    width: 100%;
+    margin-right: 2.5rem;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    button {
+        width: 100%;
+        min-height: 7rem;
+    }
+}
