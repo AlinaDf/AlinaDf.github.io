@@ -18,6 +18,10 @@
     display: flex;
     margin: 0 -2rem;
     flex-wrap: wrap;
+
+    @media (max-width: $ipad) {
+        margin: 0 -.9rem;
+    }
 }
 .service__col {
     flex: 0 1 50%;
@@ -32,12 +36,18 @@
                 position: absolute;
                 bottom: 0;
                 right: 0;
+
+                @media (max-width: $ipad) {
+                    position: static;
+                    margin-bottom: -3rem;
+                }
             }
         }
     }
 
     @media (max-width: $ipad) {
-        flex: 1 1 100%;
+        min-height: 16.2rem;
+        padding: 0 .9rem;
     }
 
     @media (max-width: $mobile) {
@@ -58,6 +68,14 @@
     background-color: $secondary;
     border-radius: 2rem;
     padding-left: 2.5rem;
+
+    overflow: hidden;
+
+    @media (max-width: $ipad) {
+        flex-direction: column;
+        padding: 2rem;
+        justify-content: space-between;
+    }
 }
 .service__item-content {
     max-width: 34.3rem;
@@ -80,6 +98,11 @@
         font-size: 2rem;
     }
 
+    @media (max-width: $ipad) {
+        margin-bottom: 2rem;
+        word-break: break-all;
+    }
+
     @media (max-width: $mobile) {
         font-size: 1.8rem;
     }
@@ -95,6 +118,10 @@
         font-size: 1.6rem;
     }
 
+    @media (max-width: $ipad) {
+        display: none;
+    }
+
     @media (max-width: $mobile) {
         font-size: 1.2rem;
         margin: 1.2rem 0 1.8rem;
@@ -108,8 +135,8 @@
         width: 100%;
     }
 
-    @media (max-width: $tablet) {
-        max-width: 20rem;
+    @media (max-width: $ipad) {
+        display: none;
     }
 
     @media (max-width: $mobile) {
@@ -122,8 +149,17 @@
 }
 .service__item-photo {
     width: 35%;
+    margin-right: -4rem;
 
     img {
         width: 100%;
+    }
+
+    @media (max-width: $ipad) {
+        margin-right: 0;
+        width: 100%;
+
+        max-width: 15rem;
+        margin: auto;
     }
 }
