@@ -9,7 +9,6 @@
 }
 .contacts__body {
     display: flex;
-    align-items: flex-end;
 
     background-color: $secondary;
     border-radius: 2rem;
@@ -29,6 +28,7 @@
 .contacts__photo {
     width: 50%;
     margin-right: 2rem;
+    align-self: flex-end;
 
     img {
         width: 100%;
@@ -38,6 +38,10 @@
     source {
         width: 100%;
         max-width: 55.8rem;
+    }
+
+    @media (max-width: $tablet) {
+        align-self: center;
     }
 
     @media (max-width: $ipad) {
