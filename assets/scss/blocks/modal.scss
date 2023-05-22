@@ -5,8 +5,9 @@
     background: rgba(0, 0, 0, 0.55);
     top: 0;
     left: 0;
-    z-index: 10000;
+    z-index: 10010;
     display: none;
+    padding: 0 2.5rem;
 
     &.show {
         display: flex;
@@ -19,6 +20,10 @@
     border-radius: 1rem;
     padding: 6rem;
     position: relative;
+
+    @media (max-width: $mobile) {
+        padding: 4rem 2.5rem;
+    }
 }
 .modal__close {
     position: absolute;
@@ -26,6 +31,16 @@
     right: 3.5rem;
 
     cursor: pointer;
+
+    @media (max-width: $mobile) {
+        top: 2rem;
+        right: 2rem;
+
+        img {
+            width: 1.8rem;
+            height: 1.8rem;
+        }
+    }
 }
 .modal__main {
     display: flex;
@@ -34,15 +49,34 @@
 }
 .modal__icon {
     margin-bottom: 3.5rem;
+    display: flex;
+    align-items: center;
+
+    @media (max-width: $mobile) {
+        max-width: 6.4rem;
+        margin-bottom: 2.5rem;
+
+        img {
+            width: 100%;
+        }
+    }
 }
 .modal__body {
     margin-bottom: 3.5rem;
     text-align: center;
+
+    @media (max-width: $mobile) {
+        margin-bottom: 1.8rem;
+    }
 }
 .modal__header {
     max-width: 32.1rem;
     margin: 0 auto 3rem;
     text-align: center;
+
+    @media (max-width: $mobile) {
+        margin: 0 auto 1.8rem;
+    }
 }
 .modal__title {
     font-weight: 700;
@@ -51,11 +85,19 @@
 
     margin-bottom: 0.8rem;
     color: $primary;
+
+    @media (max-width: $mobile) {
+        font-size: 2.4rem;
+    }
 }
 .modal__subtitle {
     font-size: 1.8rem;
     line-height: 135%;
     color: $primary;
+
+    @media (max-width: $mobile) {
+        font-size: 1.4rem;
+    }
 }
 .modal__form {
 }
@@ -79,6 +121,15 @@
             outline: 0;
             border: .1rem solid $orange;
         }
+
+        @media (max-width: $mobile) {
+            min-height: 4rem;
+            font-size: 1.4rem;
+        }
+    }
+
+    @media (max-width: $mobile) {
+        margin-bottom: 1.8rem;
     }
 }
 .modal__politic {
@@ -92,6 +143,11 @@
         color: $orange;
         border-bottom: 1px solid $orange;
     }
+
+    @media (max-width: $mobile) {
+        font-size: 1.2rem;
+        margin-bottom: 1.8rem;
+    }
 }
 .modal__btn {
     width: 100%;
@@ -100,6 +156,11 @@
         width: 100%;
         min-height: 7rem;
         font-size: 2rem;
+
+        @media (max-width: $mobile) {
+            min-height: 4rem;
+            font-size: 1.4rem;
+        }
     }
 }
 .btn {

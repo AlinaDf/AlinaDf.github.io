@@ -55,6 +55,19 @@
 
 // const interval = setInterval(nextSlide, 2500);
 
+/* Бургер-меню */
+
+const burger = document.querySelector('.header__menu');
+const menu = document.querySelector('.header__nav');
+
+if(burger) {
+    const menu = document.querySelector('.header__nav');
+    burger.addEventListener('click', function(e) {
+        burger.classList.toggle('active');
+        menu.classList.toggle('show');
+    });
+}
+
 /* Модальное окно */
 
 const modalBtn = document.querySelectorAll('[data-popup]');
@@ -176,6 +189,7 @@ document.querySelector('.intro__body').forEach(function(i) {
         swiperPagination: document.querySelector('.swiper-pagination')[i]
     });
 });
+
 
 // jQuery(function($) {
  
