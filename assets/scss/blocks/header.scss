@@ -245,6 +245,9 @@
         display: flex;
     }
 }
+.menu__burger {
+    z-index: 10001;
+}
 .header__burger {
     position: relative;
     width: 1.8rem;
