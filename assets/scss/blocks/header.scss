@@ -4,7 +4,7 @@
     flex-direction: column;
     align-items: center;
 
-    @media (max-width: $mobile) {
+    @media (max-width: $tablet) {
         min-height: 6.2rem;
     }
 }
@@ -38,12 +38,9 @@
         width: 100%;
         height: 100%;
         z-index: 10000;
-        background-color: #c1c1c1;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
+        background-color: $white;
+        
+        padding-top: 9.7rem;
 
         transition: all .2s linear;
 
@@ -110,6 +107,16 @@
 
     @media (max-width: $ipad) {
         display: flex;
+
+        .header__btn {
+            display: block;
+            margin-top: 2.5rem;
+            width: 17.8rem;
+
+            button {
+                font-size: 1.4rem;
+            }
+        }
     }
 }
 .header__mobile-phone {

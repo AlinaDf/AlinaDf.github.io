@@ -91,7 +91,7 @@ address {
       -ms-flex-align: center;
           align-items: center;
 }
-@media (max-width: 576px) {
+@media (max-width: 1024px) {
   .header {
     min-height: 6.2rem;
   }
@@ -137,20 +137,8 @@ address {
     width: 100%;
     height: 100%;
     z-index: 10000;
-    background-color: #c1c1c1;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    background-color: #fff;
+    padding-top: 9.7rem;
     -webkit-transition: all 0.2s linear;
     transition: all 0.2s linear;
   }
@@ -240,6 +228,14 @@ address {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .header__mobile .header__btn {
+    display: block;
+    margin-top: 2.5rem;
+    width: 17.8rem;
+  }
+  .header__mobile .header__btn button {
+    font-size: 1.4rem;
   }
 }
 

@@ -65,6 +65,7 @@ if(burger) {
     burger.addEventListener('click', function(e) {
         burger.classList.toggle('active');
         menu.classList.toggle('show');
+        body.classList.toggle('no-scroll');
     });
 }
 
