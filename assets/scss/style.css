@@ -236,6 +236,7 @@ address {
   }
   .header__mobile .header__btn button {
     font-size: 1.4rem;
+    min-height: 4rem;
   }
 }
 
