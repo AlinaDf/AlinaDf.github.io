@@ -134,7 +134,6 @@ document.addEventListener('DOMContentLoaded', () => {
             loop: true,
             Mode: true,
             slidesPerView: 6,
-            slidesPerGroup: 6,
         
             autoplay: {
                 delay: 5000,

@@ -1,4 +1,12 @@
-/*# sourceMappingURL=m/fonts/ain.css.map */html {font-size: 62.5%;}body,html {margin: 0;padding: 0;height: 100%;}*,*:before,*:after {box-sizing: border-box;}body {font-family: 'Cera Pro', sans-serif;} ul, ol, li {list-style: none;margin: 0;padding: 0;}button {border: 0;padding: 0;background: none;}h1, h2, h3, h4, h5, h6 {margin: 0;padding:0;}a {text-decoration: none;}input {border: 0; background: none;} p {margin: 0; padding: 0}.wrapper {min-height: 100%;overflow: hidden;display: flex;flex-direction: column;}.main {flex: 1 1 auto;}address {font-style: normal;}
+/*# sourceMappingURL=m/fonts/ain.css.map */
+html {
+    font-size: 50.5%;
+
+    @media (max-width: $tablet) {
+        font-size: 62.5%;
+    }
+}
+body,html {margin: 0;padding: 0;height: 100%;}*,*:before,*:after {box-sizing: border-box;}body {font-family: 'Cera Pro', sans-serif;} ul, ol, li {list-style: none;margin: 0;padding: 0;}button {border: 0;padding: 0;background: none;}h1, h2, h3, h4, h5, h6 {margin: 0;padding:0;}a {text-decoration: none;}input {border: 0; background: none;} p {margin: 0; padding: 0}.wrapper {min-height: 100%;overflow: hidden;display: flex;flex-direction: column;}.main {flex: 1 1 auto;}address {font-style: normal;}
 
 @import "_vars";
 
