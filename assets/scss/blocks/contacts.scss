@@ -1,7 +1,7 @@
 .contacts {
     margin-top: 8rem;
 
-    @media (max-width: $mobile) {
+    @media (max-width: $laptop) {
         margin-top: 4rem;
     }
 }
@@ -14,15 +14,14 @@
     border-radius: 2rem;
 
     padding: 6rem 2rem 0 6rem;
-
-    @media (max-width: $tablet) {
-        flex-direction: column-reverse;
-        align-items: center;
-    }
+    align-items: flex-end;
 
     @media (max-width: $ipad) {
         padding: 2.5rem;
         align-items: start;
+
+        flex-direction: column-reverse;
+        align-items: center;
     }
 }
 .contacts__photo {
@@ -41,7 +40,6 @@
     }
 
     @media (max-width: $tablet) {
-        align-self: center;
     }
 
     @media (max-width: $ipad) {
@@ -50,6 +48,7 @@
 }
 .contacts__content {
     width: 50%;
+    padding-bottom: 3rem;
 
     @media (max-width: $ipad) {
         width: 100%;

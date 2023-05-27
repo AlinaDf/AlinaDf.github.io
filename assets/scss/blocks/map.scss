@@ -1,7 +1,10 @@
 .place {
-    margin: 8rem 0;
+    margin: 8rem auto;
     max-width: 1310px;
-    margin: auto;
+
+    @media (max-width: $laptop) {
+        margin-top: 4rem;
+    }
 
     @media (max-width: 769px) {
         max-width: 100%;
@@ -12,11 +15,6 @@
     }
 }
 .place__body {
-    padding: 0 3.5rem;
-
-    @media (max-width: 769px) {
-        padding: 0;
-    }
 }
 .place__title {
     margin-bottom: 3.5rem;

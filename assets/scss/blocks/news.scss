@@ -1,7 +1,7 @@
 .news {
     margin-top: 8rem;
 
-    @media (max-width: $mobile) {
+    @media (max-width: $laptop) {
         margin-top: 4rem;
     }
 }

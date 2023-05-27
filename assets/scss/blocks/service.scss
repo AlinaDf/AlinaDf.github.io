@@ -1,6 +1,10 @@
 .service {
     margin-top: 8rem;
 
+    @media (max-width: $laptop) {
+        margin-top: 4rem;
+    }
+
     @media (max-width: $mobile) {
         margin-top: 4rem;
     }
@@ -94,7 +98,7 @@
     line-height: 135%;
     color: $primary;
 
-    @media (max-width: $tablet) {
+    @media (max-width: $laptop) {
         font-size: 2rem;
     }
 
@@ -114,7 +118,7 @@
 
     margin: 1.2rem 0 2.5rem;
 
-    @media (max-width: $tablet) {
+    @media (max-width: $laptop) {
         font-size: 1.6rem;
     }
 
