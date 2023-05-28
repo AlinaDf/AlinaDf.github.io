@@ -100,6 +100,7 @@ address {
 @media (max-width: 1024px) {
   .header {
     min-height: 6.2rem;
+    padding: 1.3rem 0;
   }
 }
 
@@ -341,9 +342,7 @@ address {
   width: 100%;
 }
 @media (max-width: 1024px) {
-  .header__btn {
-    max-width: 16rem;
-  }
+
 }
 @media (max-width: 768px) {
   .header__btn {
@@ -872,6 +871,11 @@ address {
 .dot:last-child {
   margin-right: 0;
 }
+@media (max-width: 1024px) {
+  .dot {
+
+  }
+}
 @media (max-width: 576px) {
   .dot {
     min-height: 5.5rem;
@@ -918,7 +922,7 @@ address {
       -ms-flex-pack: center;
           justify-content: center;
 }
-@media (max-width: 576px) {
+@media (max-width: 1024px) {
   .dot:first-child:after {
     width: 3.5rem;
     height: 3.5rem;
@@ -964,7 +968,7 @@ address {
       -ms-flex-pack: center;
           justify-content: center;
 }
-@media (max-width: 576px) {
+@media (max-width: 1024px) {
   .dot:nth-child(2):after {
     width: 3.5rem;
     height: 3.5rem;
@@ -1010,7 +1014,7 @@ address {
       -ms-flex-pack: center;
           justify-content: center;
 }
-@media (max-width: 576px) {
+@media (max-width: 1024px) {
   .dot:nth-child(3):after {
     width: 3.5rem;
     height: 3.5rem;
@@ -1056,7 +1060,7 @@ address {
       -ms-flex-pack: center;
           justify-content: center;
 }
-@media (max-width: 576px) {
+@media (max-width: 1024px) {
   .dot:nth-child(4):after {
     width: 3.5rem;
     height: 3.5rem;
@@ -1102,7 +1106,7 @@ address {
       -ms-flex-pack: center;
           justify-content: center;
 }
-@media (max-width: 576px) {
+@media (max-width: 1024px) {
   .dot:nth-child(5):after {
     width: 3.5rem;
     height: 3.5rem;
@@ -1124,6 +1128,7 @@ address {
   .dots {
     width: 100%;
     overflow: auto;
+    padding-bottom: 2rem;
   }
 }
 
@@ -1327,6 +1332,12 @@ address {
 .service__item-photo img {
   width: 100%;
 }
+@media (max-width: 1024px) {
+  .service__item-photo {
+    width: 40%;
+    margin-right: -2rem;
+  }
+}
 @media (max-width: 768px) {
   .service__item-photo {
     margin-right: 0;
@@ -1408,7 +1419,6 @@ address {
           align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 @media (max-width: 1024px) {
   .advantages__item {
@@ -1421,6 +1431,10 @@ address {
   .advantages__item {
     padding: 2rem;
   }
+}
+
+.advantages__icon {
+  margin-right: 3.5rem;
 }
 
 .advantages__icon-block {
@@ -1441,11 +1455,12 @@ address {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-right: 1rem;
 }
 @media (max-width: 576px) {
-  .advantages__icon-block {
+  .advantages__icon {
     margin-right: 2rem;
+  }
+  .advantages__icon-block {
     width: 5.7rem;
     height: 5.7rem;
   }
@@ -1552,7 +1567,6 @@ address {
           align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 @media (max-width: 1024px) {
   .advantages__item {
@@ -1585,11 +1599,9 @@ address {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-right: 1rem;
 }
 @media (max-width: 576px) {
   .advantages__icon-block {
-    margin-right: 2rem;
     width: 5.7rem;
     height: 5.7rem;
   }
@@ -1967,9 +1979,6 @@ address {
   background-color: #F7F7F7;
   border-radius: 2rem;
   padding: 6rem 2rem 0 6rem;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
 }
 @media (max-width: 768px) {
   .contacts__body {
@@ -1992,6 +2001,7 @@ address {
   margin-right: 2rem;
   -ms-flex-item-align: end;
       align-self: flex-end;
+  margin-bottom: -0.5rem;
 }
 .contacts__photo img {
   width: 100%;
@@ -2262,11 +2272,6 @@ address {
   display: block;
   margin-top: 4rem;
 }
-@media (max-width: 1200px) {
-  .footer {
-    margin-top: 0;
-  }
-}
 
 .footer__body {
   display: -webkit-box;
@@ -2277,7 +2282,7 @@ address {
           justify-content: space-between;
   margin: 0 -1rem;
 }
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .footer__body {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2290,7 +2295,7 @@ address {
 .footer__item {
   padding: 0 1rem;
 }
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .footer__item {
     margin-bottom: 2.5rem;
     padding: 0;
@@ -2300,7 +2305,14 @@ address {
   }
 }
 
-@media (max-width: 1024px) {
+.footer__logo {
+  width: 23rem;
+}
+.footer__logo img {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
   .footer__logo {
     width: 12.3rem;
   }
@@ -2372,7 +2384,7 @@ address {
 .footer__button button {
   width: 100%;
 }
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .footer__button {
     max-width: 100%;
   }
@@ -2409,6 +2421,7 @@ address {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  overflow: hidden;
 }
 
 .decrioption__content {
@@ -2756,7 +2769,7 @@ address {
   padding: 6rem;
   position: relative;
 }
-@media (max-width: 576px) {
+@media (max-width: 1024px) {
   .modal__dialog {
     padding: 4rem 2.5rem;
   }
@@ -2768,7 +2781,7 @@ address {
   right: 3.5rem;
   cursor: pointer;
 }
-@media (max-width: 576px) {
+@media (max-width: 1024px) {
   .modal__close {
     top: 2rem;
     right: 2rem;
@@ -2801,7 +2814,7 @@ address {
       -ms-flex-align: center;
           align-items: center;
 }
-@media (max-width: 576px) {
+@media (max-width: 1024px) {
   .modal__icon {
     max-width: 6.4rem;
     margin-bottom: 2.5rem;
@@ -2815,7 +2828,7 @@ address {
   margin-bottom: 3.5rem;
   text-align: center;
 }
-@media (max-width: 576px) {
+@media (max-width: 1024px) {
   .modal__body {
     margin-bottom: 1.8rem;
   }
@@ -2826,7 +2839,7 @@ address {
   margin: 0 auto 3rem;
   text-align: center;
 }
-@media (max-width: 576px) {
+@media (max-width: 1024px) {
   .modal__header {
     margin: 0 auto 1.8rem;
   }
@@ -2839,7 +2852,7 @@ address {
   margin-bottom: 0.8rem;
   color: #1B263B;
 }
-@media (max-width: 576px) {
+@media (max-width: 1024px) {
   .modal__title {
     font-size: 2.4rem;
   }
@@ -2850,7 +2863,7 @@ address {
   line-height: 135%;
   color: #1B263B;
 }
-@media (max-width: 576px) {
+@media (max-width: 1024px) {
   .modal__subtitle {
     font-size: 1.4rem;
   }
@@ -2875,13 +2888,13 @@ address {
   outline: 0;
   border: 0.1rem solid #FF6C4F;
 }
-@media (max-width: 576px) {
+@media (max-width: 1024px) {
   .modal__form-item input {
     min-height: 4rem;
     font-size: 1.4rem;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 1024px) {
   .modal__form-item {
     margin-bottom: 1.8rem;
   }
@@ -2897,7 +2910,7 @@ address {
   color: #FF6C4F;
   border-bottom: 1px solid #FF6C4F;
 }
-@media (max-width: 576px) {
+@media (max-width: 1024px) {
   .modal__politic {
     font-size: 1.2rem;
     margin-bottom: 1.8rem;
@@ -2912,7 +2925,7 @@ address {
   min-height: 7rem;
   font-size: 2rem;
 }
-@media (max-width: 576px) {
+@media (max-width: 1024px) {
   .modal__btn button {
     min-height: 4rem;
     font-size: 1.4rem;
@@ -2929,7 +2942,7 @@ body.no-scroll {
   line-height: 135%;
   color: #1B263B;
 }
-@media (max-width: 576px) {
+@media (max-width: 1024px) {
   .title-block {
     font-size: 2.8rem;
   }
