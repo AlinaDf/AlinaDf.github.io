@@ -55,6 +55,27 @@
 
 // const interval = setInterval(nextSlide, 2500);
 
+const button = document.querySelectorAll('.btn');
+const back = document.querySelectorAll('.button--back');
+
+function toggleOpen() {
+    this.parentNode.parentNode.parentNode.parentNode.classList.add('open');
+    button.forEach(ele => {
+        if (ele !== this) ele.parentNode.parentNode.parentNode.parentNode.classList.add('hide');
+    });
+}
+
+function toggleClose() {
+    this.parentNode.parentNode.parentNode.parentNode.classList.remove('open');
+    button.forEach(ele => {
+        if (ele !== this) ele.parentNode.parentNode.parentNode.parentNode.classList.remove('hide');
+    });
+}
+
+button.forEach(ele => ele.addEventListener('click', toggleOpen));
+back.forEach(ele => ele.addEventListener('click', toggleClose));
+
+
 /* Бургер-меню */
 
 const burger = document.querySelector('.header__menu');
@@ -189,7 +210,6 @@ document.querySelector('.intro__body').forEach(function(i) {
         swiperPagination: document.querySelector('.swiper-pagination')[i]
     });
 });
-
 
 // jQuery(function($) {
  
