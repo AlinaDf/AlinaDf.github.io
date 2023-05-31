@@ -451,6 +451,7 @@ address {
 @media (max-width: 576px) {
   .btn {
     font-size: 1.4rem;
+    min-height: 4.5rem;
   }
 }
 
@@ -1128,7 +1129,7 @@ address {
   .dots {
     width: 100%;
     overflow: auto;
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
   }
 }
 
@@ -1939,6 +1940,12 @@ address {
 }
 .news__photo img {
   border-radius: 2rem;
+  width: 100%;
+}
+@media (max-width: 1024px) {
+  .news__photo img {
+    width: auto;
+  }
 }
 @media (max-width: 576px) {
   .news__photo img {
@@ -2056,7 +2063,7 @@ address {
   display: flex;
   background-color: #F7F7F7;
   border-radius: 2rem;
-  padding: 6rem 2rem 0 6rem;
+  padding: 6rem 6rem 0 6rem;
 }
 @media (max-width: 768px) {
   .contacts__body {
@@ -2264,7 +2271,7 @@ address {
   left: 3.5rem;
   z-index: 10;
 }
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   .place__content {
     top: 2.5rem;
     left: 50%;
@@ -2359,6 +2366,11 @@ address {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 0 -1rem;
+}
+@media (max-width: 1024px) {
+  .footer {
+    margin-top: 4rem;
+  }
 }
 @media (max-width: 768px) {
   .footer__body {

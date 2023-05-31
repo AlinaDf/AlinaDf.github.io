@@ -75,6 +75,24 @@ function toggleClose() {
 button.forEach(ele => ele.addEventListener('click', toggleOpen));
 back.forEach(ele => ele.addEventListener('click', toggleClose));
 
+const serviceCol = document.querySelectorAll('.service__col');
+
+function toggleOpenMobile() {
+    this.classList.add('open');
+    serviceCol.forEach(ele => {
+        if (ele !== this) ele.classList.add('hide');
+    });
+}
+
+function toggleCloseMobile() {
+    this.classList.remove('open');
+    serviceCol.forEach(ele => {
+        if (ele !== this) ele.classList.remove('hide');
+    });
+}
+
+serviceCol.forEach(ele => ele.addEventListener('click', toggleOpenMobile));
+
 
 /* Бургер-меню */
 
