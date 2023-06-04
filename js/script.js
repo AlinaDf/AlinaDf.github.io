@@ -55,7 +55,7 @@
 
 // const interval = setInterval(nextSlide, 2500);
 
-const button = document.querySelectorAll('.btn');
+const button = document.querySelectorAll('.btn-service');
 const back = document.querySelectorAll('.button--back');
 
 function toggleOpen() {
@@ -75,23 +75,41 @@ function toggleClose() {
 button.forEach(ele => ele.addEventListener('click', toggleOpen));
 back.forEach(ele => ele.addEventListener('click', toggleClose));
 
-const serviceCol = document.querySelectorAll('.service__col');
+window.onload = window.onresize = w;
 
-function toggleOpenMobile() {
-    this.classList.add('open');
-    serviceCol.forEach(ele => {
-        if (ele !== this) ele.classList.add('hide');
-    });
-}
+const backMobile = document.querySelectorAll('.button--back');
 
-function toggleCloseMobile() {
-    this.classList.remove('open');
-    serviceCol.forEach(ele => {
-        if (ele !== this) ele.classList.remove('hide');
-    });
-}
+// function w() {
+//     if (document.documentElement.clientWidth <= 768) {
+//         const serviceCol = document.querySelectorAll('.service__col');
 
-serviceCol.forEach(ele => ele.addEventListener('click', toggleOpenMobile));
+//         function toggleOpenMobile() {
+//             this.classList.add('open');
+//             serviceCol.forEach(ele => {
+//                 if (ele !== this) ele.classList.add('hide');
+//             });
+//         }
+        
+//         function toggleCloseMobile() {
+//             this.classList.remove('open');
+//             serviceCol.forEach(ele => {
+//                 if (ele !== this) ele.classList.remove('hide');
+//             });
+//         }
+        
+//         serviceCol.forEach(ele => ele.addEventListener('click', toggleOpenMobile));
+//         backMobile.forEach(ele => ele.addEventListener('click', toggleCloseMobile));
+
+//     } else if(document.documentElement.clientWidth > 576) {
+//         function toggleOpenMobile() {
+//             this.classList.remove('open');
+//             serviceCol.forEach(ele => {
+//                 if (ele !== this) ele.classList.remove('hide');
+//             });
+//         }
+//     }
+// };
+
 
 
 /* Бургер-меню */
@@ -104,7 +122,7 @@ if(burger) {
     burger.addEventListener('click', function(e) {
         burger.classList.toggle('active');
         menu.classList.toggle('show');
-        body.classList.toggle('no-scroll');
+        document.querySelector('html').classList.toggle('no-scroll');
     });
 }
 
@@ -130,7 +148,7 @@ modalBtn.forEach(item => {
 
         modal.classList.toggle('show');
         $this.classList.toggle('active');
-        body.classList.toggle('no-scroll');
+        body.classList.add('no-scroll');
 
         setTimeout(function() {
             modalContent.style.transform = 'none';
