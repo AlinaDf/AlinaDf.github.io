@@ -75,40 +75,7 @@ function toggleClose() {
 button.forEach(ele => ele.addEventListener('click', toggleOpen));
 back.forEach(ele => ele.addEventListener('click', toggleClose));
 
-window.onload = window.onresize = w;
-
 const backMobile = document.querySelectorAll('.button--back');
-
-// function w() {
-//     if (document.documentElement.clientWidth <= 768) {
-//         const serviceCol = document.querySelectorAll('.service__col');
-
-//         function toggleOpenMobile() {
-//             this.classList.add('open');
-//             serviceCol.forEach(ele => {
-//                 if (ele !== this) ele.classList.add('hide');
-//             });
-//         }
-        
-//         function toggleCloseMobile() {
-//             this.classList.remove('open');
-//             serviceCol.forEach(ele => {
-//                 if (ele !== this) ele.classList.remove('hide');
-//             });
-//         }
-        
-//         serviceCol.forEach(ele => ele.addEventListener('click', toggleOpenMobile));
-//         backMobile.forEach(ele => ele.addEventListener('click', toggleCloseMobile));
-
-//     } else if(document.documentElement.clientWidth > 576) {
-//         function toggleOpenMobile() {
-//             this.classList.remove('open');
-//             serviceCol.forEach(ele => {
-//                 if (ele !== this) ele.classList.remove('hide');
-//             });
-//         }
-//     }
-// };
 
 
 
