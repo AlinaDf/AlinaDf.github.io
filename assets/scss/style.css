@@ -1136,7 +1136,13 @@ address {
   .dots {
     width: 100%;
     overflow: auto;
-    padding-bottom: 3rem;
+    padding: 0 1.5rem 3rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .intro__dots-body.intro__container {
+    padding: 0;
   }
 }
 
@@ -1545,7 +1551,7 @@ address {
 }
 @media (max-width: 576px) {
   .advantages {
-    margin-top: 8rem;
+    margin-top: 4rem !important;
   }
 }
 
